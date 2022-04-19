@@ -3,28 +3,28 @@ Als je nog weinig kennis van HTML hebt, is het handig om jezelf nog wat extra in
 
 We gaan nog even een voor een de basis-elementen langs:
 
-<!DOCTYPE html>
+\<!DOCTYPE html>
 De doctype declaratie is technisch gesproken geen HTML tag. Het is de manier waarop het document je browser vertelt welke versie van HTML gebruikt wordt. Geschreven zoals hierboven is dat dan HTML5, maar als je om een-of-andere reden expliciet een oudere versie van HTML zou willen gebruiken, dan kan dat hiermee.
 
 Feitje: Als je de doctype declaratie weg laat, gebruikt je browser zijn eigen regels en standaarden om HTML te interpreteren. Hiermee ondersteunt je browser hele oude websites uit de tijd voor de HTML-standaard. Dit wordt ook wel Quirks Mode genoemd.
 
 
-<html>
+\<html>
 De html tag wordt ook wel het root element genoemd. Dit is waar alles behalve de doctype declaratie in terecht komt. Bij deze tag hoor je altijd de lang attribuut gebruiken om de taal van je website in te zetten. Dit zorgt ervoor dat zoekmachines je pagina beter kunnen vinden en dat webbrowsers je pagina indien nodig beter kunnen vertalen.
 
-<head>
+\<head>
 Dit is waar de meta-informatie staat; dat is informatie over je pagina die er niet zelf op staat. Denk aan bijvoorbeeld de titel van je tabblad, verwijzingen naar externe styling/scripts of informatie over de auteur.
 
-<body>
+\<body>
 Dit is waar de daadwerkelijke inhoud van je pagina hoort te staan.
 
-<div>
+\<div>
 Het meestvoorkomende html element. Dit wordt gebruikt om de content van je pagina in te delen, met 1 enkele standaard CSS-waarde: ‘display: block’. Elementen met deze standaard-waarde (zoals divs) worden ook wel block elements genoemd.
 
-<span>
+\<span>
 Het kleine broertje van de div, met 1 cruciaal verschil. Het heeft namelijk de standaard CSS-waarde: ‘display: inline’ ipv block. Hierdoor wordt het ook wel een inline element genoemd. Vooral gebruikt om text <span>midden in de regel</span> aan te passen.
 
-<h1>, <h2>, <h3>, <h4>, <h5> & <h6>
+\<h1>, \<h2>, \<h3>, \<h4>, \<h5> & \<h6>
 Deze worden ook wel headings genoemd. Ze gaan van groot tot klein - die maten krijgen ze via de standaard CSS en dat is natuurlijk aan te passen. Headings zijn makkelijk te verwarren met heads en headers, dus wij noemen ze liever h1-h6.
 
 Let op! Gebruik niet meer dan 1x per pagina een <h1> tag. Deze wordt door zoekmachines gebruikt. Bij meer (of minder) dan 1 <h1> kan dat niet goed en zal je pagina dus lager/niet getoond worden.
