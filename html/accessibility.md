@@ -16,7 +16,7 @@ ARIA heeft heel veel verschillende HTML attributen - te veel om apart te behande
 * **ARIA states** beschrijft de huidige status van een element dat kan veranderen
     * Denk aan een checkbox die wel/niet aangevinkt is => **aria-checked=”true”**
 
-Maar hoe zit het dan met accessibility die via semantic elements komt? Dat is immers geen attribuut, maar geeft blijkbaar wel informatie erover. Dat komt omdat heel veel elementen een implicit ARIA role hebben - tenzij je ze een andere role toewijst zal deze gebruikt worden door screenreaders. De implicit ARIA role van elementen zal je niet op w3schools vinden, maar wel op MDN. 
+Maar hoe zit het dan met accessibility die via semantic elements komt? Dat is immers geen attribuut, maar geeft blijkbaar wel informatie erover. Dat komt omdat heel veel elementen een implicit ARIA role hebben - tenzij je ze een andere role toewijst zal deze gebruikt worden door screenreaders. De *implicit ARIA role* van elementen zal je niet op w3schools vinden, maar wel op MDN. 
 
 Onderzoek de volgende elementen om erachter te komen wat hun implicit ARIA role is:
 

@@ -46,7 +46,7 @@ Unordered lists & ordered lists worden erg veell gebruikt. Beiden gebruiken ze *
 
 ### **\<br> & \<hr>**
 
-Respectievelijk de break tag en de horizontal rule tag. Zorgt voor een extra lege regel of extra regel met horizontale lijn erdoorheen. Omdat het een enkele tag met 0 attributen/content is, worden ze ook wel eens als </br> of <br/> geschreven om duidelijk te maken dat er geen closing tag is. Verder heeft dat geen functioneel verschil.
+Respectievelijk de break tag en de horizontal rule tag. Zorgt voor een extra lege regel of extra regel met horizontale lijn erdoorheen. Omdat het een enkele tag met 0 attributen/content is, worden ze ook wel eens als **\</br>** of **\<br/>** geschreven om duidelijk te maken dat er geen closing tag is. Verder heeft dat geen functioneel verschil.
 
 ### **\<img>**
 
@@ -54,7 +54,7 @@ De img tag verwijst naar plaatjes - dit kan ook een plaatje zijn op andere websi
 
 ### **\<a>**
 
-De anchor tag wordt vooral gebruikt om te verwijzen naar andere pagina’s, maar kan ook verwijzen naar een bepaalde plek op dezelfde pagina. Makkelijk te verwarren met de <link> tag - vaak wordt er gesproken van een link terwijl er eigenlijk een <a> tag bedoeld wordt.
+De anchor tag wordt vooral gebruikt om te verwijzen naar andere pagina’s, maar kan ook verwijzen naar een bepaalde plek op dezelfde pagina. Makkelijk te verwarren met de **\<link>** tag - vaak wordt er gesproken van een link terwijl er eigenlijk een \<a> tag bedoeld wordt.
 
 Did you know? De target attribuut bepaalt waar de link geopend wordt - bijvoorbeeld in hetzelfde tabblad of in een nieuw tabblad. Kan je de andere 3 opties van deze attribuut raden? Het antwoord staat hier.
 
