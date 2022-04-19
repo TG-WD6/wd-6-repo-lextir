@@ -38,11 +38,11 @@ Let op! Gebruik niet meer dan 1x per pagina een **\<h1>** tag. Deze wordt door z
 
 **\<p>**
 
-Paragraaf element. Standaard CSS geeft het wat ruimte boven/onder. Ook is de <p> tag een block element en neemt het dus de hele regel in beslag.
+Paragraaf element. Standaard CSS geeft het wat ruimte boven/onder. Ook is de **\<p>** tag een block element en neemt het dus de hele regel in beslag.
 
 **\<ul>, \<ol> & \<li>**
 
-Unordered lists & ordered lists worden erg veell gebruikt. Beiden gebruiken ze <li>list item</li> om elk individueel item in de lijst te stylen. Cruciaal verschil is in de standaard CSS - <ol> is genummerd waar <ul> simpele bullet points gebruikt. Je kan lijstjes ook in elkaar nesten! Dit wordt vaak gedaan bij navigatie-menu’s.
+Unordered lists & ordered lists worden erg veell gebruikt. Beiden gebruiken ze **\<li>list item</li>** om elk individueel item in de lijst te stylen. Cruciaal verschil is in de standaard CSS - **\<ol>** is genummerd waar **\<ul>** simpele bullet points gebruikt. Je kan lijstjes ook in elkaar nesten! Dit wordt vaak gedaan bij navigatie-menu’s.
 
 **\<br> & \<hr>**
 
