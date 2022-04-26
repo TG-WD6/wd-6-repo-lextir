@@ -4,7 +4,6 @@ Deze repository zal al je werk gedurende de opleiding bevatten. De inhoud is aan
 
 Een groot deel van de web development opdrachten zijn praktijkopdrachten, maar een aantal is ook theorie. De theorie-opdrachten mag je samen of apart in een .md bestand opslaan. Voor de praktijkopdrachten dien je bij elke opdracht een aparte file te gebruiken!
 
-<br>
 
 ## Organization is Key
 
@@ -12,13 +11,9 @@ Een goede structuur van je project zorgt ervoor dat andere mensen er gemakkelijk
 
 Veel opdrachten vragen dat je je werk deelt of door mede-deelnemers laat reviewen. Als zij dit makkelijk kunnen vinden, werkt iedereen sneller!
 
-<br>
-
 ## Make it your own
 
 Deze repo, en dus ook deze README.MD, zijn van jou. Daarom moet je deze README.MD hernoemen en vervangen met je eigen README.MD die jou introduceert.
-
-<br>
 
 ## Mark-down tips
 

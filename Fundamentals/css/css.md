@@ -727,36 +727,3 @@ De laatste breakpoint waar we rekening mee willen houden is een tablet in liggen
 Deze query zorgt ervoor dat de paginatitel en beschrijving links van de gallery afbeeldingen komen te zweven. Pas het formaat van de browser aan om deze veranderingen op verschillende schermbreedtes te observeren.
 
 **Test nu je project op responsiveness door het op verschillende schermen te tonen om te kijken of jouw breakpoints werken. Je kunt dit doen door ‘toggle device toolbar’ te gebruiken, dat ingebouwd is in je browser.**
-
-<br>
-
-# **Bonus opdrachten**
-
-Zo! Je bent aan het eind van de CSS opdrachten gekomen. Nu ben je dus een volwaardige CSS baas. Jouw nieuw verworven skills moeten we natuurlijk nog wel goed testen. Hieronder hebben we wat leuke opdrachten bedacht die jij gaat maken. Laten we eens kijken hoe ver je komt.
-
-<br>
-
-## **De Chefkok**
-
-Achtergrond kleur: rgb(128, 179, 128)
-
-Text kleuren: rgb(97, 135, 216), rgb(128, 179, 128)
-
-Icons: [https://lineicons.com/icons/](https://lineicons.com/icons/)
-
-Font: &lt;link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
-font-family: 'Lobster', cursive;
-
-![alt_text](images/image4.png)
-
-<br>
-
-## **Practice Portfolio**
-
-![alt_text](images/image28.png)
-
-
-Kleuren: #4B86CB, #a0aec0, #C5DEEA
-
-![alt_text](images/image10.png)
