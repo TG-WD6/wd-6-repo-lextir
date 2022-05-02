@@ -1,81 +1,3 @@
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 41
-
-Conversion time: 10.33 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β33
-* Mon Apr 25 2022 08:01:33 GMT-0700 (PDT)
-* Source doc: CSS - Handout Cursist
-* Tables are currently converted to HTML tables.
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
-
-WARNING:
-You have 3 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 41.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-<a href="#gdcalert12">alert12</a>
-<a href="#gdcalert13">alert13</a>
-<a href="#gdcalert14">alert14</a>
-<a href="#gdcalert15">alert15</a>
-<a href="#gdcalert16">alert16</a>
-<a href="#gdcalert17">alert17</a>
-<a href="#gdcalert18">alert18</a>
-<a href="#gdcalert19">alert19</a>
-<a href="#gdcalert20">alert20</a>
-<a href="#gdcalert21">alert21</a>
-<a href="#gdcalert22">alert22</a>
-<a href="#gdcalert23">alert23</a>
-<a href="#gdcalert24">alert24</a>
-<a href="#gdcalert25">alert25</a>
-<a href="#gdcalert26">alert26</a>
-<a href="#gdcalert27">alert27</a>
-<a href="#gdcalert28">alert28</a>
-<a href="#gdcalert29">alert29</a>
-<a href="#gdcalert30">alert30</a>
-<a href="#gdcalert31">alert31</a>
-<a href="#gdcalert32">alert32</a>
-<a href="#gdcalert33">alert33</a>
-<a href="#gdcalert34">alert34</a>
-<a href="#gdcalert35">alert35</a>
-<a href="#gdcalert36">alert36</a>
-<a href="#gdcalert37">alert37</a>
-<a href="#gdcalert38">alert38</a>
-<a href="#gdcalert39">alert39</a>
-<a href="#gdcalert40">alert40</a>
-<a href="#gdcalert41">alert41</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
 # **CSS Deep Dive**
 
 ![alt_text](images/image6.png)
@@ -108,19 +30,23 @@ Deze handout bevat veel meer opdrachten dan de handouts die je hiervoor hebt gez
 
   * Leren over de werking en het gebruiken van pseudo elementen als krachtige tools om je webpagina extra stijl te geven.
 
-**5.         Flexbox**
+**5.        Flexbox**
 
   * Leren over het gebruik van flexbox en de voordelen die het heeft ten opzichte van het gewone box model.
 
-**6.        Transitions**
+**6.        CSS Grid**
+
+  * Leren over het gebruik van CSS Grid en wanneer / hoe je dit optimaal kan inzetten.
+
+**7.        Transitions**
 
   * Leren over hoe je met transitions en animations het gedrag en uiterlijk van elementen kunt beïnvloeden zonder gebruik te hoeven maken van Javascript.
 
-**7.        Media queries**
+**8.        Media queries**
 
   * Leren over hoe je een pagina responsive kan maken, zodat het op meerdere scherm goed uitziet.
 
-**8.        Extra oefenopdracht**
+**9.        Extra oefenopdracht**
 
   * Deze bonus opdracht is het maken van een volledige webpage. Dit optioneel maar biedt wel goede oefening en voorbereiding op de portfolio opdracht.
 
@@ -550,6 +476,106 @@ Maak het onderstaande na met flexbox. Properties die je o.a dient te gebruiken z
 Zie het onderstaande voorbeeld en maak het na met flexbox.
 
 ![alt_text](images/image22.png "image_tooltip")
+
+<br>
+
+# **CSS Grid**
+
+CSS Grid is een manier om de layout van je pagina in te delen, vergelijkbaar met Flexbox. Ook veel van de properties hebben vergelijkenis. CSS Grid is wel wat complexer / krachtiger - waar Flexbox items in 1 richting kan laten krimpen / groeien, kan CSS Grid dat in 2 richtingen doen. Zie onderstaand voorbeeld:
+
+![alt_text](images/image12.png)
+
+Je kan Grid dus zien als een soort “FlexBox 2.0”. Maar wanneer gebruik je dan wel Flexbox ipv Grid of vice versa? Een goede vuistregel om te onthouden is **Grid voor Layout, Flexbox voor Components**. Dat betekent dat je de eerste indeling van je pagina maakt met CSS Grid, en de aparte onderdelen van je pagina weer met Flexbox indeelt.
+
+Grid is een complex onderwerp - de verwachting is niet dat je alles hiervan onthoudt. Des te belangrijker is het dat je een goede bron vindt die je kan (her)gebruiken om hierover te leren. De [CSS-tricks guide](https://css-tricks.com/snippets/css/complete-guide-grid/) en [MDN pagina](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids) zijn beiden aan te raden.
+
+Via de oefeningen gaan we Grid wat meer onderzoeken. Wil je nog meer ervaring met CSS Grid? Kijk dan naar [Grid Garden](https://cssgridgarden.com/) en/of [MDN Grid Playground](https://mozilladevelopers.github.io/playground/css-grid).
+
+<br>
+
+## **Opdrachten**
+
+Voor deze opdrachten ga je template code gebruiken; deze kan je vinden onder opdrachten > grid.
+
+<br>
+
+### **Opdracht 1**
+
+Bij CSS Grid wordt vaak gebruikgemaakt van een speciale lengte-eenheid: “**fr**”. Onderzoek wat deze doet en beschrijf het in je eigen woorden.
+
+<br>
+
+### **Opdracht 2**
+
+Via “grid-template-rows” en “grid-template-columns” kan je de maten van je Grid bepalen. Via “grid-row” en “grid-column” kan je vervolgens het begin + einde van een item aangeven in respectievelijk horizontale en verticale richting.
+
+Gebruik deze properties en maak het volgende na:
+
+![alt_text](images/image10.png)
+
+<br>
+
+### **Opdracht 3**
+
+Je kan bij grid ook een speciale waarde gebruiken voor herhalende rijen / kolommen: **repeat()**. Onderzoek hoe deze werkt en herschrijf nu de vorige opdracht met een repeat() waarde.
+
+<br>
+
+### **Opdracht 4**
+
+Een andere vergelijkbare speciale waarde is de **minmax()** functie. Onderzoek hoe deze werkt en verwerk het in je grid.
+
+<br>
+
+### **Opdracht 5**
+
+Soms is de grootte van je grid item niet precies hetzelfde als de maat die je Grid gebruikt. Dan kan je een aantal properties gebruiken om dit grid item binnen de aangewezen ruimte te positioneren. Dit kan je bepalen voor het hele grid tegelijkertijd, of per item individueel - net zoals bij flexbox!
+
+Geef je “article” divs een “height: 200px;” en “width: 600px;”. Positioneer ze vervolgens zoals onderstaand:
+
+![alt_text](images/image4.png)
+
+<br>
+
+### **Opdracht 6**
+
+Wat is het verschil tussen justify/align/place-items en justify/align/place-content?
+
+<br>
+
+### **Opdracht 7**
+
+Je kan ook wat ruimte tussen je rijen / kolommen zetten met “grid-row-gap” / “grid-column-gap” of de shorthand “grid-gap”. Dit is vrij vergelijkbaar met padding / margin. Bij moderne browsers kan je “grid” uit de naam van deze CSS properties weglaten.
+
+Geef je grid een gap van 10px.
+
+<br>
+
+### **Opdracht 8**
+
+Tot zover heb je je grid ingedeeld met bepaalde maten en getallen gebruikt om het begin/einde van de rij/kolom aan te geven per item. Maar het kan ook anders!
+
+Je kan namelijk ook bepaalde lijnen aangeven bij het indelen van je grid, en deze lijnen vervolgens als begin / eindpunt bepalen bij je items. Dit kan helpen met de overzichtelijkheid.
+
+Geef je grid de waardes “grid-template-columns: [col-start] 300px [col-mid] 1fr [col-end];” en “grid-template-rows: [row-start] 1fr [row-mid] 1fr [row-end];”. Gebruik vervolgens **alleen** de namen van de lijnen om je grid-items in te delen.
+
+<br>
+
+### **Opdracht 9**
+
+Je kan bij CSS Grid ook een “standaardmaat” voor rijen / kolommen definieren, mocht er een grid item “buiten” je gedefinieerde grid vallen. Als dat gebeurt wordt het een onderdeel van een **_implicit grid_**. Hoe groot dit implicit grid is qua maat kan je bepalen via **“grid-auto-columns”** en **“grid-auto-rows”**.
+
+Vervang je “grid-template-rows” door “grid-auto-rows”. Maak een nieuwe “article” div met “grid-row-start: 5” om dit te testen.
+
+Meer lezen over Implicit vs Explicit Grid? [Hier](https://css-tricks.com/difference-explicit-implicit-grids/) is een goed artikel.
+
+<br>
+
+### **Opdracht 10**
+
+Tenslotte kan je ook bepaalde delen van je grid een naam geven. Dit doe je met de **“grid-template-areas”** property. Vervolgens kan je je grid items toewijzen aan een bepaald gebied met de **“grid-area”** property.
+
+Gebruik grid-template-areas om je sidebar te benoemen. Gebruik vervolgens grid-area (en **geen** grid-column of grid-row!) om je sidebar de gepaste plek te geven.
 
 <br>
 

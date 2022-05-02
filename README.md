@@ -11,6 +11,8 @@ Een goede structuur van je project zorgt ervoor dat andere mensen er gemakkelijk
 
 Veel opdrachten vragen dat je je werk deelt of door mede-deelnemers laat reviewen. Als zij dit makkelijk kunnen vinden, werkt iedereen sneller!
 
+Let op! Probeer spaties en speciale tekens (zoals &) te vermijden in de namen van je folders. Die maken het veel lastiger om met de terminal te werken en kunnen later veel problemen opleveren. Wil je echt graag een spatie gebruiken? Vervang_ze_met_een_underscore.
+
 ## Make it your own
 
 Deze repo, en dus ook deze README.MD, zijn van jou. Daarom moet je deze README.MD hernoemen en vervangen met je eigen README.MD die jou introduceert.
