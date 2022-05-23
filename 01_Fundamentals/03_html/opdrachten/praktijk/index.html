@@ -94,10 +94,47 @@
         </p>
       </section>
 
-      <h2>Random</h2>
-      <h2>Random</h2>
-      <h2>Random</h2>
-      <h2>Random</h2>
+      <h2>Voorbeelden form-elementen</h2>
+      <form action="">
+        <input type="radio" name="" id="">
+
+      </form>
+  
+      <form method="post" action="">
+        <fieldset role="" aria-labelledby="persoonsgegevens">
+          <h2 id="persoonsgegevens">Persoonsgegevens</h2>
+          <div>
+            <label for="achternaam">Achternaam: <input type="text" name="achternaam" id="achternaam" placeholder="achternaam" required />
+            </label>
+          </div>
+          <div>
+            <label for="voornaam">Voornaam: 
+            <input type="text" name="voornaam" id="voornaam" placeholder="voornaam" required />
+          </label>
+          </div>
+          <div>
+            <label for="geboortedatum">Geboortedatum:
+            <input type="date" name="geboortedatum" id="geboortedatum" required /></label>
+          </div>
+          <div>
+              <label for="man"> M: <input type="radio" name="geslacht" value="man" id="man"></label>
+              <label for="vrouw"> V: <input type="radio" name="geslacht" value="vrouw" id="vrouw"></label>      
+          </div>
+          <div>
+            <label for="postcode">Postcode: 
+            <input type="text" name="postcode" placeholder="postcode" id="postcode" required />
+            </label>
+          </div>
+          <div>
+            <label for="adres">Adres: 
+            <input type="text" name="adres" placeholder="adres" id="adres" required />
+            </label>
+          </div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+      
+        </fieldset>
+
     </main>
   </body>
 </html>

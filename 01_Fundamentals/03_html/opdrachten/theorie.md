@@ -76,15 +76,51 @@ Toont de uitkomst van een berekening of het resultaat van een gaberukershandelin
 
 
 
-1. Wat is HTML?
+1. Wat is HTML?<BR>
 HTML staat voor HyperText Markup Language. Het HTML document bevat de inhoud en structuur van de web pagina. Het kan van styling worden voorzien door CSS en interactivieit kan worden toegevoegd mbv JavaScript.
 
-2. Hoe ziet de basis-structuur van HTML eruit?
-3. Wat is een anchor tag?
+2. Hoe ziet de basis-structuur van HTML eruit?<BR>
+&lt;html><BR>
+&lt;head><BR>
+&lt;/head><BR>
+&lt;body><BR>
+&lt;/body><BR>
+&lt;/html><BR>
+
+3. Wat is een anchor tag?<BR>
+De anchor tag wordt gebuikt voor links. Dit kunnen links zijn naar web sites, links naar een locatie binnen die pagina, bestanden, emailadressen, telefoonnummers en meer.
+
 4. Noem een aantal nieuwe functionaliteiten van HTML5
-5. Wat zijn HTML attributen?
-6. Wat is HTML semantics?
-7. Waarvoor worden meta tags gebruikt?
-8. Wat is een nested element?
-9. Wat is het verschil tussen inline- en blok-elementen?
+
+- met de nieuwe video en audio tags is er nu meer controle over het embedden van multimedia bestanden.
+
+- Meer semantische tags zoals
+&lt;header><BR>
+&lt;nav><BR>
+&lt;main><BR>
+&lt;article><BR>
+&lt;aside><BR>
+&lt;section><BR>
+&lt;footer><BR>
+
+- Figure en figcaption voor onderschriften bij afbeeldingen
+
+5. Wat zijn HTML attributen?<BR>
+Attributen geven meer informatie over een element.
+
+6. Wat is HTML semantics?<BR>
+Semantische HTML zijn tags die zelfbeschrijvend zijn over hun specifieke functie. Dit heeft voordelen voor de leesbaarheid van de code, toegankelijkheid en SEO. 
+
+7. Waarvoor worden meta tags gebruikt?<BR>
+Verschaft informatie over het HTML document.
+Het bevt de informatie hoe de site gerenderd moet worden, en zaken als de titel, beschrijving, sleutelwoorden,.
+
+8. Wat is een nested element?<BR>
+Een nested element is een element (child) binnen een ander element (parent).
+
+9. Wat is het verschil tussen inline- en blok-elementen?<BR>
+Blok worden gezet op een nieuwe regel en nemen de hele breedte in van de parent.
+Inline worden gezet op dezelfde regel als het voorgaande element en nemen niet meer breedt in dan de inhoud.
+
 10. Wat is accessibility?
+Het aanpassen van de code voor mensen met beperkingen die hulpmiddelen nodig hebben om de site te gebruiken.  

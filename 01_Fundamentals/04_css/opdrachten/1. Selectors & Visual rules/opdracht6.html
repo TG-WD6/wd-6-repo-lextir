@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* universal selector */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* attribute selector */
+      [target] {
+        font-size: larger;
+      }
+
+      /* child selector */
+      main > h1 {
+        color: red;
+      }
+
+      /* adjacent sibling selectors */
+      h1 + h2 {
+        color: purple;
+      }
+
+      /* general sibling selector */
+      h1 ~ h2 {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="" target="_top">Dit is een link</a></li>
+        <li><a href="" target="_top">Dit is een link</a></li>
+        <li><a href="" target="_top">Dit is een link</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Dit is de kop</h1>
+      <h2>Dit is een subkop</h2>
+      <h2>Dit is nog een subkop</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Expedita quas animi sapiente perferendis repellendus
+        impedit odit quisquam ipsa eius porro fugiat
+        similique sunt quo facere ad, soluta libero officia vel?
+      </p>
+    </main>
+  </body>
+</html>
