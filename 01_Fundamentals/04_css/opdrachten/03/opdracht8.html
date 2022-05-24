@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: grey;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: white;
+        width: 900px;
+        height: 540px;
+      }
+
+      .brrr {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .yellow-bar1 {
+        background-color: yellow;
+        position: relative;
+        top: -300px;
+        width: 700px;
+        padding-left: 50px;
+      }
+
+      .trans-bar {
+        opacity: 0;
+        position: relative;
+        top: -300px;
+        width: 100px;
+      }
+
+      .yellow-bar2 {
+        background-color: yellow;
+        position: relative;
+        top: -300px;
+        width: 50px;
+      }
+
+      .white-bar {
+        position: relative;
+        background-color: white;
+        opacity: 50%;
+        top: -295px;
+        left: 80px;
+        width: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="img/bergen.webp" alt="bergen" width="800" height="533" />
+      <div class="brrr">
+        <div class="yellow-bar1"><h1>Bbbrrrrr...</h1></div>
+        <div class="trans-bar"></div>
+        <div class="yellow-bar2"></div>
+      </div>
+      <div class="white-bar"><h2>Super koud hier zeg!</h2></div>
+    </header>
+  </body>
+</html>
