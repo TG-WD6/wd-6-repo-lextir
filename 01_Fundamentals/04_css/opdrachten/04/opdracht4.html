@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        width: 40vw;
+        margin: 5rem;
+        justify-content: space-between;
+      }
+      .cirkel1, .cirkel2, .cirkel3 {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 50%;
+      }
+
+      .cirkel1::before, .cirkel2::before, .cirkel3::before {
+        content: ".";
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        position: absolute;
+        transform: rotate(135deg);
+        left: -20px;
+      }
+
+      .cirkel1::after, .cirkel2::after, .cirkel3::after {
+        content: ".";
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        position: absolute;
+        transform: rotate(315deg);
+        right: -20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cirkel1">1</div>
+      <div class="cirkel2">2</div>
+      <div class="cirkel3">3</div>
+    </div>
+  </body>
+</html>

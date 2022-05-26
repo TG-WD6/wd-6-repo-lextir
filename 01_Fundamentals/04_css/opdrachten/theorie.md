@@ -14,11 +14,11 @@ _Je kunt op 3 verschillende manieren CSS in je HTML inladen. Op welke 3 manieren
 
 _CSS pas je toe met een bepaalde syntax. Hoe ziet zo'n syntax eruit? Kun je ook uitleggen wat elk element uit de syntax betekent?_
 
-> selector {
-
-    property: value;
-
+```html 
+selector {
+  property: value;
 }
+```
 
 De selector refereert naar het HTML-element waar de CSS-regel op van toepassing is.
 
@@ -33,30 +33,38 @@ De waarde is de eenheid of waarde van die verandering.
 Type selectors:  
 Hiermee selecteer je alle instanties van een bepaald HTML-element. Als dit type element steeds op dezelfde manier gestyled moet worden dan is de een handige selector om te gebruiken. Voor de leesbaarheid van de code zijn deze ook te prefereren.
 
-> div {  
->  display: flex;  
-> }
+```html
+div {  
+  display: flex;  
+}
+```
 
 Class selectors:  
 Hiermee selecteer je alle elementen met dit class-atribuut. Een voorbeeld is dat je hiermee verschillende soorten elementen van dezelfde eigenschappen kan voorzien.
 
-> .theesoorten {
-> font-family: arial;
-> }
+```html
+.theesoorten {
+  font-family: arial;
+}
+```
 
 ID selectors:  
 Hiermee selecteer je een element met een bepaalde id. ID's zijn uniek in een HTML-document dus hiermee weet je zeker dat je alleen dat element selecteert.
 
-> #groene-thee {  
->  color: green;  
->  }
+```html 
+#groene-thee {  
+  color: green;  
+}
+```
 
 Descendant selectors:  
 Hiermee selecteer je een specifieke child van hun parent. Hiermee ben je in staat op een specifieke manier een HTML element te selecteren zonder een nieuwe class aan te maken. Een ander voordeel is dat het voor anderen duidelijk is wat je selecteert.
 
-> ul li {  
->  color: green;  
-> }
+```html
+ul li {  
+  color: green;  
+}
+```
 
 ---
 
@@ -142,7 +150,9 @@ Wat merk je op met width en height?: De inhoud-, padding- en box-waardes bepalen
 
 _Welke CSS property kun je gebruiken om ervoor te zorgen dat de waarde van width en height de totale breedte en hoogte is van het blok van de voorgaande opdracht?_
 
-> Box-sizing: border-box
+```html
+Box-sizing: border-box
+```
 
 ---
 
@@ -176,8 +186,10 @@ Dit element maakt een pseudo-element direct voor of na het geselecteerde element
 
 Dit voorbeeld plaatst een asterisk na een element met de klasse 'label':
 
-```html
-.label::after { content: *; }
+```html  
+.label::after {  
+  content: *; 
+  }  
 ```
 
 ::backdrop  
@@ -185,20 +197,24 @@ Maakt een element tussen het geselecteerde element en de rest van de pagina wann
 
 Dit voorbeeld maakt een grijze achtergrond wanneer de video fullscreen wordt afgespeeld:
 
-```html
-video::backdrop { background-color: gray; }
+```html  
+video::backdrop {  
+  background-color: gray;  
+  }  
 ```
 
 ::cue  
-Hiermee kan je de WebVTT cues styleren, wat de captions zijn van een VIDEO element.
+Hiermee kan je de WebVTT cues styleren, wat de captions zijn van een VIDEO element.  
 
-```html
-video::cue { color: yellow; }
+```html  
+video::cue {  
+  color: yellow;  
+  }  
 ```
 
 ::first-letter  
 Selecteert de eerste letter van het element.  
-Properties die je kunt toepassen zijn:
+Properties die je kunt toepassen zijn:  
 
 - color
 - background properties (zoals background-image)
@@ -207,78 +223,106 @@ Properties die je kunt toepassen zijn:
 - font properties (zoals font-size en font-weight)
 - text properties (zoals text-decoration en word-spacing)
 
-```html
-.label::first-letter { color: red; }
+```html  
+.label::first-letter {  
+  color: red;  
+  }  
 ```
 
 ::first-line  
 Selecteert de eerste regel van het element. Kan alleen toegepast worden als het een waarde heeft van block, inline-block, list-item, table-caption of table-cell.  
-Properties die je kunt toepassen zijn:
+Properties die je kunt toepassen zijn:  
 
 - color
 - background properties
 - font properties
 - text properties
 
-```html
-.label::first-line { color: golden; }
+```html  
+.label::first-line {  
+  color: golden;  
+  }  
 ```
 
 ::file-selector-button  
-Dit selecteert de knop die gebruikt wordt bij een <input> met type="file".
+Dit selecteert de knop die gebruikt wordt bij een INPUT met type="file".  
 
-```html
-input[type=file]::file-selector-button { border: 2px solid #6c5ce7; }
+```html  
+input[type=file]::file-selector-button {  
+  border: 2px solid #6c5ce7;  
+  }  
 ```
 
 :grammar-error  
-Hiermee wordt de tekst geselecteerd die door de browser beschouwd wordt als grammaticaal incorrect. Deze kan je van styling voorzien.
+Hiermee wordt de tekst geselecteerd die door de browser beschouwd wordt als grammaticaal incorrect. Deze kan je van styling voorzien.  
 
-```html
-::grammar-error { text-decoration: underline red; color: red; }
+```html  
+::grammar-error {  
+  text-decoration: underline red;  
+  color: red;  
+  }  
 ```
 
 ::marker  
-Hiermee kan je bij lijsten de opsommingstekens en nummers van opmaak voorzien en bij SUMMARY het pijltje.
+Hiermee kan je bij lijsten de opsommingstekens en nummers van opmaak voorzien en bij SUMMARY het pijltje.  
 
-```html
-ul li::marker { color: yellow; }
+```html  
+ul li::marker {  
+  color: yellow;  
+  }  
 ```
 
 ::part  
-Selecteert ieder element in een shadow tree met het part-atribuut.
+Selecteert ieder element in een shadow tree met het part-atribuut.  
 
 ::placeholder  
-Hiermee kan je de PLACEHOLDER-tekst styleren.
+Hiermee kan je de PLACEHOLDER-tekst styleren.  
 
-```html
-::placeholder { color: darkcyan; }
+```html  
+::placeholder {  
+  color: darkcyan;  
+  }  
 ```
 
 ::selection  
-Hiermee kan je de tekstselectie van een bepaalde opmaak voorzien.
+Hiermee kan je de tekstselectie van een bepaalde opmaak voorzien.  
 
-```html
-::selection { background: green; color: white; }
+```html  
+::selection {  
+  background: green;   
+  color: white;  
+  }  
 ```
 
 ::slotted()  
-Selecteert een element in een slot in een HTML template.
+Selecteert een element in een slot in een HTML template.  
 
-```html
-::slotted(span) { font-weight: bold; }
+```html  
+::slotted(span) {  
+  font-weight: bold;  
+  }  
 ```
 
 ::spelling-error  
-Hiermee wordt de tekst geselecteerd die door de browser beschouwd wordt als een spelfout. Deze kan je van styling voorzien.
+Hiermee wordt de tekst geselecteerd die door de browser beschouwd wordt als een spelfout. Deze kan je van styling voorzien.  
 
-```html
-::spelling-error { text-decoration: wavy red; }
+```html  
+::spelling-error {  
+  text-decoration: wavy red;  
+  }  
 ```
 
 ::target-text  
-Dit is de tekst waarnaar gescrolled wordt vanaf een interne link. Deze tekst kun je van opmaak voorzien.
+Dit is de tekst waarnaar gescrolled wordt vanaf een interne link. Deze tekst kun je van opmaak voorzien.  
 
-```html
-::target-text { background-color: blue; }
+```html  
+::target-text {  
+  background-color: blue;  
+  }  
 ```
+---
+
+# 6. CSS GRID
+
+### Opdracht 1:
+fr staat voor fraction-eenheid. Dit is een relatieve eenheid die afzonderlijk of in combinatie kan worden gebruikt met andere soort eenheden. In dat geval behouden de andere eenheden hun waarde en de fr-eenheden verdelen onderling de resterende ruimte.
