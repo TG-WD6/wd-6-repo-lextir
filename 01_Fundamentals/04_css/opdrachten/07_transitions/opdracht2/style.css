@@ -1,0 +1,9 @@
+h1 {
+  transition-duration: 500ms;
+  transition-property: color;
+}
+
+h1:hover {
+  color: rgba(119, 34, 210, 0.62);
+}
+

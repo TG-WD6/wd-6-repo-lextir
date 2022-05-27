@@ -1,0 +1,28 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.container div {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border: 1px solid black;
+  position: relative;
+}

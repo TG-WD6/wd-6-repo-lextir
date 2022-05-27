@@ -325,4 +325,22 @@ Dit is de tekst waarnaar gescrolled wordt vanaf een interne link. Deze tekst kun
 # 6. CSS GRID
 
 ### Opdracht 1:
+*Bij CSS Grid wordt vaak gebruikgemaakt van een speciale lengte-eenheid: “fr”. Onderzoek wat deze doet en beschrijf het in je eigen woorden.*  
+
 fr staat voor fraction-eenheid. Dit is een relatieve eenheid die afzonderlijk of in combinatie kan worden gebruikt met andere soort eenheden. In dat geval behouden de andere eenheden hun waarde en de fr-eenheden verdelen onderling de resterende ruimte.
+
+---
+### Opdracht 6:
+
+*Wat is het verschil tussen justify/align/place-items en justify/align/place-content?*  
+
+Items beinvloedt de plaatsing van items op een rij.   
+Content beinvloedt de plaatsing van rijen tov elkaar.  
+---
+
+# 7. TRANSITIONS
+
+*Zoek uit wat transitions zijn en beschrijf met eigen woorden wat het betekent.*
+
+Elementen in een web site kunnen verschillende staten hebben. Denk aan een knop die animeert op het moment dat je met je cursor erop gaat of een stuk tekst die tevoorschijn komt als je ergens op klikt. Met CSS transitions heb je controle over de overgang tussen de initial state en de target state. Je kunt de oa tijdsduur bepalen en hoe de animatie eruit ziet.
+
