@@ -19,17 +19,40 @@
   border: 4px solid black;
 }
 
-.container__bird
-{
+.bird {
   position: absolute;
   top: 0;
   left: 0;
   width: 300px;
   height: 300px;
   background-image: url(img/bird.webp);
+  background-color: white;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: 10px solid;
 }
+
+.bird::before {
+  content: "HAHA";
+  position: absolute;
+  font-size: 2.5em;
+  left: 75px;
+}
+
+.bird::after {
+  content: "";
+  background-color: pink;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  transition: transform 1s;
+}
+
+.box:hover .bird::after {
+  transform: translate(150px, 125px) rotate(45deg);
+}
+
 
