@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 500px;
+  margin: 20px;
+  border: 4px solid black;
+}
+
+.container__bird
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-image: url(img/bird.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 10px solid;
+}
+

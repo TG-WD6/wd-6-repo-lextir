@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -6,20 +8,15 @@
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 .container {
-  width: 90%;
+  width: 90vw;
+  height: 100%;
   margin: 20px;
   padding: 10px;
-  display: flex;
-  flex-direction: column;
   border: 1px solid black;
 }
 
-.container div {
+.box {
   width: 100px;
   height: 100px;
   margin: 5px;
@@ -27,5 +24,80 @@ html, body {
   text-align: center;
   font-size: 2rem;
   border: 1px solid black;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: left, background-color, border-radius;
 }
+
+.one {
+  position: relative;
+  transition-duration: 2500ms;
+  transition-timing-function: ease-out;
+  left: 0%;
+  background-color: white;
+  border-radius: 0%;
+}
+
+.container:hover .one {
+  left: 90%;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.two {
+  position: relative;
+  transition-duration: 2900ms;
+  transition-timing-function: ease-in;
+  left: 0%;
+  background-color: white;
+  border-radius: 0%;
+}
+
+.container:hover .two {
+  left: 90%;
+  background-color: red;
+  border-radius: 25%;
+}
+
+.three {
+  position: relative;
+  transition-duration: 2700ms;
+  transition-timing-function: ease-out;
+  left: 0%;
+  background-color: white;
+}
+
+.container:hover .three {
+  left: 90%;
+  background-color: red;
+}
+
+.four {
+  position: relative;
+  transition-duration: 2700ms;
+  transition-timing-function: ease-in-out;
+  left: 0%;
+  background-color: white;
+}
+
+.container:hover .four {
+  left: 90%;
+  background-color: red;
+}
+
+.five {
+  position: relative;
+  transition-duration: 2900ms;
+  transition-timing-function: cubic-bezier(0.17, 1.06, 0.51,-0.7);
+  left: 0%;
+  background-color: white;
+  border-radius: 0%;
+}
+
+.container:hover .five {
+  left: 90%;
+  background-color: red;
+}
+
+
