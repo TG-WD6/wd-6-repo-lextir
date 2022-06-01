@@ -55,7 +55,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  border: 1px solid white;
+
 }
 .gallery-item {
   margin: 20px;
@@ -117,13 +117,13 @@ nav a {
 
 @media (min-resolution: 150dpi) {
   .logo {
-     background-image: url("./images/spaceship2.png");
+    background-image: url("./images/spaceship2.png");
   }
 }
 
 /* OPDRACHT 6 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .page-description {
      display: inline-block;
      width: 20vw;
@@ -132,6 +132,21 @@ nav a {
     display: inline-block;
   }
 
+} */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    text-align: start;
+  }
+  .page-description {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .gallery {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
-
-
