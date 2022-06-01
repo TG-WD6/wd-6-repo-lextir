@@ -55,7 +55,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-
 }
 .gallery-item {
   margin: 20px;
@@ -123,30 +122,16 @@ nav a {
 
 /* OPDRACHT 6 */
 
-/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .page-description {
-     display: inline-block;
-     width: 20vw;
-  }
-  .gallery {
-    display: inline-block;
-  }
-
-} */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  main {
+  .main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    text-align: start;
+    grid-template-columns: 200px 1fr;
   }
   .page-description {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
   }
   .gallery {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
   }
 }
