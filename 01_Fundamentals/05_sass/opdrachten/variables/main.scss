@@ -1,3 +1,8 @@
+$translucent-white: rgba(255,255,255,0.3);
+$icon-square-length: 300px;
+$standard-border: 4px solid black;
+
+
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 h1 {
     font-family: Roboto, sans-serif;
@@ -10,7 +15,16 @@ h1 {
     background-image: url("lemonade.jpg");
 }
 
+.slogan {
+    background-color: $translucent-white;
+}
+
 .container {
     text-align: center;
     font-family: "Pacifico", cursive;
+}
+
+.icon {
+width: $icon-square-length;
+height: $icon-square-length;
 }

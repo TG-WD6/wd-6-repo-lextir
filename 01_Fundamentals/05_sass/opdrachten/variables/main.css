@@ -10,8 +10,17 @@ h1 {
   background-image: url("lemonade.jpg");
 }
 
+.slogan {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .container {
   text-align: center;
   font-family: "Pacifico", cursive;
+}
+
+.icon {
+  width: 300px;
+  height: 300px;
 }
 /*# sourceMappingURL=main.css.map */
