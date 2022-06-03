@@ -1,0 +1,10 @@
+.button {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: goldenrod;
+}
+
+.button:hover {
+  background-color: gold;
+}

@@ -1,0 +1,28 @@
+@mixin button-styling {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: goldenrod;
+  &:hover {
+    background-color: gold;
+  }
+}
+
+@mixin color-transition {
+  background-color: blue;
+  transition: background-color 1s;
+  &:hover {
+    background-color: purple;
+  }
+}
+
+.button {
+  @include button-styling;
+  font-weight: bold;
+}
+
+.colorChangingSquare {
+  @include color-transition;
+  width: 200px;
+  height: 200px;
+}
