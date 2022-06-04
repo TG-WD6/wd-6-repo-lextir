@@ -1,0 +1,11 @@
+@import 'global/resets';
+@import 'components/login';
+@import 'components/search-bar';
+
+.search-bar {
+  @extend %search-bar;
+}
+
+.login {
+  @extend %login;
+}
