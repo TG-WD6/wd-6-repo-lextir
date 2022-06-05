@@ -1,34 +1,32 @@
-
 %search-bar {
   width: 20rem;
-  transition: transform 0.2s;
+  transition: transform 0.1s;
   margin: 3rem auto;
-  
+
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
-  
+
   form {
     display: flex;
     background-color: rgb(236, 236, 236);
     border-radius: 20px;
   }
-  
+
   input {
     background-color: inherit;
     width: 80%;
     border: 0px;
     padding: 5px 15px;
-    
+
     &:focus {
       outline: none;
     }
   }
-  
+
   button {
     border: 0px;
     padding-left: 15px;
     border-radius: 20px;
-   }
-
+  }
 }

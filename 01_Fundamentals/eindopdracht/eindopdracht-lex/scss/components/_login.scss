@@ -9,27 +9,28 @@
     color: grey;
   }
 
- .login__img-placeholder {
-  background-color:  rgb(210, 210, 210);
-  border-radius: 1.5rem;
-  height: 250px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: large;
-  color: grey;
+  .login__img-placeholder {
+    background-color: rgb(210, 210, 210);
+    border-radius: 1.5rem;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    color: grey;
 
-  .powered {
-    position: relative;
-    top: 95px;
-    left: 37px;
-    font-size: small;
-  }
+    :nth-child(2) {
+      position: relative;
+      top: 95px;
+      left: 37px;
+      font-size: small;
+    }
   }
 
-  input[type="email"], input[type="password"] {
+  input[type="email"],
+  input[type="password"] {
     width: 100%;
     margin: 1rem 0;
     border-top-style: hidden;
@@ -42,6 +43,7 @@
     }
 
   }
+
   .login__remember {
     display: flex;
     justify-content: space-between;
@@ -63,7 +65,7 @@
     transition: transform 0.1s;
 
     img {
-      padding-right:  10px;
+      padding-right: 10px;
       padding-bottom: 2px;
     }
 
@@ -71,5 +73,4 @@
       transform: scale(1.01);
     }
   }
-
 }
