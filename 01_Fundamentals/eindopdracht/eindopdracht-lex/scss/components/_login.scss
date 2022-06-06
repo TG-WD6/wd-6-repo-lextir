@@ -1,4 +1,4 @@
-%login {
+.login {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@
   input[type="email"],
   input[type="password"] {
     width: 100%;
-    margin: 1rem 0;
+    margin: 16px 0;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
@@ -47,7 +47,7 @@
   .login__remember {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0;
+    margin: 16px 0;
   }
 
   button[type="submit"] {
@@ -61,7 +61,7 @@
     font-size: x-large;
     font-weight: bold;
     border: 0;
-    margin-top: .5rem;
+    margin-top: 8px;
     transition: transform 0.1s;
 
     img {

@@ -2,15 +2,4 @@
 @import 'components/login';
 @import 'components/search-bar';
 @import 'components/product-cards';
-
-.login {
-  @extend %login;
-}
-
-.search-bar {
-  @extend %search-bar;
-}
-
-.product-cards {
-  @extend %product-cards;
-}
+@import 'components/navbar';
