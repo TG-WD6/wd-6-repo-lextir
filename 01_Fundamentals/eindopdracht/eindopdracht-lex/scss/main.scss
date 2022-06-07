@@ -1,5 +1,8 @@
-@import 'global/resets';
-@import 'components/login';
-@import 'components/search-bar';
-@import 'components/product-cards';
+@import 'base/resets';
+@import 'helpers/variables';
 @import 'components/navbar';
+@import 'components/search-bar';
+@import 'components/login';
+@import 'components/product-cards';
+@import 'components/footer';
+@import 'components/accordion';
