@@ -292,30 +292,29 @@ input[type=search]::-webkit-search-results-decoration {
   max-height: 100%;
 }
 
-#navbar__checkbox {
-  opacity: 0;
-}
-
 .navbar__menu {
-  transform: translate(-50%, -50%);
-  cursor: pointer;
   position: absolute;
   top: 36px;
   right: 10px;
   height: 35px;
+  transform: translate(-50%, -50%);
 }
-
-.navbar__menu:hover .bar {
-  box-shadow: 1px 1px 7px 1px RGBa(0, 0, 0, 0.3);
-}
-
 .navbar__menu .bar {
   width: 35px;
   height: 4px;
   background: #fff;
-  box-shadow: 1px 1px 3px RGBa(0, 0, 0, 0.4);
   border-radius: 2px;
-  transition: 200ms ease;
+  transition: transform 200ms ease;
+}
+
+#navbar__checkbox {
+  opacity: 0;
+}
+#navbar__checkbox:checked ~ .navbar__list--mobile {
+  transform: translateX(0);
+}
+#navbar__checkbox:checked ~ .navbar__list--mobile li {
+  transform: translateX(0);
 }
 
 .navbar__menu .bar:not(:first-child) {
@@ -323,22 +322,18 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 #navbar__checkbox:checked + .navbar__menu {
-  transform: translate(-50%, -50%) rotatey(180deg);
+  transform: translate(-50%, -50%) rotateY(180deg);
 }
-
 #navbar__checkbox:checked + .navbar__menu .bar {
-  transform: rotatey(180deg) rotatex(360deg);
+  transform: rotateY(180deg) rotateX(360deg);
 }
-
 #navbar__checkbox:checked + .navbar__menu .bar:first-child {
   transform: rotate(-45deg);
   margin-top: 15px;
 }
-
 #navbar__checkbox:checked + .navbar__menu .bar:nth-child(2) {
   opacity: 0;
 }
-
 #navbar__checkbox:checked + .navbar__menu .bar:nth-child(3) {
   margin-top: -15px;
   transform: rotate(45deg);
@@ -383,19 +378,13 @@ input[type=search]::-webkit-search-results-decoration {
   padding-left: 7px;
 }
 
-input:checked ~ ul {
-  transform: translateX(0);
-}
-input:checked ~ ul li {
-  transform: translateX(0);
-}
-
 .navbar__list--desktop {
   display: none;
 }
 
 @media (min-width: 39rem) {
-  .navbar__list--mobile {
+  .navbar__menu,
+.navbar__list--mobile {
     display: none;
   }
 
@@ -419,9 +408,5 @@ input:checked ~ ul li {
   }
   .navbar__list--desktop li a:hover {
     border-bottom: 3px solid white;
-  }
-
-  .navbar__menu {
-    display: none;
   }
 }
