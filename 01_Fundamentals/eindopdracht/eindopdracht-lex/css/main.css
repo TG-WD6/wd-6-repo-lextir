@@ -536,3 +536,39 @@ footer .menu-item__sub a:hover::before {
           user-select: none;
   max-width: 600px;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 10px;
+  padding: 25px;
+  font-size: large;
+  font-weight: 200;
+}
+.form input {
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+.form__postcode {
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
+  grid-column-gap: 5px;
+}
+.form button {
+  background-color: rgb(14, 42, 250);
+  width: 175px;
+  height: 40px;
+  float: right;
+  border: 0;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  margin-top: 8px;
+  font-weight: bold;
+  color: white;
+}
