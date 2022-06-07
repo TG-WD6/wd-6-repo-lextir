@@ -26,7 +26,7 @@
 
 // HAMBURGER ICON
 
-.navbar__menu {
+.navbar__ham {
   position: absolute;
   top: 36px;
   right: 10px;
@@ -61,11 +61,11 @@
 
 // HAMBURGER ICON ANIMATION
 
-.navbar__menu .bar:not(:first-child) {
+.navbar__ham .bar:not(:first-child) {
   margin-top: 7px;
 }
 
-#navbar__checkbox:checked+.navbar__menu {
+#navbar__checkbox:checked+.navbar__ham {
   transform: translate(-50%, -50%) rotateY(180deg);
 
   .bar {
@@ -141,7 +141,7 @@
 
 @media (min-width: 39rem) {
 
-  .navbar__menu,
+  .navbar__ham,
   .navbar__list--mobile {
     display: none;
   }
