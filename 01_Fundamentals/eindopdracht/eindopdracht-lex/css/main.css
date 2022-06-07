@@ -407,6 +407,36 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 
+* {
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  background-color: rgb(248, 245, 240);
+  padding: 3rem 2rem;
+}
+footer .footer__column {
+  width: 25%;
+  padding: 0 15px;
+}
+footer .footer__column ul {
+  list-style: none;
+}
+footer .footer__column ul a {
+  text-decoration: none;
+  color: gray;
+}
+footer .footer__column ul a:hover {
+  color: black;
+}
+footer .footer__column ul li img {
+  display: inline-block;
+  padding-top: 10px;
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;
