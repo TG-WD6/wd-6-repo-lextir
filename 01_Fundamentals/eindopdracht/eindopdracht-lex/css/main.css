@@ -621,22 +621,31 @@ footer .footer-desktop {
 }
 
 .pagination {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin: 20px;
 }
-.pagination a {
+.pagination__items {
+  display: inline-block;
+}
+.pagination__items a {
   color: black;
   float: left;
   font-size: 1.3rem;
-  padding: 15px 25px;
+  padding: 10px 20px;
   color: blue;
   text-decoration: none;
 }
-.pagination a:first-of-type,
-.pagination a:last-of-type {
-  border: 1px solid blue;
-  border-radius: 3px;
+.pagination__items a:first-of-type,
+.pagination__items a:last-of-type {
+  border: 2px solid blue;
+  border-radius: 5px;
 }
-.pagination a:hover:not(.active) {
+.pagination__items a.active {
+  color: black;
+}
+.pagination__items a:hover:not(.active) {
+  background-color: blue;
+  color: white;
   font-weight: 700;
+  border-radius: 5px;
 }
