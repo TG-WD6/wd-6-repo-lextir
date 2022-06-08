@@ -58,6 +58,10 @@
       color: red;
       font-size: x-large;
       font-weight: bold;
+
+      sup {
+        font-size: .6em;
+      }
     }
 
     &--b {
@@ -68,6 +72,7 @@
     &--c {
       display: none;
     }
+
   }
 
   // MEDIA QUERIES

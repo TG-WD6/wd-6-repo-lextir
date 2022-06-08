@@ -227,6 +227,9 @@ input[type=search]::-webkit-search-results-decoration {
   font-size: x-large;
   font-weight: bold;
 }
+.product-cards .product__box3--a sup {
+  font-size: 0.6em;
+}
 .product-cards .product__box3--b {
   color: rgb(0, 99, 0);
   font-size: 0.9rem;
