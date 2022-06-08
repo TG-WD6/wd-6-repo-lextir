@@ -1,10 +1,11 @@
 @import 'base/resets';
 @import 'helpers/variables';
-@import 'components/navbar';
+
 @import 'components/search-bar';
 @import 'components/login';
 @import 'components/product-cards';
 @import 'components/footer';
-@import 'components/accordion';
 @import 'components/image-overlay';
 @import 'components/form';
+@import 'components/accordion';
+@import 'components/navbar';
