@@ -538,7 +538,7 @@ footer .footer-desktop {
 .navbar #navbar__checkbox:checked + .navbar__ham .bar {
   transform: rotateY(180deg) rotateX(360deg);
 }
-.navbar #navbar__checkbox:checked + .navbar__ham .bar:first-child {
+.navbar #navbar__checkbox:checked + .navbar__ham .bar:nth-child(1) {
   transform: rotate(-45deg);
   margin-top: 15px;
 }

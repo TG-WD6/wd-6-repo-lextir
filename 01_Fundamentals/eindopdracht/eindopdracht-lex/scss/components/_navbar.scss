@@ -63,7 +63,7 @@
       transform: rotateY(180deg) rotateX(360deg);
     }
 
-    .bar:first-child {
+    .bar:nth-child(1) {
       transform: rotate(-45deg);
       margin-top: 15px;
     }
