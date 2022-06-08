@@ -11,16 +11,13 @@
     text-decoration: none;
   }
 
-  a:first-of-type, a:last-of-type {
+  a:first-of-type,
+  a:last-of-type {
     border: 1px solid blue;
-  }
-
-  a.active {
-    background-color: rosybrown;
-    color: white;
+    border-radius: 3px;
   }
 
   a:hover:not(.active) {
-    background-color: lightgray;
+    font-weight: 700;
   }
 }

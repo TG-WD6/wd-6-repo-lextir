@@ -632,13 +632,11 @@ footer .footer-desktop {
   color: blue;
   text-decoration: none;
 }
-.pagination a:first-of-type, .pagination a:last-of-type {
+.pagination a:first-of-type,
+.pagination a:last-of-type {
   border: 1px solid blue;
-}
-.pagination a.active {
-  background-color: rosybrown;
-  color: white;
+  border-radius: 3px;
 }
 .pagination a:hover:not(.active) {
-  background-color: lightgray;
+  font-weight: 700;
 }
