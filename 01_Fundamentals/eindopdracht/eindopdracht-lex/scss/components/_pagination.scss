@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: black;
+    float: left;
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    color: blue;
+    text-decoration: none;
+  }
+
+  a:first-of-type, a:last-of-type {
+    border: 1px solid blue;
+  }
+
+  a.active {
+    background-color: rosybrown;
+    color: white;
+  }
+
+  a:hover:not(.active) {
+    background-color: lightgray;
+  }
+}

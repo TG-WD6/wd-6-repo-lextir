@@ -390,7 +390,7 @@ footer .footer-desktop {
   footer .footer-desktop {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 19px 20px;
   }
   footer .footer-desktop .footer__column {
     width: 25%;
@@ -501,63 +501,57 @@ footer .footer-desktop {
   height: 65px;
   padding: 10px;
 }
-
-.navbar__elements {
+.navbar .navbar__elements {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
   max-width: 1000px;
 }
-.navbar__elements__logo {
+.navbar .navbar__elements__logo {
   max-height: 100%;
 }
-
-.navbar__ham {
+.navbar .navbar__ham {
   position: absolute;
   top: 36px;
   right: 10px;
   height: 35px;
   transform: translate(-50%, -50%);
 }
-.navbar__ham .bar {
+.navbar .navbar__ham .bar {
   width: 35px;
   height: 4px;
   background: #fff;
   border-radius: 2px;
   transition: transform 200ms ease;
 }
-
-#navbar__checkbox {
+.navbar #navbar__checkbox {
   opacity: 0;
 }
-#navbar__checkbox:checked ~ .navbar__list--mobile, #navbar__checkbox:checked ~ .navbar__list--mobile li {
+.navbar #navbar__checkbox:checked ~ .navbar__list--mobile, .navbar #navbar__checkbox:checked ~ .navbar__list--mobile li {
   transform: translateX(0);
 }
-
-.navbar__ham .bar:not(:first-child) {
+.navbar .navbar__ham .bar:not(:first-child) {
   margin-top: 7px;
 }
-
-#navbar__checkbox:checked + .navbar__ham {
+.navbar #navbar__checkbox:checked + .navbar__ham {
   transform: translate(-50%, -50%) rotateY(180deg);
 }
-#navbar__checkbox:checked + .navbar__ham .bar {
+.navbar #navbar__checkbox:checked + .navbar__ham .bar {
   transform: rotateY(180deg) rotateX(360deg);
 }
-#navbar__checkbox:checked + .navbar__ham .bar:first-child {
+.navbar #navbar__checkbox:checked + .navbar__ham .bar:first-child {
   transform: rotate(-45deg);
   margin-top: 15px;
 }
-#navbar__checkbox:checked + .navbar__ham .bar:nth-child(2) {
+.navbar #navbar__checkbox:checked + .navbar__ham .bar:nth-child(2) {
   opacity: 0;
 }
-#navbar__checkbox:checked + .navbar__ham .bar:nth-child(3) {
+.navbar #navbar__checkbox:checked + .navbar__ham .bar:nth-child(3) {
   margin-top: -15px;
   transform: rotate(45deg);
 }
-
-.navbar__list--mobile {
+.navbar .navbar__list--mobile {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -572,51 +566,48 @@ footer .footer-desktop {
   transform: translateX(100%);
   transition: transform 0.3s;
 }
-.navbar__list--mobile li {
+.navbar .navbar__list--mobile li {
   display: flex;
   align-items: baseline;
   width: 100%;
   margin: 10px 0;
   transform: translateX(100%);
 }
-.navbar__list--mobile li:nth-of-type(1) {
+.navbar .navbar__list--mobile li:nth-of-type(1) {
   transition: transform 0.3s 150ms;
 }
-.navbar__list--mobile li:nth-of-type(2) {
+.navbar .navbar__list--mobile li:nth-of-type(2) {
   transition: transform 0.3s 300ms;
 }
-.navbar__list--mobile li:nth-of-type(3) {
+.navbar .navbar__list--mobile li:nth-of-type(3) {
   transition: transform 0.3s 450ms;
 }
-.navbar__list--mobile li a {
+.navbar .navbar__list--mobile li a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: bold;
   padding-left: 7px;
 }
-
-.navbar__list--desktop {
+.navbar .navbar__list--desktop {
   display: none;
 }
-
 @media (min-width: 39rem) {
-  .navbar__ham,
-.navbar__list--mobile {
+  .navbar .navbar__ham,
+.navbar .navbar__list--mobile {
     display: none;
   }
-
-  .navbar__list--desktop {
+  .navbar .navbar__list--desktop {
     display: flex;
     list-style-type: none;
     padding-top: 10px;
   }
-  .navbar__list--desktop li {
+  .navbar .navbar__list--desktop li {
     display: flex;
     align-items: baseline;
     padding: 0 15px;
   }
-  .navbar__list--desktop li a {
+  .navbar .navbar__list--desktop li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
@@ -624,7 +615,30 @@ footer .footer-desktop {
     margin-left: 7px;
     padding-bottom: 3px;
   }
-  .navbar__list--desktop li a:hover {
+  .navbar .navbar__list--desktop li a:hover {
     border-bottom: 3px solid white;
   }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination a {
+  color: black;
+  float: left;
+  font-size: 1.3rem;
+  padding: 15px 25px;
+  color: blue;
+  text-decoration: none;
+}
+.pagination a:first-of-type, .pagination a:last-of-type {
+  border: 1px solid blue;
+}
+.pagination a.active {
+  background-color: rosybrown;
+  color: white;
+}
+.pagination a:hover:not(.active) {
+  background-color: lightgray;
 }
