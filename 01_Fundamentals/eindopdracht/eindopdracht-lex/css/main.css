@@ -237,7 +237,7 @@ input[type=search]::-webkit-search-results-decoration {
 .product-cards .product__box3--c {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .product-cards .product__item {
     flex-wrap: nowrap;
     width: 80%;
