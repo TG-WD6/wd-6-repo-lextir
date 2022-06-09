@@ -237,7 +237,7 @@ input[type=search]::-webkit-search-results-decoration {
 .product-cards .product__box3--a sup {
   font-size: 0.7em;
   position: relative;
-  top: 4px;
+  top: 3px;
 }
 .product-cards .product__box3--b {
   color: rgb(0, 99, 0);
@@ -649,7 +649,7 @@ footer .footer-desktop {
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
-  margin: 5rem;
+  margin: 5rem 0;
 }
 .pagination__items {
   display: inline-block;
