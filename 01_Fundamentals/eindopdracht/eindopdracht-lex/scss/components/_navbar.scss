@@ -92,6 +92,7 @@
     height: 100%;
     top: 65px;
     left: 0;
+    z-index: 1;
     list-style-type: none;
     transition: transform 0.3s;
     transform: translateX(100%);
