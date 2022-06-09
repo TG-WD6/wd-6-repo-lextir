@@ -696,7 +696,7 @@ footer .footer-desktop {
   border: 0;
   border-radius: 50px;
   box-shadow: 0 0 18px 18px hsl(93deg, 69%, 25%) inset;
-  transition: box-shadow 400ms ease-in-out;
+  transition: box-shadow 500ms ease-in-out;
 }
 .buttons button:hover {
   box-shadow: 0 0 27px 27px hsl(93deg, 69%, 31%) inset;
