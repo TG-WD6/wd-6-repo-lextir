@@ -1,11 +1,11 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 35rem;
+  width: 26rem;
   border: 1px solid rgb(227, 227, 227);
   border-radius: 10px;
   padding: 25px;
-  font-size: large;
+  font-size: 1.1rem;
   font-weight: 200;
 
   input {
@@ -19,14 +19,14 @@
 
   &__postcode {
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
     grid-column-gap: 5px;
   }
 
   button {
     background-color: rgb(14, 42, 250);
-    width: 175px;
-    height: 40px;
+    width: 10rem;
+    height: 2.5rem;
     float: right;
     border: 0;
     border-radius: 6px;

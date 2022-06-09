@@ -80,7 +80,6 @@ input[type=search]::-webkit-search-results-decoration {
 .search-bar {
   width: 20rem;
   transition: transform 0.1s;
-  margin: 3rem auto;
 }
 .search-bar:hover {
   transform: scale(1.01);
@@ -110,7 +109,6 @@ input[type=search]::-webkit-search-results-decoration {
   flex-direction: column;
   align-items: center;
   width: 325px;
-  margin: 3rem auto;
 }
 .login p {
   color: grey;
@@ -206,10 +204,11 @@ input[type=search]::-webkit-search-results-decoration {
 .product-cards .product__box2-3 {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .product-cards .product__box2 {
   margin: 8px;
-  width: 65%;
+  width: 60%;
 }
 .product-cards .product__box2--b {
   font-size: large;
@@ -227,7 +226,9 @@ input[type=search]::-webkit-search-results-decoration {
   font-weight: bold;
 }
 .product-cards .product__box3--a sup {
-  font-size: 0.6em;
+  font-size: 0.7em;
+  position: relative;
+  top: 4px;
 }
 .product-cards .product__box3--b {
   color: rgb(0, 99, 0);
@@ -457,11 +458,11 @@ footer .footer-desktop {
 .form {
   display: flex;
   flex-direction: column;
-  width: 35rem;
+  width: 26rem;
   border: 1px solid rgb(227, 227, 227);
   border-radius: 10px;
   padding: 25px;
-  font-size: large;
+  font-size: 1.1rem;
   font-weight: 200;
 }
 .form input {
@@ -474,13 +475,13 @@ footer .footer-desktop {
 }
 .form__postcode {
   display: grid;
-  grid-template-columns: 3fr 3fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr;
   grid-column-gap: 5px;
 }
 .form button {
   background-color: rgb(14, 42, 250);
-  width: 175px;
-  height: 40px;
+  width: 10rem;
+  height: 2.5rem;
   float: right;
   border: 0;
   border-radius: 6px;
@@ -625,7 +626,6 @@ footer .footer-desktop {
 
 .pagination {
   text-align: center;
-  margin: 20px;
 }
 .pagination__items {
   display: inline-block;
