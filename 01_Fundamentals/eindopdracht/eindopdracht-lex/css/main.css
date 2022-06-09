@@ -524,7 +524,7 @@ footer .footer-desktop {
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 .navbar .navbar__elements__logo {
   max-height: 100%;
