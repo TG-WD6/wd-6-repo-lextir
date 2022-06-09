@@ -669,10 +669,7 @@ footer .footer-desktop {
   border-radius: 50px;
   box-shadow: 0 0 18px 18px hsl(93deg, 69%, 25%) inset;
   transition: box-shadow 400ms ease-in-out;
-  cursor: pointer;
 }
-.buttons button:hover, .buttons .btn:focus {
-  color: #fff;
-  outline: 0;
+.buttons button:hover {
   box-shadow: 0 0 30px 30px hsl(93deg, 69%, 31%) inset;
 }
