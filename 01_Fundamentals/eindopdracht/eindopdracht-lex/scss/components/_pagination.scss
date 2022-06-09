@@ -1,15 +1,19 @@
 .pagination {
+  display: flex;
+  flex-wrap: nowrap;
   text-align: center;
   margin: 5rem;
 
   &__items {
     display: inline-block;
 
+
     a {
       color: black;
       float: left;
       font-size: 1.3rem;
       padding: 10px 20px;
+      margin: 0 5px;
       color: blue;
       text-decoration: none;
     }
