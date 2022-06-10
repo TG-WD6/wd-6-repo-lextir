@@ -13,11 +13,12 @@
     font-size: 2rem;
     border: 0;
     border-radius: 50px;
+    cursor: pointer;
     box-shadow: 0 0 18px 18px hsl(93, 69, 25) inset;
-    transition: box-shadow 500ms ease-in-out;
-  }
+    transition: box-shadow 450ms ease-in-out;
 
-  button:hover {
-    box-shadow: 0 0 27px 27px hsl(93, 69, 31) inset;
+    &:hover {
+      box-shadow: 0 0 27px 27px hsl(93, 69, 31) inset;
+    }
   }
 }

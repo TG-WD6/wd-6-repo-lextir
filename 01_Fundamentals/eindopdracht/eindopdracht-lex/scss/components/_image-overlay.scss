@@ -1,6 +1,7 @@
 .image-slider {
   position: relative;
   margin-top: 5rem;
+  max-width: 90vw;
 
   &>div {
     position: absolute;
@@ -8,7 +9,7 @@
     bottom: 0;
     left: 0;
     width: 25px;
-    max-width: 600px;
+    max-width: 90vw;
     overflow: hidden;
     resize: horizontal;
   }
@@ -19,7 +20,7 @@
     right: 0;
     bottom: 0;
     width: 5px;
-    height: 488px;
+    height: 100%;
     background: blue;
   }
 
@@ -36,6 +37,6 @@
 
   & img {
     user-select: none;
-    max-width: 600px;
+    max-width: 90vw;
   }
 }

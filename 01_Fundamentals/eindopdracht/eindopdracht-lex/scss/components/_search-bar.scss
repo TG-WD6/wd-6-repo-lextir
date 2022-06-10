@@ -11,22 +11,23 @@
     display: flex;
     background-color: rgb(236, 236, 236);
     border-radius: 20px;
-  }
 
-  input {
-    background-color: inherit;
-    width: 80%;
-    border: 0px;
-    padding: 5px 15px;
-
-    &:focus {
-      outline: none;
+    button {
+      border: 0px;
+      padding-left: 15px;
+      border-radius: 20px;
+      background-color: inherit;
     }
-  }
 
-  button {
-    border: 0px;
-    padding-left: 15px;
-    border-radius: 20px;
+    input {
+      width: 80%;
+      border: 0px;
+      padding: 5px 15px;
+      background-color: inherit;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }
