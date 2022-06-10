@@ -72,12 +72,12 @@ In de console zal dit string tonen. De naamgeving in dit voorbeeld wordt ook wel
 
 Bij JavaScript wordt er onderscheid gemaakt tussen 9 datatypes. 6 daarvan worden ook wel **_primitive datatypes_** genoemd. Dit zijn:
 
-* number  	    een getal
-* string 		een stuk tekst
-* boolean 	    is altijd true of false
-* undefined 	geen waarde toegekend
-* bigint 		voor hele grote getallen
-* symbol		voor unieke waarden
+* number  	    -> een getal
+* string 		-> een stuk tekst
+* boolean 	    -> is altijd true of false
+* undefined 	-> geen waarde toegekend
+* bigint 		-> voor hele grote getallen
+* symbol		-> voor unieke waarden
 
 De laatste twee hiervan worden weinig gebruikt. De overige drie datatypes zijn:
 
@@ -91,15 +91,15 @@ Al deze informatie in datatypes en variables wil je dus ook kunnen veranderen. D
 
 Er zijn vrij veel operators en meeste ervan zijn vrij makkelijk te begrijpen, dus we gaan ze hier niet allemaal benoemen. Toch zijn er enkele nieuw of lastig die jullie tegen zullen komen:
 
-* ==		gelijke waarde
-* !=		ongelijke waarde
-* ===		gelijke waarde EN gelijk datatype
-* !==		ongelijke waarde OF ongelijk datatype
-* ++		increment
-* --		decrement
-* %		    modulo: 10 % 3 = 1
+* "=="		-> gelijke waarde
+* "!="		-> ongelijke waarde
+* "==="		-> gelijke waarde EN gelijk datatype
+* "!=="		-> ongelijke waarde OF ongelijk datatype
+* "++"		-> increment
+* "--"		-> decrement
+* "%"		-> modulo: 10 % 3 = 1
 
-Een enkel = teken signaleert dat je een bepaalde waarde ergens aan toewijst, terwijl twee of meer == tekens een vraag aangeven die true of false kan zijn. Het antwoord op zo’n vraag is dus altijd een boolean.
+Een enkel = teken signaleert dat je een bepaalde waarde ergens aan toewijst, terwijl twee of meer == tekens een vraag aangeven die true of false kan zijn. Het antwoord op zo’n vraag is altijd een boolean.
 
 # Variables & Datatypes - Opdrachten
 
@@ -150,13 +150,13 @@ Gegeven de volgende code:
 
 ![alt_text](images/image54.png "image_tooltip")
 
-3. Wat komt hier uit?
-4. Wat komt er uit als je van beiden een number maakt?
-5. Wat komt er uit als je de + vervangt door:
-    11. ==
-    12. ===
-    13. !=
-    14. !==
+1. Wat komt hier uit?
+2. Wat komt er uit als je van beiden een number maakt?
+3. Wat komt er uit als je de + vervangt door:
+    1. "=="
+    2. "==="
+    3. "!="
+    4. "!=="
 
 ### **Opdracht 1.4:**
 
@@ -184,8 +184,8 @@ We gaan operators wat nader onderzoeken, en ermee experimenteren.
     6. “true”
     7. null
     8. undefined
-6. Zoek op of experimenteer wat += doet. Werkt deze ook met Strings? Weet je hoe je deze anders kan schrijven?
-7. Doe hetzelfde voor -=, *=, /=, %= en **=.
+6. Zoek op of experimenteer wat "+=" doet. Werkt deze ook met Strings? Weet je hoe je deze anders kan schrijven?
+7. Doe hetzelfde voor "-=", "*=", "/=", "%=" en "**=".
 
 # String Methods
 
