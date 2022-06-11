@@ -36,9 +36,10 @@
     </div>
   </nav>
 
+
   <!-- LOGIN -->
 
-  <div class="login">
+  <section class="login">
     <div class="login__img-placeholder">
       <p>250 x 250</p>
       <p>Powered by HTML.COM</p>
@@ -46,8 +47,8 @@
     <h2>Login</h2>
     <p>Login with Your Email</p>
     <form>
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="password" name="password" placeholder="Password" minlength="12" required />
+      <label><input type="email" name="email" placeholder="Email" required /></label>
+      <label><input type="password" name="password" placeholder="Password" minlength="12" required /></label>
       <div class="login__remember">
         <label for="remember-me">
           <input type="checkbox" name="remember-me" id="remember-me" />
@@ -59,11 +60,11 @@
         <img src="./img/drupal-logo.webp" height="25" /> LOGIN
       </button>
     </form>
-  </div>
+  </section>
 
   <!-- PRODUCT CARDS -->
 
-  <div class="product-cards">
+  <section class="product-cards">
     <div class="product__item">
       <div class="product__box1">
         <p>165 x 165</p>
@@ -133,53 +134,53 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- FORM -->
 
-  <div class="form">
+  <section class="form">
     <h2>Nieuw hier?</h2>
     <p>Maak hier een nieuwe account aan.</p>
     <form>
-      <input type="text" name="voornaam" placeholder="Voornaam" required />
-      <input type="text" name="achternaam" placeholder="Achternaam" required />
+      <label><input type="text" name="voornaam" placeholder="Voornaam" required /></label>
+      <label><input type="text" name="achternaam" placeholder="Achternaam" required /></label>
       <div class="form__postcode">
-        <input type="text" name="postcode" placeholder="Postcode" required />
-        <input type="number" name="huisnummer" placeholder="Huisnummer" required />
-        <input name="huisnummer" placeholder="Toev." />
+        <label><input type="text" name="postcode" placeholder="Postcode" required /></label>
+        <label><input type="number" name="huisnummer" placeholder="Huisnummer" required /></label>
+        <label><input name="toevoeging" placeholder="Toev." /></label>
       </div>
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="password" name="password" placeholder="Password" minlength="12" required />
-      <input type="tel" name="telefoonnummer" placeholder="Telefoonnummer" minlength="10" maxlength="10">
+      <label><input type="email" name="email" placeholder="Email" required /></label>
+      <label><input type="password" name="password" placeholder="Password" minlength="12" required /></label>
+      <label><input type="tel" name="telefoonnummer" placeholder="Telefoonnummer" minlength="10" maxlength="10"></label>
       <button type="submit">Registreer</button>
     </form>
-  </div>
+  </section>
 
   <!-- IMAGE OVERLAY -->
 
-  <div class="image-slider">
+  <section class="image-slider">
     <div><img src="./img/strangelove-color.webp" alt="Set photo in color of the film Dr. Strangelove"></div>
     <img src="./img/strangelove-bw.webp" alt="Set photo in black and white of the film Dr. Strangelove">
-  </div>
+  </section>
 
   <!-- GEANIMEERDE BUTTON -->
 
-  <div class="buttons">
+  <section class="buttons">
     <button>About</button>
     <button>Projects</button>
     <button>Reviews</button>
-  </div>
+  </section>
 
   <!-- SEARCH BAR -->
 
-  <div class="search-bar">
+  <section class="search-bar">
     <form>
       <button type="submit">
         <img class="search-icon" src="./img/search-icon.webp" width="20" height="20" alt="Een vergrootglas zoekicoon" />
       </button>
       <input type="search" placeholder="Zoekterm" />
     </form>
-  </div>
+  </section>
 
   <!-- PAGINATION -->
 
@@ -194,6 +195,7 @@
     </div>
   </nav>
 
+
   <!-- FOOTER MOBILE -->
 
   <footer>
@@ -202,7 +204,7 @@
         <li>
           <input type="checkbox" checked>
           <i></i>
-          <h4>Klantenservice</h4>
+          <span>Klantenservice</span>
           <p><a href="#">Contact opnemen</a></p>
           <p><a href="#">Bestellen & Leveren</a></p>
           <p><a href="#">Betalen</a></p>
@@ -212,7 +214,7 @@
         <li>
           <input type="checkbox" checked>
           <i></i>
-          <h4>Winkels</h4>
+          <span>Winkels</span>
           <p><a href="#">Almere</a></p>
           <p><a href="#">Amstelveen</a></p>
           <p><a href="#">Amsterdam</a></p>
@@ -226,7 +228,7 @@
         <li>
           <input type="checkbox" checked>
           <i></i>
-          <h4>Ontdek</h4>
+          <span>Ontdek</span>
           <p><a href="#">Inspiratie</a></p>
           <p><a href="#">Merken</a></p>
           <p><a href="#">Outlet</a></p>
@@ -245,7 +247,7 @@
 
     <div class="footer-desktop">
       <div class="footer__column">
-        <h4>Klantenservice</h4>
+        <p>Klantenservice</p>
         <ul>
           <li><a href="#">Contact opnemen</a></li>
           <li><a href="#">Bestellen & Leveren</a></li>
@@ -255,7 +257,7 @@
         </ul>
       </div>
       <div class="footer__column">
-        <h4>Winkels</h4>
+        <p>Winkels</p>
         <ul>
           <li><a href="#">Almere</a></li>
           <li><a href="#">Amstelveen</a></li>
@@ -269,7 +271,7 @@
         </ul>
       </div>
       <div class="footer__column">
-        <h4>Ontdek</h4>
+        <p>Ontdek</p>
         <ul>
           <li><a href="#">Inspiratie</a></li>
           <li><a href="#">Merken</a></li>
@@ -284,7 +286,7 @@
         </ul>
       </div>
       <div class="footer__column .social-links">
-        <h4>Wil je ons volgen?</h4>
+        <p>Wil je ons volgen?</p>
         <ul>
           <li>
            <a href="https://facebook.com"> <img src="./img/facebook.png" alt="Facebook logo">&nbsp;</a>

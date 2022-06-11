@@ -7,26 +7,16 @@ footer {
     width: 95%;
     padding: 10px 30px 160px 30px;
 
-    .transition,
     ul li i:before,
     ul li i:after,
     p {
       transition: all 0.25s ease-in-out;
     }
 
-    .no-select,
-    h4 {
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    h4 {
+    span {
       cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 600;
     }
 
     p {
@@ -61,7 +51,6 @@ footer {
       margin: 0;
       padding-bottom: 4px;
       padding-top: 18px;
-      border-top: 1px dotted #dce7eb;
     }
 
     ul li:nth-of-type(1) {
@@ -151,6 +140,11 @@ footer {
       .footer__column {
         width: 25%;
         padding: 0 15px;
+
+        p {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
 
         ul {
           list-style: none;
