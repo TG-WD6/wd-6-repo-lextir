@@ -645,13 +645,17 @@ En gaan verder met for loops:
 
 2. Gebruik een for loop om 1 t/m 10 in je terminal te printen.
 
+Het keyword break heb je eerder gezien bij condities. Deze is ook bij loops te gebruiken op dezelfde manier. Daarnaast is er nog een vergelijkbaar keyword die je bij een loop kan inzetten - **continue**
+
+3. Print alle even getallen onder de 10 in je terminal. Maak hierbij gebruik van _continue_.
+
 Je kan loops net als conditions in elkaar nesten. Let wel op dat dit een groot effect kan hebben op de snelheid van je programma!
 
-3. Bouw een nieuwe for loop om je bestaande for loop heen. Zorg dat deze buitenste loop 3 keer wordt uitgevoerd.
+4. Bouw een nieuwe for loop om je bestaande for loop heen. Zorg dat deze buitenste loop 3 keer wordt uitgevoerd.
 
 Nu wordt er driemaal 1 t/m 10 in je terminal geprint.
 
-4. Zorg ervoor dat dit eerst 1 t/m 10 is als vanouds, vervolgens het dubbele en tenslotte het viervoudige. Anders gezegd moet het volgende geprint worden:
+5. Zorg ervoor dat dit eerst 1 t/m 10 is als vanouds, vervolgens het dubbele en tenslotte het viervoudige. Anders gezegd moet het volgende geprint worden:
     * 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
     * 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
     * 4, 8, 12, 16, 20, 24, 28, 32, 36, 40
