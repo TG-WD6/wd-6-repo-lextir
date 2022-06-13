@@ -6,12 +6,12 @@
   height: 65px;
   padding: 10px;
 
-  .navbar__elements {
+  &__elements {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1000px;
 
     &__logo {
       max-height: 100%;
@@ -20,7 +20,7 @@
 
   // HAMBURGER ICON
 
-  .navbar__ham {
+  &__ham {
     position: absolute;
     top: 36px;
     right: 10px;
@@ -43,13 +43,13 @@
 
     &:checked {
 
-      &~.navbar__list--mobile,
-      &~.navbar__list--mobile li {
+      & ~ .navbar__list,
+      & ~ .navbar__list li {
         transform: translateX(0);
         width: 100vw;
       }
 
-      &~.navbar__list--mobile {
+      & ~ .navbar__list {
         padding-left: 50px;
       }
     }
@@ -57,11 +57,11 @@
 
   // HAMBURGER ICON ANIMATION
 
-  .navbar__ham .bar:not(:first-child) {
+  &__ham .bar:not(:first-child) {
     margin-top: 7px;
   }
 
-  #navbar__checkbox:checked+.navbar__ham {
+  #navbar__checkbox:checked + .navbar__ham {
     transform: translate(-50%, -50%) rotateY(180deg);
 
     .bar {
@@ -85,7 +85,7 @@
 
   // MOBILE MENU
 
-  .navbar__list--mobile {
+  &__list {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -134,33 +134,42 @@
     }
   }
 
-  .navbar__list--desktop {
-    display: none;
-  }
-
   // MEDIA QUERIES
 
   @media (min-width: 39rem) {
 
-    .navbar__ham, .navbar__list--mobile {
+    .navbar__ham {
       display: none;
     }
 
     // DESKTOP MENU
 
-    .navbar__list--desktop {
-      display: flex;
+    .navbar__list {
       flex-direction: row;
-      justify-content: space-between;
+      position: static;
+      justify-content: flex;
+      width: auto;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: visible;
       padding-top: 10px;
       color: white;
       list-style-type: none;
+      transform: none;
 
       li {
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
         margin: 0 15px;
+        transform: none;
+
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          transition: none;
+        }
 
         a {
           color: white;
