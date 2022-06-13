@@ -9,18 +9,18 @@
     color: grey;
   }
 
-  .login__img-placeholder {
-    background-color: rgb(210, 210, 210);
-    border-radius: 1.5rem;
-    height: 250px;
-    width: 250px;
-    margin-bottom: 10px;
+  &__img-placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    background-color: rgb(210, 210, 210);
     color: grey;
+    border-radius: 1.5rem;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: large;
 
     :nth-child(2) {
       position: relative;
@@ -43,7 +43,7 @@
     }
   }
 
-  .login__remember {
+  &__remember {
     display: flex;
     justify-content: space-between;
     margin: 16px 0;

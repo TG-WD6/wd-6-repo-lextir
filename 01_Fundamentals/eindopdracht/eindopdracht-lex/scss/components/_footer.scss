@@ -23,9 +23,9 @@ footer {
       position: relative;
       overflow: hidden;
       opacity: 1;
-      transform: translate(0, 0);
       margin-top: 10px;
       z-index: 2;
+      transform: translate(0, 0);
 
       a {
         text-decoration: none;
@@ -40,17 +40,13 @@ footer {
     ul {
       list-style: none;
       perspective: 900;
-      padding: 0;
-      margin: 0;
-      width: 100%;
     }
 
     ul li {
       position: relative;
-      padding: 0;
-      margin: 0;
-      padding-bottom: 4px;
-      padding-top: 18px;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgb(210, 209, 209);
     }
 
     ul li:nth-of-type(1) {
@@ -103,18 +99,18 @@ footer {
       opacity: 0;
     }
 
-    ul li input[type=checkbox]:checked~p {
+    ul li input[type=checkbox]:checked ~ p {
       margin-top: 0;
       max-height: 0;
       opacity: 0;
       transform: translate(0, 50%);
     }
 
-    ul li input[type=checkbox]:checked~i:before {
+    ul li input[type=checkbox]:checked ~ i:before {
       transform: translate(2px, 0) rotate(45deg);
     }
 
-    ul li input[type=checkbox]:checked~i:after {
+    ul li input[type=checkbox]:checked ~ i:after {
       transform: translate(-2px, 0) rotate(-45deg);
     }
   }
@@ -125,7 +121,7 @@ footer {
 
   // MEDIA QUERIES
 
-  @media (min-width: 39rem) {
+  @media (min-width: 40rem) {
 
     .footer-mobile {
       display: none;
@@ -135,7 +131,7 @@ footer {
       display: flex;
       flex-wrap: wrap;
       width: 90%;
-      padding: 30px 20px 30px 20px;
+      padding: 30px 20px 40px 60px;
 
       .footer__column {
         width: 25%;

@@ -122,20 +122,20 @@ input[type=search]::-webkit-search-results-decoration {
 .login p {
   color: grey;
 }
-.login .login__img-placeholder {
-  background-color: rgb(210, 210, 210);
-  border-radius: 1.5rem;
-  height: 250px;
-  width: 250px;
-  margin-bottom: 10px;
+.login__img-placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: large;
+  background-color: rgb(210, 210, 210);
   color: grey;
+  border-radius: 1.5rem;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 10px;
+  font-size: large;
 }
-.login .login__img-placeholder :nth-child(2) {
+.login__img-placeholder :nth-child(2) {
   position: relative;
   top: 95px;
   left: 37px;
@@ -153,7 +153,7 @@ input[type=search]::-webkit-search-results-decoration {
 .login input[type=password]:focus {
   outline: none;
 }
-.login .login__remember {
+.login__remember {
   display: flex;
   justify-content: space-between;
   margin: 16px 0;
@@ -310,9 +310,9 @@ footer .footer-mobile p {
   position: relative;
   overflow: hidden;
   opacity: 1;
-  transform: translate(0, 0);
   margin-top: 10px;
   z-index: 2;
+  transform: translate(0, 0);
 }
 footer .footer-mobile p a {
   text-decoration: none;
@@ -324,16 +324,12 @@ footer .footer-mobile p a:hover {
 footer .footer-mobile ul {
   list-style: none;
   perspective: 900;
-  padding: 0;
-  margin: 0;
-  width: 100%;
 }
 footer .footer-mobile ul li {
   position: relative;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 4px;
-  padding-top: 18px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(210, 209, 209);
 }
 footer .footer-mobile ul li:nth-of-type(1) {
   -webkit-animation-delay: 0.5s;
@@ -394,7 +390,7 @@ footer .footer-mobile ul li input[type=checkbox]:checked ~ i:after {
 footer .footer-desktop {
   display: none;
 }
-@media (min-width: 39rem) {
+@media (min-width: 40rem) {
   footer .footer-mobile {
     display: none;
   }
@@ -402,7 +398,7 @@ footer .footer-desktop {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    padding: 30px 20px 30px 20px;
+    padding: 30px 20px 40px 60px;
   }
   footer .footer-desktop .footer__column {
     width: 25%;
