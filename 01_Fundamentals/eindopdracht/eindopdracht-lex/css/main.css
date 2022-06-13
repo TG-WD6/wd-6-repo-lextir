@@ -294,7 +294,7 @@ footer {
 }
 footer .footer-mobile {
   width: 95%;
-  padding: 10px 30px 100px 30px;
+  padding: 10px 30px 70px 30px;
 }
 footer .footer-mobile ul li i:before,
 footer .footer-mobile ul li i:after,
@@ -330,21 +330,6 @@ footer .footer-mobile ul li {
   padding-top: 30px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(210, 209, 209);
-}
-footer .footer-mobile ul li:nth-of-type(1) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-footer .footer-mobile ul li:nth-of-type(2) {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
-footer .footer-mobile ul li:nth-of-type(3) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-footer .footer-mobile ul li:last-of-type {
-  padding-bottom: 0;
 }
 footer .footer-mobile ul li i {
   position: absolute;
