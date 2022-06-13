@@ -582,13 +582,13 @@ footer .footer-desktop {
   flex-direction: column;
   position: absolute;
   background-color: rgb(36, 14, 76);
-  padding-top: 10px;
   color: white;
   width: 0vw;
-  overflow: hidden;
   height: 100%;
+  overflow: hidden;
   top: 65px;
   left: 0;
+  padding-top: 10px;
   z-index: 1;
   list-style-type: none;
   transition: transform 0.3s;
@@ -598,7 +598,7 @@ footer .footer-desktop {
   display: flex;
   align-items: baseline;
   margin: 10px 0;
-  transform: translateX(100%);
+  transform: translateX(100vw);
 }
 .navbar .navbar__list--mobile li:nth-of-type(1) {
   transition: transform 0.3s 150ms;

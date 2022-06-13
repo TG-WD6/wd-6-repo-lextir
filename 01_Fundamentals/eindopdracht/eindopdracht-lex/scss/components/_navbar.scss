@@ -47,7 +47,6 @@
       &~.navbar__list--mobile li {
         transform: translateX(0);
         width: 100vw;
-
       }
 
       &~.navbar__list--mobile {
@@ -91,13 +90,13 @@
     flex-direction: column;
     position: absolute;
     background-color: $tg-color;
-    padding-top: 10px;
     color: white;
     width: 0vw;
-    overflow: hidden;
     height: 100%;
+    overflow: hidden;
     top: 65px;
     left: 0;
+    padding-top: 10px;
     z-index: 1;
     list-style-type: none;
     transition: transform 0.3s;
@@ -106,9 +105,8 @@
     li {
       display: flex;
       align-items: baseline;
-      // width: 100%;
       margin: 10px 0;
-      transform: translateX(100%);
+      transform: translateX(100vw);
 
       &:nth-of-type(1) {
         transition: transform 0.3s 150ms;
