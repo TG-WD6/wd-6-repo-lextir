@@ -8,7 +8,6 @@
 
   &__elements {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 90%;
     max-width: 1000px;
@@ -42,7 +41,7 @@
     opacity: 0;
 
     &:checked {
-
+      
       & ~ .navbar__list,
       & ~ .navbar__list li {
         transform: translateX(0);
@@ -138,13 +137,13 @@
 
   @media (min-width: 39rem) {
 
-    .navbar__ham {
+    &__ham {
       display: none;
     }
 
     // DESKTOP MENU
 
-    .navbar__list {
+    &__list {
       flex-direction: row;
       position: static;
       width: auto;

@@ -525,7 +525,6 @@ footer .footer-desktop {
 }
 .navbar__elements {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 90%;
   max-width: 1000px;
@@ -620,10 +619,10 @@ footer .footer-desktop {
   border-bottom: 3px solid white;
 }
 @media (min-width: 39rem) {
-  .navbar .navbar__ham {
+  .navbar__ham {
     display: none;
   }
-  .navbar .navbar__list {
+  .navbar__list {
     flex-direction: row;
     position: static;
     width: auto;
@@ -631,11 +630,11 @@ footer .footer-desktop {
     overflow: visible;
     transform: none;
   }
-  .navbar .navbar__list li {
+  .navbar__list li {
     margin: 0 15px;
     transform: none;
   }
-  .navbar .navbar__list li:nth-of-type(1), .navbar .navbar__list li:nth-of-type(2), .navbar .navbar__list li:nth-of-type(3) {
+  .navbar__list li:nth-of-type(1), .navbar__list li:nth-of-type(2), .navbar__list li:nth-of-type(3) {
     transition: none;
   }
 }
