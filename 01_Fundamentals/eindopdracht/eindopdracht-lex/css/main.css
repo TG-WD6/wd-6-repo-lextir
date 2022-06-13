@@ -552,6 +552,10 @@ footer .footer-desktop {
 }
 .navbar #navbar__checkbox:checked ~ .navbar__list--mobile, .navbar #navbar__checkbox:checked ~ .navbar__list--mobile li {
   transform: translateX(0);
+  width: 100vw;
+}
+.navbar #navbar__checkbox:checked ~ .navbar__list--mobile {
+  padding-left: 50px;
 }
 .navbar .navbar__ham .bar:not(:first-child) {
   margin-top: 7px;
@@ -579,21 +583,20 @@ footer .footer-desktop {
   position: absolute;
   background-color: rgb(36, 14, 76);
   padding-top: 10px;
-  padding-left: 50px;
   color: white;
-  width: 100%;
+  width: 0vw;
+  overflow: hidden;
   height: 100%;
   top: 65px;
   left: 0;
   z-index: 1;
   list-style-type: none;
   transition: transform 0.3s;
-  transform: translateX(100%);
+  transform: translateX(100vw);
 }
 .navbar .navbar__list--mobile li {
   display: flex;
   align-items: baseline;
-  width: 100%;
   margin: 10px 0;
   transform: translateX(100%);
 }
