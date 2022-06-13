@@ -147,21 +147,12 @@
     .navbar__list {
       flex-direction: row;
       position: static;
-      justify-content: flex;
       width: auto;
-      height: 100%;
       top: 0;
-      left: 0;
       overflow: visible;
-      padding-top: 10px;
-      color: white;
-      list-style-type: none;
       transform: none;
 
       li {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: baseline;
         margin: 0 15px;
         transform: none;
 
@@ -169,18 +160,6 @@
         &:nth-of-type(2),
         &:nth-of-type(3) {
           transition: none;
-        }
-
-        a {
-          color: white;
-          text-decoration: none;
-          font-size: 1.1rem;
-          font-weight: bold;
-          padding-left: 7px;
-        }
-
-        a:hover {
-          border-bottom: 3px solid white;
         }
       }
     }
