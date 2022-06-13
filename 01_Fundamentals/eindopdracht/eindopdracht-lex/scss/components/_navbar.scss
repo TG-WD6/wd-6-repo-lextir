@@ -1,38 +1,13 @@
 .navbar {
-  background-color: $tg-color;
-  display: flex;
-  justify-content: center;
   width: 100%;
   height: 65px;
   padding: 10px;
+  background-color: $tg-color;
 
   &__elements {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 0px 15px;
-
-    &__logo {
-      max-height: 100%;
-    }
-  }
-
-  // HAMBURGER ICON
-
-  &__ham {
-    position: absolute;
-    top: 36px;
-    right: 10px;
-    height: 35px;
-    transform: translate(-50%, -50%);
-
-    .bar {
-      width: 35px;
-      height: 4px;
-      background: #fff;
-      border-radius: 2px;
-      transition: transform 200ms ease;
-    }
   }
 
   // CHECKBOX
@@ -45,7 +20,7 @@
       & ~ .navbar__list,
       & ~ .navbar__list li {
         transform: translateX(0);
-        width: 100vw;
+        width: 100%;
       }
 
       & ~ .navbar__list {
@@ -54,7 +29,25 @@
     }
   }
 
-  // HAMBURGER ICON ANIMATION
+  // HAMBURGER
+
+  &__ham {
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    height: 35px;
+    transform: translate(-50%, -50%);
+
+    .bar {
+      width: 35px;
+      height: 4px;
+      border-radius: 2px;
+      background: #fff;
+      transition: transform 200ms ease;
+    }
+  }
+
+  // HAMBURGER ANIMATION
 
   &__ham .bar:not(:first-child) {
     margin-top: 7px;
@@ -88,16 +81,16 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: $tg-color;
-    color: white;
-    width: 0vw;
+    width: 0%;
     height: 100%;
-    overflow: hidden;
     top: 65px;
     left: 0;
     padding-top: 10px;
+    overflow: hidden;
     z-index: 1;
     list-style-type: none;
+    color: white;
+    background-color: $tg-color;
     transition: transform 0.3s;
     transform: translateX(100vw);
 
