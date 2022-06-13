@@ -1,6 +1,6 @@
 # Alex Tirajoh 
 
-Ik ben opgegroeid in een dorpje in Twente en heb Indonesische roots. Als tiener raakte ik verslingerd aan films en ben uiteindelijk ook film gaan studeren. Ik heb sindsdien o.a. als video editor gewerkt en als filmprogrammeur. Mijn werk in de culturele sector is in de afgelopen jaren door corona zo goed als stil komen te liggen. Dit heeft de wens om mezelf opnieuw uit te dagen zodanig versterkt dat het me heeft doen besluiten tot een carrièreswitch.
+Ik ben opgegroeid in een dorpje in Twente en heb Indonesische roots. Als tiener raakte ik verslingerd aan films en ik ben uiteindelijk ook film gaan studeren. Ik heb sindsdien o.a. als video editor gewerkt en als filmprogrammeur. Mijn werk in de culturele sector is in de afgelopen jaren door corona zo goed als stil komen te liggen. Dit heeft de wens om mezelf opnieuw uit te dagen zodanig versterkt dat het me heeft doen besluiten tot een carrièreswitch.
 
 Van jongs af aan heb ik een sterke affiniteit met computers en games. In mijn studietijd ben ik begonnen met web sites te bouwen en ik ontdekte dat ik het heel erg leuk vond en het mij ook goed lag. Web development is sindsdien altijd in het achterhoofd blijven hangen en nu ik voor een carrièreswitch sta was er geen enkele twijfel over wat ik wilde gaan doen.
 
