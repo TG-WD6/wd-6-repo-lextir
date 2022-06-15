@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 26rem;
+  max-width: 90%;
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 10px;
+  padding: 25px;
+  font-weight: 200;
+  margin-top: 5rem;
+
+  input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__postcode {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-column-gap: 5px;
+  }
+
+  button {
+    background-color: rgb(14, 42, 250);
+    width: 8rem;
+    height: 2.5rem;
+    float: right;
+    border: 0;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s;
+
+    &:hover {
+      transform: scale(1.01);
+     }
+  }
+}

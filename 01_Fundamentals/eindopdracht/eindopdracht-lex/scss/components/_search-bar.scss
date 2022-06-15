@@ -1,0 +1,33 @@
+.search-bar {
+  width: 20rem;
+  transition: transform 0.1s;
+  margin-top: 5rem;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  form {
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+
+    button {
+      border: 0px;
+      padding-left: 15px;
+      border-radius: 20px;
+      background-color: inherit;
+    }
+
+    input {
+      width: 80%;
+      border: 0px;
+      padding: 5px 15px;
+      background-color: inherit;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

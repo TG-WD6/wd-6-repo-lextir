@@ -1,0 +1,159 @@
+.navbar {
+  width: 100%;
+  height: 65px;
+  padding: 10px;
+  background-color: $tg-color;
+
+  &__elements {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+  }
+
+  // CHECKBOX
+
+  #navbar__checkbox {
+    opacity: 0;
+
+    &:checked {
+
+      & ~ .navbar__list,
+      & ~ .navbar__list li {
+        transform: translateX(0);
+        width: 100%;
+      }
+
+      & ~ .navbar__list {
+        padding-left: 50px;
+      }
+    }
+  }
+
+  // HAMBURGER
+
+  &__ham {
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    height: 35px;
+    transform: translate(-50%, -50%);
+
+    .bar {
+      width: 35px;
+      height: 4px;
+      border-radius: 2px;
+      background: #fff;
+      transition: transform 200ms ease;
+    }
+  }
+
+  // HAMBURGER ANIMATION
+
+  &__ham .bar:not(:first-child) {
+    margin-top: 7px;
+  }
+
+  #navbar__checkbox:checked + .navbar__ham {
+    transform: translate(-50%, -50%) rotateY(180deg);
+
+    .bar {
+      transform: rotateY(180deg) rotateX(360deg);
+    }
+
+    .bar:nth-child(1) {
+      transform: rotate(-45deg);
+      margin-top: 15px;
+    }
+
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .bar:nth-child(3) {
+      margin-top: -15px;
+      transform: rotate(45deg);
+    }
+  }
+
+  // MOBILE MENU
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 65px;
+    left: 0;
+    padding-top: 10px;
+    overflow: hidden;
+    z-index: 1;
+    list-style-type: none;
+    color: white;
+    background-color: $tg-color;
+    transition: transform 0.3s;
+    transform: translateX(100vw);
+
+    li {
+      display: flex;
+      align-items: baseline;
+      margin: 10px 0;
+      transform: translateX(100vw);
+
+      &:nth-of-type(1) {
+        transition: transform 0.3s 150ms;
+      }
+
+      &:nth-of-type(2) {
+        transition: transform 0.3s 300ms;
+      }
+
+      &:nth-of-type(3) {
+        transition: transform 0.3s 450ms;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-left: 7px;
+      }
+
+      a:hover {
+        border-bottom: 3px solid white;
+      }
+    }
+  }
+
+  // MEDIA QUERIES
+
+  @media (min-width: 39rem) {
+
+    &__ham {
+      display: none;
+    }
+
+    // DESKTOP MENU
+
+    &__list {
+      flex-direction: row;
+      position: static;
+      width: auto;
+      top: 0;
+      overflow: visible;
+      transform: none;
+
+      li {
+        margin: 0 15px;
+        transform: none;
+
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          transition: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: lightgreen;
+}
+button:hover {
+  background-color: green;
+}
+
+button {
+  background-color: pink;
+}
+button:hover {
+  background-color: purple;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eindopdracht CSS Lex</title>
+  <meta name="description" content="Eindopdracht CSS voor TechGrounds">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <div class="root">
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+    <div class="navbar__elements">
+      <img class="navbar__logo" src="./img/techgrounds.png" alt="Techgrounds logo" height="45" />
+      <input id="navbar__checkbox" type="checkbox">
+      <label class="navbar__ham" for="navbar__checkbox">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+      <ul class="navbar__list">
+        <li><img src="./img/home.webp" width="16" height="16"><a href="">Home</a></li>
+        <li><img src="./img/popular.webp" width="16" height="16"><a href="">Popular</a></li>
+        <li><img src="./img/contact.webp" width="16" height="16"><a href="">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- LOGIN -->
+
+  <section class="login">
+    <div class="login__img-placeholder">
+      <p>250 x 250</p>
+      <p>Powered by HTML.COM</p>
+    </div>
+    <h2>Login</h2>
+    <p>Login with Your Email</p>
+    <form>
+      <label><input type="email" name="email" placeholder="Email" required /></label>
+      <label><input type="password" name="password" placeholder="Password" minlength="12" required /></label>
+      <div class="login__remember">
+        <label for="remember-me">
+          <input type="checkbox" name="remember-me" id="remember-me" />
+          Remember me
+        </label>
+        <a href="">Forget Password?</a>
+      </div>
+      <button type="submit">
+        <img src="./img/drupal-logo.webp" height="25" /> LOGIN
+      </button>
+    </form>
+  </section>
+
+  <!-- PRODUCT CARDS -->
+
+  <section class="product-cards">
+    <div class="product__item">
+      <div class="product__box1">
+        <p>165 x 165</p>
+        <p>Powered by HTML.COM</p>
+      </div>
+      <div class="product__box2-3">
+        <div class="product__box2">
+          <div class="product__box2--a">techgrounds</div>
+          <div class="product__box2--b">techgrounds titel</div>
+          <div class="product__box2--c">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+        </div>
+        <div class="product__box3">
+          <div class="product__box3--a">99,<sup>99</sup></div>
+          <div class="product__box3--b">Voor 23:59 besteld, morgen in huis</div>
+          <div class="product__box3--c">
+            <button type="button">
+              <img src="./img/plus-icon.webp"> <img src="./img/shopping-bag.webp">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="product__box1">
+        <p>165 x 165</p>
+        <p>Powered by HTML.COM</p>
+      </div>
+      <div class="product__box2-3">
+        <div class="product__box2">
+          <div class="product__box2--a">techgrounds</div>
+          <div class="product__box2--b">techgrounds titel</div>
+          <div class="product__box2--c">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+        </div>
+        <div class="product__box3">
+          <div class="product__box3--a">99,<sup>99</sup></div>
+          <div class="product__box3--b">Voor 23:59 besteld, morgen in huis</div>
+          <div class="product__box3--c">
+            <button type="button">
+              <img src="./img/plus-icon.webp"> <img src="./img/shopping-bag.webp">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="product__box1">
+        <p>165 x 165</p>
+        <p>Powered by HTML.COM</p>
+      </div>
+      <div class="product__box2-3">
+        <div class="product__box2">
+          <div class="product__box2--a">techgrounds</div>
+          <div class="product__box2--b">techgrounds titel</div>
+          <div class="product__box2--c">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+        </div>
+        <div class="product__box3">
+          <div class="product__box3--a">99,<sup>99</sup></div>
+          <div class="product__box3--b">Voor 23:59 besteld, morgen in huis</div>
+          <div class="product__box3--c">
+            <button type="button">
+              <img src="./img/plus-icon.webp"> <img src="./img/shopping-bag.webp">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+
+  <section class="form">
+    <h2>Nieuw hier?</h2>
+    <p>Maak hier een nieuwe account aan.</p>
+    <form>
+      <label><input type="text" name="voornaam" placeholder="Voornaam" required /></label>
+      <label><input type="text" name="achternaam" placeholder="Achternaam" required /></label>
+      <div class="form__postcode">
+        <label><input type="text" name="postcode" placeholder="Postcode" required /></label>
+        <label><input type="number" name="huisnummer" placeholder="Huisnummer" required /></label>
+        <label><input name="toevoeging" placeholder="Toev." /></label>
+      </div>
+      <label><input type="email" name="email" placeholder="Email" required /></label>
+      <label><input type="password" name="password" placeholder="Password" minlength="12" required /></label>
+      <label><input type="tel" name="telefoonnummer" placeholder="Telefoonnummer" minlength="10" maxlength="10"></label>
+      <button type="submit">Registreer</button>
+    </form>
+  </section>
+
+  <!-- IMAGE OVERLAY -->
+
+  <section class="image-slider">
+    <div><img src="./img/strangelove-color.webp" alt="Set photo in color of the film Dr. Strangelove"></div>
+    <img src="./img/strangelove-bw.webp" alt="Set photo in black and white of the film Dr. Strangelove">
+  </section>
+
+  <!-- GEANIMEERDE BUTTON -->
+
+  <section class="buttons">
+    <button>About</button>
+    <button>Projects</button>
+    <button>Reviews</button>
+  </section>
+
+  <!-- SEARCH BAR -->
+
+  <section class="search-bar">
+    <form>
+      <button type="submit">
+        <img class="search-icon" src="./img/search-icon.webp" width="20" height="20" alt="Een vergrootglas zoekicoon" />
+      </button>
+      <input type="search" placeholder="Zoekterm" />
+    </form>
+  </section>
+
+  <!-- PAGINATION -->
+
+  <nav class="pagination" aria-label="pagination">
+    <div class="pagination__items">
+      <a href="#"><</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">></a>
+    </div>
+  </nav>
+
+  <!-- FOOTER MOBILE -->
+
+  <footer>
+    <div class="footer-mobile">
+      <ul>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <span>Klantenservice</span>
+          <p><a href="#">Contact opnemen</a></p>
+          <p><a href="#">Bestellen & Leveren</a></p>
+          <p><a href="#">Betalen</a></p>
+          <p><a href="#">Retourneren</a></p>
+          <p><a href="#">Garantie & Reparatie</a></p>
+        </li>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <span>Winkels</span>
+          <p><a href="#">Almere</a></p>
+          <p><a href="#">Amstelveen</a></p>
+          <p><a href="#">Amsterdam</a></p>
+          <p><a href="#">Den Haag</a></p>
+          <p><a href="#">Eindhoven</a></p>
+          <p><a href="#">Groningen</a></p>
+          <p><a href="#">Maastricht</a></p>
+          <p><a href="#">Rotterdam</a></p>
+          <p><a href="#">Utrecht</a></p>
+        </li>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <span>Ontdek</span>
+          <p><a href="#">Inspiratie</a></p>
+          <p><a href="#">Merken</a></p>
+          <p><a href="#">Outlet</a></p>
+          <p><a href="#">Acties</a></p>
+          <p>&nbsp;</p>
+          <p><a href="#">Damesmode</a></p>
+          <p><a href="#">Herenmode</a></p>
+          <p><a href="#">Kindermode</a></p>
+          <p><a href="#">Wonen</a></p>
+          <p><a href="#">Cosmetica</a></p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- FOOTER DESKTOP -->
+
+    <div class="footer-desktop">
+      <div class="footer__column">
+        <p>Klantenservice</p>
+        <ul>
+          <li><a href="#">Contact opnemen</a></li>
+          <li><a href="#">Bestellen & Leveren</a></li>
+          <li><a href="#">Betalen</a></li>
+          <li><a href="#">Retourneren</a></li>
+          <li><a href="#">Garantie & Reparatie</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <p>Winkels</p>
+        <ul>
+          <li><a href="#">Almere</a></li>
+          <li><a href="#">Amstelveen</a></li>
+          <li><a href="#">Amsterdam</a></li>
+          <li><a href="#">Den Haag</a></li>
+          <li><a href="#">Eindhoven</a></li>
+          <li><a href="#">Groningen</a></li>
+          <li><a href="#">Maastricht</a></li>
+          <li><a href="#">Rotterdam</a></li>
+          <li><a href="#">Utrecht</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <p>Ontdek</p>
+        <ul>
+          <li><a href="#">Inspiratie</a></li>
+          <li><a href="#">Merken</a></li>
+          <li><a href="#">Outlet</a></li>
+          <li><a href="#">Acties</a></li>
+          <li>&nbsp;</li>
+          <li><a href="#">Damesmode</a></li>
+          <li><a href="#">Herenmode</a></li>
+          <li><a href="#">Kindermode</a></li>
+          <li><a href="#">Wonen</a></li>
+          <li><a href="#">Cosmetica</a></li>
+        </ul>
+      </div>
+      <div class="footer__column .social-links">
+        <p>Wil je ons volgen?</p>
+        <ul>
+          <li>
+           <a href="https://facebook.com"> <img src="./img/facebook.png" alt="Facebook logo">&nbsp;</a>
+            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="Instagram logo">&nbsp;</a>
+            <a href="https://www.linkedin.com/"><img src="./img/linkedin.png" alt="Linkedin logo">&nbsp;</a>
+            <a href="https://www.twitter.com/"><img src="./img/twitter.png" alt="Twitter logo">&nbsp;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: rgb(248, 245, 240);
+
+  .footer-mobile {
+    width: 95%;
+    padding: 10px 30px 70px 30px;
+
+    ul li i:before,
+    ul li i:after,
+    p {
+      transition: all 0.25s ease-in-out;
+    }
+
+    span {
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    p {
+      position: relative;
+      overflow: hidden;
+      opacity: 1;
+      margin-top: 10px;
+      z-index: 2;
+      transform: translate(0, 0);
+
+      a {
+        text-decoration: none;
+        color: grey;
+      }
+
+      a:hover {
+        color: black;
+      }
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      position: relative;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgb(210, 209, 209);
+    }
+
+    ul li i {
+      position: absolute;
+      transform: translate(-6px, 0);
+      margin-top: 16px;
+      right: 0;
+    }
+
+    ul li i:before,
+    ul li i:after {
+      content: "";
+      position: absolute;
+      background-color: black;
+      top: -7px;
+      width: 3px;
+      height: 9px;
+    }
+
+    ul li i:before {
+      transform: translate(-2px, 0) rotate(45deg);
+    }
+
+    ul li i:after {
+      transform: translate(2px, 0) rotate(-45deg);
+    }
+
+    ul li input[type=checkbox] {
+      position: absolute;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    ul li input[type=checkbox]:checked ~ p {
+      margin-top: 0;
+      max-height: 0;
+      opacity: 0;
+      transform: translate(0, 50%);
+    }
+
+    ul li input[type=checkbox]:checked ~ i:before {
+      transform: translate(2px, 0) rotate(45deg);
+    }
+
+    ul li input[type=checkbox]:checked ~ i:after {
+      transform: translate(-2px, 0) rotate(-45deg);
+    }
+  }
+
+  .footer-desktop {
+    display: none;
+  }
+
+  // MEDIA QUERIES
+
+  @media (min-width: 40rem) {
+
+    .footer-mobile {
+      display: none;
+    }
+
+    .footer-desktop {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      padding: 30px 20px 40px 60px;
+
+      .footer__column {
+        width: 25%;
+        padding: 0 15px;
+
+        p {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+
+        ul {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: gray;
+
+            &:hover {
+              color: black;
+            }
+          }
+
+          li img {
+            display: inline-block;
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
