@@ -1,15 +1,15 @@
 // IF ELSE
 
-// function pressed() {
-//   let text = document.getElementById("input").value;
-//   if (text == "1") {
-//     document.getElementById("header").innerHTML = "Januari";
-//   } else if (text == "2") {
-//     document.getElementById("header").innerHTML = "Februari";
-//   } else {
-//     document.getElementById("header").innerHTML = "Geen geldige maand";
-//   }
-// }
+function pressed() {
+  let maand = document.getElementById("input").value;
+  if (maand == "1") {
+    document.getElementById("header").innerHTML = "Januari";
+  } else if (maand == "2") {
+    document.getElementById("header").innerHTML = "Februari";
+  } else {
+    document.getElementById("header").innerHTML = "Geen geldige maand";
+  }
+}
 
 // SWITCH CASE
 
@@ -46,7 +46,15 @@
 
 // }
 
-function greet(name) {
-  console.log("hello " + name);
+
+// // STUDIEKEUZE
+// function myFunction() {
+//   let x = document.getElementById("studiekeuze").value;
+//   document.getElementById("toon-studiekeuze").innerHTML = "Je hebt gekozen: " + x;
+// }
+
+// OPDRACHT 4.1 PARAMETERS
+
+function welkomTerug(voornaam) {
+  console.log('Welkom terug, ' + voornaam)
 }
-greet("Lex")

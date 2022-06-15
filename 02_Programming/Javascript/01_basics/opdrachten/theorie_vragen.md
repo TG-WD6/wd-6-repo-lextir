@@ -299,9 +299,16 @@ function pressed() {
 
 2) 
 ```javascript
-let text ="woord";
-
 let text = document.getElementById("input").value;
 ```
 
 3)
+```html
+      <input type="text" onchange="welkomTerug(voornaam.value)" id="voornaam">
+```
+
+```javascript
+function welkomTerug(voornaam) {
+  console.log('Welkom terug, ' + voornaam)
+}
+```
