@@ -299,16 +299,132 @@ function pressed() {
 
 2) 
 ```javascript
-let text = document.getElementById("input").value;
+let text = document.getElementById("voornaam").value;
 ```
 
 3)
 ```html
-      <input type="text" onchange="welkomTerug(voornaam.value)" id="voornaam">
+      <input type="text" onchange="showMessage(voornaam.value)" id="voornaam">
 ```
 
 ```javascript
-function welkomTerug(voornaam) {
+function showMessage(voornaam) {
   console.log('Welkom terug, ' + voornaam)
+}
+```
+
+```javascript
+function showMessage(voornaam) {
+  return voornaam * 2;
+  console.log('Welkom terug, ' + voornaam)
+}
+
+let result = return;
+console.log(result)
+```
+
+# Opdracht 4.2
+
+1)
+document.getElementsByClassName:   
+Selecteert alle elementen op met die class-naam:
+```javascript
+let menu = document.getElementsByClassName("menu");
+```
+
+document.getElementsByTagName  
+Selecteert alle elementen op met deze HTML tag:
+```javascript
+let links = document.getElementsByTagName("a");
+```
+
+Document.querySelector()  
+Selecteert het eerste element met die selector.
+```javascript
+let firstParagraph = document.querySelector("p");
+```
+
+document.querySelectorAll  
+Selecteert alle elementen met die selector.
+```javascript
+let allParagraphs = document.querySelector("p");
+```
+
+element.innerHTML
+Geeft of bepaald de waarde van de HTML-inhoud van het element 
+```javascript
+let html = document.getElementById("myP").innerHTML; 
+
+document.getElementById("myP").innerHTML = "I have changed!"; 
+```
+element.innerText
+Geeft of bepaald de waarde van de HTML-inhoud van het element als plain text.
+```javascript
+document.getElementById("myP").innerText = "Alleen plain text"; 
+```
+
+2)
+oninput verandert zodra je typt. onchange pas wanneer de focus ergens anders is.
+
+# OPDRACHT 4.3
+
+1)
+Het gegenereerde getal is tussen 0 en 1.
+
+```html
+    <section>
+      <h2>4.3</h2>
+      <button onclick="randomNumber()">Randomize</button>
+    </section>
+```
+```javascript
+function randomNumber() {
+  let random = Math.random();
+  console.log(random);
+}
+```
+
+2)
+Het resultaat gaat tot de waarde die je invult.
+
+```javascript
+function randomNumber(x) {
+  let random = Math.floor(Math.random() * 8);
+  console.log(random);
+}
+```
+
+3)
+Math.min geeft de laagste waarde terug als resultaat. In onderstaand voorbeeld is dat 0. 
+
+Math.max() geeft de hoogste waarde terug.
+
+```javascript
+let b = Math.min(0, 150, 30, 20, 38);
+```
+
+# OPDRACHT 4.4
+
+1)
+
+```html
+<input type="text" id="inputnaam">
+<button onclick="pressed()">Klik</button>
+<h2 id="toon-naam"></h2>
+```
+
+```javascript
+function pressed() {
+  let naamGroepslid = document.getElementById("inputnaam").value;
+  switch (naamGroepslid) {
+    case "Fares":
+    case "Joost":
+    case "Nathaniel":
+    case "Lex":
+      document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit in jouw groepje";
+      break;
+    default:
+      document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit niet in jouw groepje";
+  }
 }
 ```

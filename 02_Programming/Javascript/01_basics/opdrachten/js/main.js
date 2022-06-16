@@ -1,15 +1,15 @@
 // IF ELSE
 
-function pressed() {
-  let maand = document.getElementById("input").value;
-  if (maand == "1") {
-    document.getElementById("header").innerHTML = "Januari";
-  } else if (maand == "2") {
-    document.getElementById("header").innerHTML = "Februari";
-  } else {
-    document.getElementById("header").innerHTML = "Geen geldige maand";
-  }
-}
+// function pressed() {
+//   let maand = document.getElementById("input").value;
+//   if (maand == "1") {
+//     document.getElementById("header").innerHTML = "Januari";
+//   } else if (maand == "2") {
+//     document.getElementById("header").innerHTML = "Februari";
+//   } else {
+//     document.getElementById("header").innerHTML = "Geen geldige maand";
+//   }
+// }
 
 // SWITCH CASE
 
@@ -55,6 +55,52 @@ function pressed() {
 
 // OPDRACHT 4.1 PARAMETERS
 
-function welkomTerug(voornaam) {
-  console.log('Welkom terug, ' + voornaam)
+// function pressed() {
+//   console.log("Hello World")
+// }
+
+// function showMessage(voornaam) {
+//   console.log('Welkom terug, ' + voornaam)
+// }
+
+//  return voorbeeld
+// function myFunction(a) {
+//   return a * 2;
+// }
+
+// let x = myFunction(7);
+// document.getElementById("demo").innerHTML = x;
+
+
+// OPDRACHT 4.3.1
+
+// function randomNumber() {
+//   let random = Math.random();
+//   console.log(random);
+// }
+
+// OPDRACHT 4.3.2
+
+// function randomNumber(x) {
+//   let random = Math.floor(Math.random() * 8);
+//   console.log(random);
+// }
+
+// OPDRACHT 4.4.1
+
+function pressed() {
+  let naamGroepslid = document.getElementById("inputnaam").value;
+  switch (naamGroepslid) {
+    case "Fares":
+    case "Joost":
+    case "Nathaniel":
+    case "Lex":
+      document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit in jouw groepje";
+      break;
+    default:
+      document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit niet in jouw groepje";
+  }
 }
+
+// OPDRACHT 4.4.3
+
