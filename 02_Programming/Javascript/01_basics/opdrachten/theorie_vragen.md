@@ -439,26 +439,30 @@ function pressed() {
 
 ### Opdracht 5.1
 
-1+2)
+1)
 
 ```javascript
-let soortenFruit = ["appel", "peer", "banaan", "kiwi", "ananas", "meloen", "mango", "druiven", "kersen", "aardbei"];
+let numberArray = [1, 5, 6, 4, 8, 2, 9, 3, 7, 10];
+console.log(numberArray);
+```
+2)
+
+```javascript
+let soortenFruit = ['appel', 'aardbei', 'banaan', 'kiwi', 'ananas'];
 console.log(soortenFruit);
 ```
 
 3)
 
 ```javascript
-let soortenFruit = ["appel", "peer", "banaan", "kiwi", "ananas", "meloen", "mango", "druiven", "kersen", "aardbei"];
-console.log(soortenFruit[0], soortenFruit[9]);
+let soortenFruit =  ['appel', 'aardbei', 'banaan', 'kiwi', 'ananas'];
+console.log(soortenFruit[0], soortenFruit[1]);
 ```
 
 4)
 ``` javascript
-let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
-
+let soortenFruit =  ['appel', 'aardbei', 'banaan', 'kiwi', 'ananas'];
 let randomFruit = soortenFruit[Math.floor(Math.random() * soortenFruit.length)];
-
 console.log(randomFruit);
 ```
 
@@ -470,20 +474,14 @@ console.log(soortenFruit.length);
 
 7)
 ```javascript
-let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
-
+let soortenFruit =  ['appel', 'aardbei', 'banaan', 'kiwi', 'ananas'];
 soortenFruit[0] = 'peer';
-
-console.log(soortenFruit);
 ```
 8)
 ```javascript
-let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
-
-soortenFruit[0] = 'peer';
-soortenFruit[1] = 'appel';
-
-console.log(soortenFruit);
+let soortenFruit =  ['appel', 'aardbei', 'banaan', 'kiwi', 'ananas'];
+soortenFruit[0] = 'aardbei';
+soortenFruit[1] = 'peer';
 ```
 ____________
 
