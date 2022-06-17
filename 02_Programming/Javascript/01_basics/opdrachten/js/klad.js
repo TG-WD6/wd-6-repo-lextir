@@ -64,11 +64,63 @@
 // }
 
 
-const first_input = document.querySelector();
-const second_input = document.querySelector();
+// const first_input = document.querySelector();
+// const second_input = document.querySelector();
 
-const zinnen = ["has escaped", "has kidnapped", "dropped by"]
+// const zinnen = ["has escaped", "has kidnapped", "dropped by"]
 
-document.createElement()
+// document.createElement()
 
-document.querySelector().appendChild()
+// document.querySelector().appendChild()
+
+
+
+// if (bDay == 1979) {
+//   console.log('Correct!');
+// } else {
+//   console.log('Fout!');
+// }
+
+
+
+// let bDay = 1979;
+// let message = (bDay == 1979) ? 'Correct!' : 'Fout!';
+// console.log(message);
+
+// let x = 0;
+// while (x < 5) {
+//   console.log(x);
+//   x++;
+// }
+
+// let i = 0;
+// while (i < 10) {
+//   console.log(i);
+//   i++;
+// }
+
+
+// function showMessage() {
+//   let message = document.querySelector('#textinput').value;
+//   console.log(message);
+// }
+
+
+// let selectedColors = ['red', 'blue', 'green'];
+// console.log(selectedColors);
+
+// for (let i = 1; i <= 10; i++) {
+
+//   if (i === 5) {
+//     continue;
+//   }
+//   console.log(i);
+
+//   if (i === 7) {
+//     break;
+//   }
+// }
+// console.log('Done');
+
+let dieren = ['koe', 'paard', 'hond', 'kat', 'kameel'];
+console.log(dieren.indexOf('sat'));

@@ -88,19 +88,81 @@
 
 // OPDRACHT 4.4.1
 
-function pressed() {
-  let naamGroepslid = document.getElementById("inputnaam").value;
-  switch (naamGroepslid) {
-    case "Fares":
-    case "Joost":
-    case "Nathaniel":
-    case "Lex":
-      document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit in jouw groepje";
-      break;
-    default:
-      document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit niet in jouw groepje";
-  }
-}
+// function pressed() {
+//   let naamGroepslid = document.getElementById("inputnaam").value;
+//   switch (naamGroepslid) {
+//     case "Fares":
+//     case "Joost":
+//     case "Nathaniel":
+//     case "Lex":
+//       document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit in jouw groepje";
+//       break;
+//     default:
+//       document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit niet in jouw groepje";
+//   }
+// }
 
-// OPDRACHT 4.4.3
+// OPDRACHT 5.1.1
+
+// let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
+// console.log(soortenFruit);
+
+// OPDRACHT 5.1.4
+
+// let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
+
+// let randomFruit = soortenFruit[Math.floor(Math.random() * soortenFruit.length)];
+
+// console.log(randomFruit);
+
+// OPDRACHT 5.1.7
+
+// let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
+
+// soortenFruit[0] = 'peer';
+// soortenFruit[1] = 'appel';
+
+// console.log(soortenFruit);
+
+// OPDRACHT 5.2.1
+
+// const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
+
+// for (i = 0; i < dutchSports.length; i++) {
+//   console.log(dutchSports[i]);
+// }
+
+// OPDRACHT 5.2.2 (FOR...IN LOOP)
+
+// const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
+
+// for (const x in dutchSports) {
+//   console.log(`dutchSports.${x} = ${dutchSports[x]}`);
+// }
+
+// OPDRACHT 5.2.2 (FOR...OF LOOP)
+
+// const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
+
+// for (const x of dutchSports) {
+//   console.log(x);
+// }
+
+// OPDRACHT 5.2.3
+
+// for (i = 1; i <= 20; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//   }
+// }
+
+// OPDRACHT 5.2.4
+
+// for (i = 1; i <= 3; i++) {
+//   for (j = 1; j <= 10; j++) {
+//     console.log(j);
+//   }
+// }
+
+// OPDRACHT 5.2.5
 

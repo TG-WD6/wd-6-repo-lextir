@@ -1,4 +1,4 @@
-# Variables, Datatypes & Operators
+# 1. Variables, Datatypes & Operators
 
 ### Opdracht 1.1:
 
@@ -67,7 +67,7 @@ Een andere manier om het te schrijven is variable + operand.
 
 ____________
 
-# STRING METHODS
+# 2. STRING METHODS
 
 ### Opdracht 2.1
 
@@ -114,9 +114,9 @@ const array = someKittens.split(" ");
 
 ____________
 
-# CONDITIONS
+# 3. CONDITIONS
 
-## Opdracht 3.1
+### Opdracht 3.1
 
 1)
 
@@ -125,14 +125,13 @@ ____________
 === is een strict equality operator. Deze beschouwd operaters van een verschillende type als niet gelijk, ook al hebben ze dezelfde waarde.  
 
 2)  
-> is greater than operator. Geeft 'true' als de linker operator groter is dan de rechter operator, en zoniet 'false'. 
+'>' is greater than operator. Geeft 'true' als de linker operator groter is dan de rechter operator, en zoniet 'false'. 
 
->= is een greater than or equal operator. Geeft 'true' als de linker operator groter is dan of gelijk aan de rechter operator en zoniet 'false'.  
+'>=' is een greater than or equal operator. Geeft 'true' als de linker operator groter is dan of gelijk aan de rechter operator en zoniet 'false'.  
 
 3) 
 
 ```JavaScript 
-
 let x = 4;
 let y = 8
 
@@ -185,6 +184,7 @@ if (x > 5 && x < 10) {
   console.log("No result");
 }
 ```
+____________
 
 ## Opdracht 3.2
 
@@ -208,7 +208,8 @@ function pressed() {
 }
 ```
 
-2) 2 geeft als result 'groter dan elf'.
+2) 
+2 geeft als result 'groter dan elf'.
 
 3)
 
@@ -286,8 +287,11 @@ results = x<=4 && x>=0 ? '2' : '5'
 console.log(results)
 
 ```
+____________
 
-# Opdracht 4.1
+# 4. FUNCTIONS
+
+### Opdracht 4.1
 
 1)  
 
@@ -322,8 +326,9 @@ function showMessage(voornaam) {
 let result = return;
 console.log(result)
 ```
+____________
 
-# Opdracht 4.2
+### Opdracht 4.2
 
 1)
 document.getElementsByClassName:   
@@ -365,8 +370,9 @@ document.getElementById("myP").innerText = "Alleen plain text";
 
 2)
 oninput verandert zodra je typt. onchange pas wanneer de focus ergens anders is.
+____________
 
-# OPDRACHT 4.3
+### OPDRACHT 4.3
 
 1)
 Het gegenereerde getal is tussen 0 en 1.
@@ -402,8 +408,9 @@ Math.max() geeft de hoogste waarde terug.
 ```javascript
 let b = Math.min(0, 150, 30, 20, 38);
 ```
+______________
 
-# OPDRACHT 4.4
+### OPDRACHT 4.4
 
 1)
 
@@ -425,6 +432,104 @@ function pressed() {
       break;
     default:
       document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit niet in jouw groepje";
+  }
+}
+```
+# 5. ARRAYS & LOOPS
+
+### Opdracht 5.1
+
+1+2)
+
+```javascript
+let soortenFruit = ["appel", "peer", "banaan", "kiwi", "ananas", "meloen", "mango", "druiven", "kersen", "aardbei"];
+console.log(soortenFruit);
+```
+
+3)
+
+```javascript
+let soortenFruit = ["appel", "peer", "banaan", "kiwi", "ananas", "meloen", "mango", "druiven", "kersen", "aardbei"];
+console.log(soortenFruit[0], soortenFruit[9]);
+```
+
+4)
+``` javascript
+let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
+
+let randomFruit = soortenFruit[Math.floor(Math.random() * soortenFruit.length)];
+
+console.log(randomFruit);
+```
+
+5)
+
+```javascript
+console.log(soortenFruit.length);
+```
+
+7)
+```javascript
+let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
+
+soortenFruit[0] = 'peer';
+
+console.log(soortenFruit);
+```
+8)
+```javascript
+let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
+
+soortenFruit[0] = 'peer';
+soortenFruit[1] = 'appel';
+
+console.log(soortenFruit);
+```
+____________
+
+### OPDRACHT 5.2
+
+1)  
+```javascript
+const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
+
+for (i = 0; i < dutchSports.length; i++) {
+  console.log(dutchSports[i]);
+}
+```
+
+2)
+For...in loop:  
+```javascript
+const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
+
+for (const x in dutchSports) {
+  console.log(`dutchSports.${x} = ${dutchSports[x]}`);
+}
+```
+For...of loop:  
+```javascript
+const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
+
+for (const x of dutchSports) {
+  console.log(x);
+}
+```
+
+3)
+```javascript
+for (i = 1; i <= 20; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+}
+```
+
+4)
+```javascript
+for (i = 1; i <= 3; i++) {
+  for (j = 1; j <= 10; j++) {
+    console.log(j);
   }
 }
 ```
