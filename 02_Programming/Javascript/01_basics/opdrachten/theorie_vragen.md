@@ -531,3 +531,73 @@ for (i = 1; i <= 3; i++) {
   }
 }
 ```
+
+5)
+```javascript
+for (i = 1; i <= 3; i++) {
+  for (j = 1; j <= 10; j++) {
+    console.log(j * i);
+  }
+}
+```
+
+6)
+```javascript
+let fibArray = [0, 1];
+
+for (i = 2; i <= 50; i++) {
+  fibArray[i] = fibArray[i - 2] + fibArray[i - 1];
+  console.log(fibArray[i]);
+}
+```
+
+7)
+```javascript
+function bubbleSort(array) {
+
+  for (let i = 0; i < array.length ; i++) {
+    for(let j = 0 ; j < array.length; j++) {
+    if (array[j] > array[j + 1]) {
+      let temp = array[j];
+      array[j] = array[j+1];
+      array[j + 1] = temp;
+    }
+   }
+  }
+  return array;
+}
+
+let randomNumbers = [2,7,5,10,4,9,3,1,8,6];
+console.log(bubbleSort(randomNumbers));
+```
+____________
+
+### OPDRACHT 5.3
+
+1) 
+```javascript
+const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
+dutchSports.push("Zeilen", "Zwemmen");
+```
+
+2)
+```javascript
+dutchSports.unshift("Volleybal");
+```
+
+3)
+```javascript
+const ballSports = dutchSports.slice(0, 3);
+```
+
+4)
+```javascript
+dutchSports.splice(0, 3);
+```
+
+7)
+```javascript
+let sportsLength = dutchSports.map(function (word) {
+  return word.length
+})
+ ```

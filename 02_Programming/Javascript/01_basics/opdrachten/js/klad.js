@@ -122,5 +122,46 @@
 // }
 // console.log('Done');
 
-let dieren = ['koe', 'paard', 'hond', 'kat', 'kameel'];
-console.log(dieren.indexOf('sat'));
+// let dieren = ['koe', 'paard', 'hond', 'kat', 'kameel'];
+// console.log(dieren.indexOf('sat'));
+
+// function myFunction(myString) {
+//   console.log(myString);
+// }
+
+// myFunction(4456);
+
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// let result = sum(13, 78);
+// console.log(result);
+
+// const max = 57;
+// let actual = max - 13;
+// let percentage = actual / max;
+
+// const song = 'Fight the Power';
+// const score = 8;
+// const highestScore = 10;
+// const output = `I gave the song ${song} a score of ${score/highestScore * 100}%.`;
+
+let x = 24;
+
+if (x < 18) {
+  console.log('Je bent jonger dan 18');
+} else {
+  console.log('Je bent ouder dan 18');
+}
+
+switch (x < 18) {
+
+}
+
+function generate () {
+  let x = Math.floor(Math.random() * 10);
+  console.log(x);
+}
+
+console.log(`${generate()}`);

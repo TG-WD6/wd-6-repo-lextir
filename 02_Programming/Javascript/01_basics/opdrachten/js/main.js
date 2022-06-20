@@ -166,8 +166,56 @@
 
 // OPDRACHT 5.2.5
 
-for (i = 1; i <= 3; i++) {
-  for (j = 1; j <= 10; j++) {
-    console.log(j);
-  }
-}
+// for (i = 1; i <= 3; i++) {
+//   for (j = 1; j <= 10; j++) {
+//     console.log(j * i);
+//   }
+// }
+
+// OPDRACHT 5.2.6
+
+// let fibArray = [0, 1];
+
+// for (i = 2; i <= 50; i++) {
+//   fibArray[i] = fibArray[i - 2] + fibArray[i - 1];
+//   console.log(fibArray[i]);
+// }
+
+// OPDRACHT 5.2.7
+
+// function bubbleSort(array) {
+
+//   for (let i = 0; i < array.length ; i++) {
+//     for(let j = 0 ; j < array.length; j++) {
+//     if (array[j] > array[j + 1]) {
+//       let temp = array[j];
+//       array[j] = array[j+1];
+//       array[j + 1] = temp;
+//     }
+//    }
+//   }
+//   return array;
+// }
+
+// let randomNumbers = [2,7,5,10,4,9,3,1,8,6];
+// console.log(bubbleSort(randomNumbers));
+
+// OPDRACHT 5.3.1
+
+const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
+
+dutchSports.push("Zeilen", "Zwemmen");
+dutchSports.unshift("Volleybal");
+
+const ballSports = dutchSports.slice(0, 3);
+
+dutchSports.splice(0, 3);
+
+console.log(dutchSports);
+
+let sportsLength = dutchSports.map(function (word) {
+  return word.length
+})
+
+
+console.log(sportsLength);
