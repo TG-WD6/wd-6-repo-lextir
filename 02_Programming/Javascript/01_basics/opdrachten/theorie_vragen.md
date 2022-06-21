@@ -2,65 +2,65 @@
 
 ### Opdracht 1.1:
 
-a) let Tekst Twee - de tweede regel overschrijft de eerste.  
+a) let Tekst Twee - de tweede regel overschrijft de eerste.
 
-b) let Tekst Twee - de waarde van de variable wordt aangepast.  
+b) let Tekst Twee - de waarde van de variable wordt aangepast.
 
-c) foutmelding. const kan niet veranderd worden.  
+c) foutmelding. const kan niet veranderd worden.
 
-d) var tekst drie - var wordt veranderd.  
+d) var tekst drie - var wordt veranderd.
 
 ____________
 
 ### Opdracht 1.2:
 
-1) This is a string, with the value number  
+1) This is a string, with the value number
 
-2) this is a boolean, with the value true  
-this is a undefined, with the value undefined  
-this is a number, with the value 22  
-this is a bigint, with the value 22  
-error  
-this is a object, with the value null  
-this is a object, with the value [object Object]  
-this is a object, with the value [object Object]  
-this is a function, with the value function calculateSomething() {}  
+2) this is a boolean, with the value true
+this is a undefined, with the value undefined
+this is a number, with the value 22
+this is a bigint, with the value 22
+error
+this is a object, with the value null
+this is a object, with the value [object Object]
+this is a object, with the value [object Object]
+this is a function, with the value function calculateSomething() {}
 
 ____________
 
 ### Opdracht 1.3:
 
-1) 55  
-2) dan wordt het een optelsom  
-3) false, false, true, true  
+1) 55
+2) dan wordt het een optelsom
+3) false, false, true, true
 
 ____________
 
 ### Opdracht 1.4:
 
-1) 2, 2  
+1) 2, 2
 
-2) 3, 5  
+2) 3, 5
 
-3) 4  
+3) 4
 
-4) false  
+4) false
 
-5) 5 = false; Boolean = false; false = true; "false" = false; true = false; "true" = false; null = true; undefined = true. 
+5) 5 = false; Boolean = false; false = true; "false" = false; true = false; "true" = false; null = true; undefined = true.
 
-6) += is een addition assignment. Met += kan je de variable waarde veranderen door een optelling (alleen bij nummers en boolean combi's) of door de toevoeging er achter aan te plakken (wanneer er een string gebruikt wordt). 
+6) += is een addition assignment. Met += kan je de variable waarde veranderen door een optelling (alleen bij nummers en boolean combi's) of door de toevoeging er achter aan te plakken (wanneer er een string gebruikt wordt).
 
-Een andere manier om het te schrijven is variable + operand.  
+Een andere manier om het te schrijven is variable + operand.
 
-7) 
+7)
 
--= is een subtraction assignment operator. Zelfde als een += maar dan een aftrekking.  
+-= is een subtraction assignment operator. Zelfde als een += maar dan een aftrekking.
 
-*= is een multiplication assignment operator. Deze vermenigvuldigt het met de operand.  
+*= is een multiplication assignment operator. Deze vermenigvuldigt het met de operand.
 
-/= is een division assignment operator. deze deelt de variable waarde door de operand.  
+/= is een division assignment operator. deze deelt de variable waarde door de operand.
 
-%= is een remainder assignment operator. deze kijkt hoevaak de operand in de variable past en wat overblijft wordt de nieuwe variable waarde.  
+%= is een remainder assignment operator. deze kijkt hoevaak de operand in de variable past en wat overblijft wordt de nieuwe variable waarde.
 
 **= is een exponentiation assignment operator. deze vermenigvuldigt de variable waarde exponentieel.
 
@@ -71,7 +71,7 @@ ____________
 
 ### Opdracht 2.1
 
-1)  
+1)
 
 ```javascript
 let someKittens = 'De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.';
@@ -80,33 +80,33 @@ let someKittens = 'De poes van de buurman heeft kittens gehad! Hij vraagt of wij
 let zinGebeurtenis = someKittens.slice(0,43);
 
 let zinGevolg = someKittens.slice(43);
-```  
+```
 
-2)  
+2)
 
 ```javascript
 someKittens.toUpperCase()
-```  
+```
 
-3)   k = 29; s = 35.  
+3)   k = 29; s = 35.
 
-4) de letters k en s.  
+4) de letters k en s.
 
 ____________
 ### Opdracht 2.2
 
-Substring en slice geven de waardes weer vanaf en t/m de laatste index en maken er een nieuwe string van. Als er alleen 1 index wordt gegeven dan is het t/m het einde van de string.  
+Substring en slice geven de waardes weer vanaf en t/m de laatste index en maken er een nieuwe string van. Als er alleen 1 index wordt gegeven dan is het t/m het einde van de string.
 
-1) dan gebeurt hetzelfde alsof de waardes omgedraaid staan.  
-2) dan geeft hij een empty string ""  
-3) dan geeft hij een empty string "" 
-4) dan begint hij vanaf het einde van de string en telt 'terug'  
+1) dan gebeurt hetzelfde alsof de waardes omgedraaid staan.
+2) dan geeft hij een empty string ""
+3) dan geeft hij een empty string ""
+4) dan begint hij vanaf het einde van de string en telt 'terug'
 
 ____________
 
 ### Opdracht 2.3
 
-```JavaScript  
+```JavaScript
 let someKittens = 'Die nieuwe kittens zijn zo schattig';
 
 const array = someKittens.split(" ");
@@ -120,18 +120,18 @@ ____________
 
 1)
 
-== is een equality operator. Deze vergelijkt twee operaters of ze gelijk zijn, en geeft dat weer middels een boolean. Operators van een verschillend type worden omgezet omte kijken of de dezelfde waarde hebben.  
+== is een equality operator. Deze vergelijkt twee operaters of ze gelijk zijn, en geeft dat weer middels een boolean. Operators van een verschillend type worden omgezet omte kijken of de dezelfde waarde hebben.
 
-=== is een strict equality operator. Deze beschouwd operaters van een verschillende type als niet gelijk, ook al hebben ze dezelfde waarde.  
+=== is een strict equality operator. Deze beschouwd operaters van een verschillende type als niet gelijk, ook al hebben ze dezelfde waarde.
 
-2)  
-'>' is greater than operator. Geeft 'true' als de linker operator groter is dan de rechter operator, en zoniet 'false'. 
+2)
+'>' is greater than operator. Geeft 'true' als de linker operator groter is dan de rechter operator, en zoniet 'false'.
 
-'>=' is een greater than or equal operator. Geeft 'true' als de linker operator groter is dan of gelijk aan de rechter operator en zoniet 'false'.  
+'>=' is een greater than or equal operator. Geeft 'true' als de linker operator groter is dan of gelijk aan de rechter operator en zoniet 'false'.
 
-3) 
+3)
 
-```JavaScript 
+```JavaScript
 let x = 4;
 let y = 8
 
@@ -164,7 +164,7 @@ else {
 }
 ```
 
-6) 
+6)
 
 
 7)
@@ -208,7 +208,7 @@ function pressed() {
 }
 ```
 
-2) 
+2)
 2 geeft als result 'groter dan elf'.
 
 3)
@@ -293,7 +293,7 @@ ____________
 
 ### Opdracht 4.1
 
-1)  
+1)
 
 ```javascript
 function pressed() {
@@ -301,7 +301,7 @@ function pressed() {
 }
 ```
 
-2) 
+2)
 ```javascript
 let text = document.getElementById("voornaam").value;
 ```
@@ -331,41 +331,41 @@ ____________
 ### Opdracht 4.2
 
 1)
-document.getElementsByClassName:   
+document.getElementsByClassName:
 Selecteert alle elementen op met die class-naam:
 ```javascript
 let menu = document.getElementsByClassName("menu");
 ```
 
-document.getElementsByTagName  
+document.getElementsByTagName
 Selecteert alle elementen op met deze HTML tag:
 ```javascript
 let links = document.getElementsByTagName("a");
 ```
 
-Document.querySelector()  
+Document.querySelector()
 Selecteert het eerste element met die selector.
 ```javascript
 let firstParagraph = document.querySelector("p");
 ```
 
-document.querySelectorAll  
+document.querySelectorAll
 Selecteert alle elementen met die selector.
 ```javascript
 let allParagraphs = document.querySelector("p");
 ```
 
 element.innerHTML
-Geeft of bepaald de waarde van de HTML-inhoud van het element 
+Geeft of bepaald de waarde van de HTML-inhoud van het element
 ```javascript
-let html = document.getElementById("myP").innerHTML; 
+let html = document.getElementById("myP").innerHTML;
 
-document.getElementById("myP").innerHTML = "I have changed!"; 
+document.getElementById("myP").innerHTML = "I have changed!";
 ```
 element.innerText
 Geeft of bepaald de waarde van de HTML-inhoud van het element als plain text.
 ```javascript
-document.getElementById("myP").innerText = "Alleen plain text"; 
+document.getElementById("myP").innerText = "Alleen plain text";
 ```
 
 2)
@@ -401,7 +401,7 @@ function randomNumber(x) {
 ```
 
 3)
-Math.min geeft de laagste waarde terug als resultaat. In onderstaand voorbeeld is dat 0. 
+Math.min geeft de laagste waarde terug als resultaat. In onderstaand voorbeeld is dat 0.
 
 Math.max() geeft de hoogste waarde terug.
 
@@ -487,7 +487,7 @@ ____________
 
 ### OPDRACHT 5.2
 
-1)  
+1)
 ```javascript
 const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
 
@@ -497,7 +497,7 @@ for (i = 0; i < dutchSports.length; i++) {
 ```
 
 2)
-For...in loop:  
+For...in loop:
 ```javascript
 const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
 
@@ -505,7 +505,7 @@ for (const x in dutchSports) {
   console.log(`dutchSports.${x} = ${dutchSports[x]}`);
 }
 ```
-For...of loop:  
+For...of loop:
 ```javascript
 const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
 
@@ -574,7 +574,7 @@ ____________
 
 ### OPDRACHT 5.3
 
-1) 
+1)
 ```javascript
 const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
 dutchSports.push("Zeilen", "Zwemmen");
@@ -601,3 +601,144 @@ let sportsLength = dutchSports.map(function (word) {
   return word.length
 })
  ```
+ ____________
+
+### OPDRACHT 5.4
+
+1)
+```javascript
+let arrayLike = document.querySelectorAll('div');
+let arrayFrom = Array.from(arrayLike);
+```
+
+filter() - geeft alle waardes boven 15000:
+```javascript
+const populatieSteden = [30000, 10000, 50000, 7000];
+let groteSteden = populatieSteden.filter(function (checkPopulatie) {
+  return checkPopulatie > 15000;
+});
+
+console.log(groteSteden);
+```
+find() - geeft het eerste waarde boven 15000:
+```javascript
+const populatieSteden = [30000, 10000, 50000, 7000];
+let groteSteden = populatieSteden.find(function (checkPopulatie) {
+  return checkPopulatie > 15000;
+});
+
+console.log(groteSteden);
+```
+some() - checkt of er tenminste 1 resultaat boven de 15000 is (boolean):
+```javascript
+const populatieSteden = [30000, 10000, 50000, 7000];
+groteSteden = populatieSteden.some(function (checkPopulatie) {
+  return checkPopulatie > 15000;
+});
+
+console.log(groteSteden)
+```
+every()  - checkt of alle waardes boven de 15000 zijn (boolean):
+```javascript
+const populatieSteden = [30000, 10000, 50000, 7000];
+groteSteden = populatieSteden.every(function (checkPopulatie) {
+  return checkPopulatie > 15000;
+});
+
+console.log(groteSteden)
+```
+includes() - checkt of een array een specifieke waarde bevat (boolean):
+```javascript
+const populatieSteden = [30000, 10000, 50000, 7000];
+const groteSteden = populatieSteden.includes(50000);
+
+console.log(groteSteden);
+```
+ ____________
+
+### OPDRACHT 6.1
+
+Object Constructor:
+```javascript
+let petOne = new Object();
+  petOne.name = "bennie"
+  petOne.type = "dog"
+  console.log(petOne);
+  ```
+
+  Literal Constructor:
+  ```javascript
+  let petTwo = {
+    name : "bea",
+    type: "canary"
+  }
+  console.log(petTwo);
+  ```
+
+  Function Constructor:
+  ```javascript
+  function Pet (name, type) {
+    this.name = name
+    this.type = type
+  }
+  let petThree = new Pet("Minous", "cat");
+  console.log(petThree);
+  ```
+
+  Function Constructor:
+  ```javascript
+  let petFour = new function() {
+    this.name = "Karel",
+    this.type = "guinea pig"
+  }
+  console.log(petFour);
+  ```
+
+  Class-based Constructor:
+  ```javascript
+  class Pet {
+    constructor(name, type) {
+      this.name = name
+      this.type = type
+    }
+  }
+  const petFour = new Pet("Joop", "fish")
+  console.log(petFour);
+  ```
+
+### OPDRACHT 6.2
+
+1)
+ ```javascript
+class Club {
+  constructor(name, type, members) {
+    this.name = name
+    this.type = type
+    this.members = members
+  }
+}
+```
+
+2)
+ ```javascript
+class Club {
+  constructor(name, type, members, contact) {
+    this.name = name;
+    this.type = type;
+    this.members = members;
+    this.contact = contact
+  }
+}
+
+class Contact {
+  constructor(address, phone, contactperson) {
+    this.address = address;
+    this.phone = phone;
+    this.contactperson = contactperson;
+  }
+}
+
+let myClub = new Club('lex', 'voetbal', '100', new Contact('javastraat', 34234324, 'piet'))
+
+console.log(myClub);
+```

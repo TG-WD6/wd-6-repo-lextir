@@ -91,14 +91,14 @@
 // function pressed() {
 //   let naamGroepslid = document.getElementById("inputnaam").value;
 //   switch (naamGroepslid) {
-//     case "Fares":
-//     case "Joost":
-//     case "Nathaniel":
-//     case "Lex":
-//       document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit in jouw groepje";
+//     case "fares":
+//     case "joost":
+//     case "nathaniel":
+//     case "lex":
+//       document.getElementById("toon-naam").innerText = naamGroepslid + " zit in jouw groepje";
 //       break;
 //     default:
-//       document.getElementById("toon-naam").innerHTML = naamGroepslid + " zit niet in jouw groepje";
+//       document.getElementById("toon-naam").innerText = naamGroepslid + " zit niet in jouw groepje";
 //   }
 // }
 
@@ -202,20 +202,150 @@
 
 // OPDRACHT 5.3.1
 
-const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
+// const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
 
-dutchSports.push("Zeilen", "Zwemmen");
-dutchSports.unshift("Volleybal");
+// dutchSports.push("Zeilen", "Zwemmen");
+// dutchSports.unshift("Volleybal");
 
-const ballSports = dutchSports.slice(0, 3);
+// const ballSports = dutchSports.slice(0, 3);
 
-dutchSports.splice(0, 3);
+// dutchSports.splice(0, 3);
 
-console.log(dutchSports);
+// console.log(dutchSports);
 
-let sportsLength = dutchSports.map(function (word) {
-  return word.length
-})
+// let sportsLength = dutchSports.map(function (word) {
+//   return word.length
+// })
+
+// OPDRACHT 5.4
+
+// let arrayLike = document.querySelectorAll('div');
+// let arrayFrom = Array.from(arrayLike);
+
+// const ages = [32, 33, 16, 40];
+// const result = ages.filter(checkAdult);
+
+// function checkAdult(age) {
+//   return age >= 18;
+// }
+
+// filter():
+// const populatieSteden = [30000, 10000, 50000, 7000];
+// let groteSteden = populatieSteden.filter(function (checkPopulatie) {
+//   return checkPopulatie > 15000;
+// });
+
+// console.log(groteSteden);
+
+// find():
+// const populatieSteden = [30000, 10000, 50000, 7000];
+// let groteSteden = populatieSteden.find(function (checkPopulatie) {
+//   return checkPopulatie > 15000;
+// });
+
+// console.log(groteSteden);
+
+// some():
+// const populatieSteden = [30000, 10000, 50000, 7000];
+// groteSteden = populatieSteden.some(function (checkPopulatie) {
+//   return checkPopulatie > 15000;
+// });
+
+// console.log(groteSteden)
+
+// every():
+// const populatieSteden = [30000, 10000, 50000, 7000];
+// groteSteden = populatieSteden.every(function (checkPopulatie) {
+//   return checkPopulatie > 15000;
+// });
+
+// console.log(groteSteden)
+
+// includes():
+// const populatieSteden = [30000, 10000, 50000, 7000];
+// const groteSteden = populatieSteden.includes(5000);
+
+// console.log(groteSteden);
+
+// OPDRACHT 6.1.1
+
+// Object Constructor:
+// let petOne = new Object();
+//   petOne.name = "bennie"
+//   petOne.type = "dog"
+//   console.log(petOne);
+
+//   Literal Constructor:
+//   let petTwo = {
+//     name : "bea",
+//     type: "canary"
+//   }
+//   console.log(petTwo);
+
+//   Function Constructor:
+//   function Pet (name, type) {
+//     this.name = name
+//     this.type = type
+//   }
+//   let petThree = new Pet("Minous", "cat");
+//   console.log(petThree);
+
+//   Function Constructor:
+//   let petFour = new function() {
+//     this.name = "Karel",
+//     this.type = "guinea pig"
+//   }
+//   console.log(petFour);
+
+// Class-based Constructor:
+// class Pet {
+//   constructor(name, type) {
+//     this.name = name
+//     this.type = type
+//   }
+// }
+// const petFour = new Pet("Joop", "fish")
+// console.log(petFour);
+
+// OPDRACHT 6.1.2
+let petOne = new Object();
+petOne.name = "bennie"
+petOne.type = "dog"
+console.log(petOne);
 
 
-console.log(sportsLength);
+
+
+
+// OPDRACHT 6.2.1
+
+// class Club {
+//   constructor(name, type, members) {
+//     this.name = name
+//     this.type = type
+//     this.members = members
+//   }
+// }
+
+// OPDRACHT 6.2.2
+
+// class Club {
+//   constructor(name, type, members, contact) {
+//     this.name = name;
+//     this.type = type;
+//     this.members = members;
+//     this.contact = contact
+//   }
+// }
+
+// class Contact {
+//   constructor(address, phone, contactperson) {
+//     this.address = address;
+//     this.phone = phone;
+//     this.contactperson = contactperson;
+//   }
+// }
+
+// let myClub = new Club('lex', 'voetbal', '100', new Contact('javastraat', 34234324, 'piet'))
+
+// console.log(myClub);
