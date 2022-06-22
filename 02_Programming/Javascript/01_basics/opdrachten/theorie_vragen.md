@@ -654,9 +654,11 @@ const groteSteden = populatieSteden.includes(50000);
 
 console.log(groteSteden);
 ```
- ____________
+____________
 
 ### OPDRACHT 6.1
+
+1)
 
 Object Constructor:
 ```javascript
@@ -706,6 +708,36 @@ let petOne = new Object();
   console.log(petFour);
   ```
 
+ 2)
+```javascript
+const petTemplate = {
+  name: this.name,
+  type: this.type,
+}
+const petOne = Object.create(petTemplate);
+petOne.name = "Bennie";
+petOne.type = "dog";
+```
+3)
+```javascript
+let users = [
+  { name: "John", age: 20 },
+  { name: "Peter", age: 39 },
+  { name: "Alice", age: 28 },
+  { name: "Kate", age: 33 },
+  { name: "Jack", age: 40 },
+  { name: "Jill", age: 45 },
+  { name: "John", age: 16 },
+  { name: "Peter", age: 60 },
+  { name: "Alice", age: 25 },
+  { name: "Kate", age: 30 },
+]
+
+users.sort(function(a, b) {return a.age - b.age});
+console.log(users);
+```
+____________
+
 ### OPDRACHT 6.2
 
 1)
@@ -741,4 +773,57 @@ class Contact {
 let myClub = new Club('lex', 'voetbal', '100', new Contact('javastraat', 34234324, 'piet'))
 
 console.log(myClub);
+```
+3)
+```javascript
+class footballClub {
+  constructor(name, phone, contact) {
+    this.name = name;
+    this.phone = phone;
+    this.contact = contact;
+  }
+}
+
+let ajax = new footballClub('ajax', '06-12345678', 'paolo')
+let feyenoord = new footballClub('feyenoord', '06-12945678', 'piet')
+let psv = new footballClub('psv', '06-12342678', 'dorien')
+let twente = new footballClub('twente', '06-12344678', 'anne')
+let az = new footballClub('az', '06-12335678', 'joop')
+
+let clubArray = [ajax, feyenoord, psv, twente, az];
+
+for (let i = 0; i < clubArray.length; i++) {
+  console.log(clubArray[i].name, clubArray[i].phone, clubArray[i].contact);
+}
+```
+4)
+```javascript
+class footballClub {
+  constructor(name, phone, contact) {
+    this.name = name;
+    this.phone = phone;
+    this.contact = contact;
+  }
+}
+
+class Contact {
+  constructor(contact) {
+    this.contact = contact;
+  }
+}
+
+let newContactDude = new Contact('xander')
+
+let ajax = new footballClub('ajax', '06-12345678', newContactDude)
+let feyenoord = new footballClub('feyenoord', '06-12945678', 'piet')
+let psv = new footballClub('psv', '06-12342678', newContactDude)
+let twente = new footballClub('twente', '06-12344678', 'anne')
+let az = new footballClub('az', '06-12335678', 'joop')
+
+let clubArray = [ajax, feyenoord, psv, twente, az];
+
+for (let i = 0; i < clubArray.length; i++) {
+  console.log(clubArray[i].name, clubArray[i].phone, clubArray[i].contact);
+}
+
 ```

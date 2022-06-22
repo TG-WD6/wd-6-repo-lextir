@@ -105,6 +105,7 @@
 // OPDRACHT 5.1.1
 
 // let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
+
 // console.log(soortenFruit);
 
 // OPDRACHT 5.1.4
@@ -276,19 +277,19 @@
 //   console.log(petOne);
 
 //   Literal Constructor:
-//   let petTwo = {
-//     name : "bea",
-//     type: "canary"
-//   }
+// let petTwo = {
+//   name : "bea",
+//   type: "canary"
+// }
 //   console.log(petTwo);
 
 //   Function Constructor:
-//   function Pet (name, type) {
-//     this.name = name
-//     this.type = type
-//   }
-//   let petThree = new Pet("Minous", "cat");
-//   console.log(petThree);
+// function Pet (name, type) {
+//   this.name = name
+//   this.type = type
+// }
+// let petThree = new Pet("Minous", "cat");
+// console.log(petThree);
 
 //   Function Constructor:
 //   let petFour = new function() {
@@ -308,14 +309,33 @@
 // console.log(petFour);
 
 // OPDRACHT 6.1.2
-let petOne = new Object();
-petOne.name = "bennie"
-petOne.type = "dog"
-console.log(petOne);
+// const petTemplate = {
+//   name: this.name,
+//   type: this.type,
+// }
+// const petOne = Object.create(petTemplate);
+// petOne.name = "Bennie";
+// petOne.type = "dog";
 
+// console.log(petOne);
 
+// OPDRACHT 6.1.3
 
+// let users = [
+//   { name: "John", age: 20 },
+//   { name: "Peter", age: 39 },
+//   { name: "Alice", age: 28 },
+//   { name: "Kate", age: 33 },
+//   { name: "Jack", age: 40 },
+//   { name: "Jill", age: 45 },
+//   { name: "John", age: 16 },
+//   { name: "Peter", age: 60 },
+//   { name: "Alice", age: 25 },
+//   { name: "Kate", age: 30 },
+// ]
 
+// users.sort(function(a, b) {return a.age - b.age});
+// console.log(users);
 
 // OPDRACHT 6.2.1
 
@@ -334,7 +354,7 @@ console.log(petOne);
 //     this.name = name;
 //     this.type = type;
 //     this.members = members;
-//     this.contact = contact
+//     this.contact = contact;
 //   }
 // }
 
@@ -349,3 +369,56 @@ console.log(petOne);
 // let myClub = new Club('lex', 'voetbal', '100', new Contact('javastraat', 34234324, 'piet'))
 
 // console.log(myClub);
+
+// OPDRACHT 6.2.3
+
+// class footballClub {
+//   constructor(name, phone, contact) {
+//     this.name = name;
+//     this.phone = phone;
+//     this.contact = contact;
+//   }
+// }
+
+// let ajax = new footballClub('ajax', '06-12345678', 'paolo')
+// let feyenoord = new footballClub('feyenoord', '06-12945678', 'piet')
+// let psv = new footballClub('psv', '06-12342678', 'dorien')
+// let twente = new footballClub('twente', '06-12344678', 'anne')
+// let az = new footballClub('az', '06-12335678', 'joop')
+
+// let clubArray = [ajax, feyenoord, psv, twente, az];
+
+// for (let i = 0; i < clubArray.length; i++) {
+//   console.log(clubArray[i].name, clubArray[i].phone, clubArray[i].contact);
+// }
+
+// OPDRACHT 6.2.4
+
+class footballClub {
+  constructor(name, phone, contact) {
+    this.name = name;
+    this.phone = phone;
+    this.contact = contact;
+  }
+}
+
+class Contact {
+  constructor(contact) {
+    this.contact = contact;
+  }
+}
+
+let newContactDude = new Contact('xander')
+
+let ajax = new footballClub('ajax', '06-12345678', newContactDude)
+let feyenoord = new footballClub('feyenoord', '06-12945678', 'piet')
+let psv = new footballClub('psv', '06-12342678', newContactDude)
+let twente = new footballClub('twente', '06-12344678', 'anne')
+let az = new footballClub('az', '06-12335678', 'joop')
+
+let clubArray = [ajax, feyenoord, psv, twente, az];
+
+for (let i = 0; i < clubArray.length; i++) {
+  console.log(clubArray[i].name, clubArray[i].phone, clubArray[i].contact);
+}
+
