@@ -1,4 +1,4 @@
-// IF ELSE
+// * IF ELSE
 
 // function pressed() {
 //   let maand = document.getElementById("input").value;
@@ -11,7 +11,7 @@
 //   }
 // }
 
-// SWITCH CASE
+// * SWITCH CASE
 
 // let text = 1;
 
@@ -30,7 +30,7 @@
 //   }
 // }
 
-//  TERNARY OPERATOR
+// * TERNARY OPERATOR
 
 // let x = 10;
 // let results;
@@ -47,13 +47,13 @@
 // }
 
 
-// // STUDIEKEUZE
+// * STUDIEKEUZE
 // function myFunction() {
 //   let x = document.getElementById("studiekeuze").value;
 //   document.getElementById("toon-studiekeuze").innerHTML = "Je hebt gekozen: " + x;
 // }
 
-// OPDRACHT 4.1 PARAMETERS
+// * OPDRACHT 4.1
 
 // function pressed() {
 //   console.log("Hello World")
@@ -72,21 +72,21 @@
 // document.getElementById("demo").innerHTML = x;
 
 
-// OPDRACHT 4.3.1
+// * OPDRACHT 4.3.1
 
 // function randomNumber() {
 //   let random = Math.random();
 //   console.log(random);
 // }
 
-// OPDRACHT 4.3.2
+// * OPDRACHT 4.3.2
 
 // function randomNumber(x) {
 //   let random = Math.floor(Math.random() * 8);
 //   console.log(random);
 // }
 
-// OPDRACHT 4.4.1
+// * OPDRACHT 4.4.1
 
 // function pressed() {
 //   let naamGroepslid = document.getElementById("inputnaam").value;
@@ -102,13 +102,13 @@
 //   }
 // }
 
-// OPDRACHT 5.1.1
+// * OPDRACHT 5.1.1
 
 // let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
 
 // console.log(soortenFruit);
 
-// OPDRACHT 5.1.4
+// * OPDRACHT 5.1.4
 
 // let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
 
@@ -116,7 +116,7 @@
 
 // console.log(randomFruit);
 
-// OPDRACHT 5.1.7
+// * OPDRACHT 5.1.7
 
 // let soortenFruit = ['appel', 'peer', 'banaan', 'kiwi', 'ananas', 'meloen', 'mango', 'druiven', 'kersen', 'aardbei'];
 
@@ -125,7 +125,7 @@
 
 // console.log(soortenFruit);
 
-// OPDRACHT 5.2.1
+// * OPDRACHT 5.2.1
 
 // const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
 
@@ -149,7 +149,7 @@
 //   console.log(x);
 // }
 
-// OPDRACHT 5.2.3
+// * OPDRACHT 5.2.3
 
 // for (i = 1; i <= 20; i++) {
 //   if (i % 2 == 0) {
@@ -157,7 +157,7 @@
 //   }
 // }
 
-// OPDRACHT 5.2.4
+// * OPDRACHT 5.2.4
 
 // for (i = 1; i <= 3; i++) {
 //   for (j = 1; j <= 10; j++) {
@@ -165,7 +165,7 @@
 //   }
 // }
 
-// OPDRACHT 5.2.5
+// * OPDRACHT 5.2.5
 
 // for (i = 1; i <= 3; i++) {
 //   for (j = 1; j <= 10; j++) {
@@ -173,7 +173,7 @@
 //   }
 // }
 
-// OPDRACHT 5.2.6
+// * OPDRACHT 5.2.6
 
 // let fibArray = [0, 1];
 
@@ -182,7 +182,7 @@
 //   console.log(fibArray[i]);
 // }
 
-// OPDRACHT 5.2.7
+// * OPDRACHT 5.2.7
 
 // function bubbleSort(array) {
 
@@ -201,7 +201,7 @@
 // let randomNumbers = [2,7,5,10,4,9,3,1,8,6];
 // console.log(bubbleSort(randomNumbers));
 
-// OPDRACHT 5.3.1
+// * OPDRACHT 5.3.1
 
 // const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
 
@@ -218,7 +218,7 @@
 //   return word.length
 // })
 
-// OPDRACHT 5.4
+// * OPDRACHT 5.4
 
 // let arrayLike = document.querySelectorAll('div');
 // let arrayFrom = Array.from(arrayLike);
@@ -268,7 +268,7 @@
 
 // console.log(groteSteden);
 
-// OPDRACHT 6.1.1
+// * OPDRACHT 6.1.1
 
 // Object Constructor:
 // let petOne = new Object();
@@ -308,7 +308,8 @@
 // const petFour = new Pet("Joop", "fish")
 // console.log(petFour);
 
-// OPDRACHT 6.1.2
+// * OPDRACHT 6.1.2
+
 // const petTemplate = {
 //   name: this.name,
 //   type: this.type,
@@ -319,7 +320,7 @@
 
 // console.log(petOne);
 
-// OPDRACHT 6.1.3
+// * OPDRACHT 6.1.3
 
 // let users = [
 //   { name: "John", age: 20 },
@@ -337,7 +338,7 @@
 // users.sort(function(a, b) {return a.age - b.age});
 // console.log(users);
 
-// OPDRACHT 6.2.1
+// * OPDRACHT 6.2.1
 
 // class Club {
 //   constructor(name, type, members) {
@@ -347,7 +348,7 @@
 //   }
 // }
 
-// OPDRACHT 6.2.2
+// * OPDRACHT 6.2.2
 
 // class Club {
 //   constructor(name, type, members, contact) {
@@ -370,7 +371,7 @@
 
 // console.log(myClub);
 
-// OPDRACHT 6.2.3
+// * OPDRACHT 6.2.3
 
 // class footballClub {
 //   constructor(name, phone, contact) {
@@ -392,33 +393,33 @@
 //   console.log(clubArray[i].name, clubArray[i].phone, clubArray[i].contact);
 // }
 
-// OPDRACHT 6.2.4
+// * OPDRACHT 6.2.4
 
-class footballClub {
-  constructor(name, phone, contact) {
-    this.name = name;
-    this.phone = phone;
-    this.contact = contact;
-  }
-}
+// class footballClub {
+//   constructor(name, phone, contact) {
+//     this.name = name;
+//     this.phone = phone;
+//     this.contact = contact;
+//   }
+// }
 
-class Contact {
-  constructor(contact) {
-    this.contact = contact;
-  }
-}
+// class Contact {
+//   constructor(contact) {
+//     this.contact = contact;
+//   }
+// }
 
-let newContactDude = new Contact('xander')
+// let newContactDude = new Contact('xander')
 
-let ajax = new footballClub('ajax', '06-12345678', newContactDude)
-let feyenoord = new footballClub('feyenoord', '06-12945678', 'piet')
-let psv = new footballClub('psv', '06-12342678', newContactDude)
-let twente = new footballClub('twente', '06-12344678', 'anne')
-let az = new footballClub('az', '06-12335678', 'joop')
+// let ajax = new footballClub('ajax', '06-12345678', newContactDude)
+// let feyenoord = new footballClub('feyenoord', '06-12945678', 'piet')
+// let psv = new footballClub('psv', '06-12342678', newContactDude)
+// let twente = new footballClub('twente', '06-12344678', 'anne')
+// let az = new footballClub('az', '06-12335678', 'joop')
 
-let clubArray = [ajax, feyenoord, psv, twente, az];
+// let clubArray = [ajax, feyenoord, psv, twente, az];
 
-for (let i = 0; i < clubArray.length; i++) {
-  console.log(clubArray[i].name, clubArray[i].phone, clubArray[i].contact);
-}
+// for (let i = 0; i < clubArray.length; i++) {
+//   console.log(clubArray[i].name, clubArray[i].phone, clubArray[i].contact);
+// }
 

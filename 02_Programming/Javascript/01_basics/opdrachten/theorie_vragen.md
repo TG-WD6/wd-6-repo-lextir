@@ -825,5 +825,5 @@ let clubArray = [ajax, feyenoord, psv, twente, az];
 for (let i = 0; i < clubArray.length; i++) {
   console.log(clubArray[i].name, clubArray[i].phone, clubArray[i].contact);
 }
-
 ```
+
