@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*  3. Allow percentage-based heights */
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*   8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  background-color: black;
+}
+.clock__face {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+}
+.clock__face::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  z-index: 1;
+  transform: translate(-50%, 40%);
+  background-color: black;
+}
+.clock__face--hour, .clock__face--minute, .clock__face--second {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: black;
+  --rotation: 0;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+.clock__face--hour {
+  width: 0.7rem;
+  height: 30%;
+}
+.clock__face--minute {
+  width: 0.5rem;
+  height: 35%;
+}
+.clock__face--second {
+  width: 0.2rem;
+  height: 40%;
+  background-color: red;
+}
+.clock__face--number {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  --rotation: 0;
+  transform: rotate(var(--rotation));
+}
+.clock__face--number:nth-child(4) {
+  --rotation: 30deg;
+}
+.clock__face--number:nth-child(5) {
+  --rotation: 60deg;
+}
+.clock__face--number:nth-child(6) {
+  --rotation: 90deg;
+}
+.clock__face--number:nth-child(7) {
+  --rotation: 120deg;
+}
+.clock__face--number:nth-child(8) {
+  --rotation: 150deg;
+}
+.clock__face--number:nth-child(9) {
+  --rotation: 180deg;
+}
+.clock__face--number:nth-child(10) {
+  --rotation: 210deg;
+}
+.clock__face--number:nth-child(11) {
+  --rotation: 240deg;
+}
+.clock__face--number:nth-child(12) {
+  --rotation: 270deg;
+}
+.clock__face--number:nth-child(13) {
+  --rotation: 300deg;
+}
+.clock__face--number:nth-child(14) {
+  --rotation: 330deg;
+}
