@@ -78,19 +78,16 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .clock {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  place-content: center;
   width: 20rem;
   height: 20rem;
-  padding: 1rem;
   background-color: black;
 }
 .clock__face {
   position: relative;
   width: 18rem;
   height: 18rem;
-  margin: auto;
   background-color: white;
   border-radius: 50%;
 }
@@ -103,7 +100,7 @@ input[type=search]::-webkit-search-results-decoration {
   height: 1.5rem;
   border-radius: 50%;
   z-index: 1;
-  transform: translate(-50%, 40%);
+  transform: translate(-50%, 50%);
   background-color: black;
 }
 .clock__face--hour, .clock__face--minute, .clock__face--second {
