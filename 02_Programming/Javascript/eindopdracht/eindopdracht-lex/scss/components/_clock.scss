@@ -12,6 +12,8 @@
         background-color: white;
         border-radius: 50%;
 
+        // CENTER DOT
+
         &::after {
             content: '';
             position: absolute;
