@@ -101,7 +101,7 @@ input[type=search]::-webkit-search-results-decoration {
   border-radius: 50%;
   z-index: 1;
   transform: translate(-50%, 50%);
-  background-color: green;
+  background-color: purple;
 }
 .clock__face--hour, .clock__face--minute, .clock__face--second {
   position: absolute;
