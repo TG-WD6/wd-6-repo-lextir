@@ -179,42 +179,39 @@ section {
   --rotation: 330deg;
 }
 
-/*create slider */
 .carousel {
-  display: flex;
-  justify-content: center;
   position: relative;
-  width: 18rem;
-  margin: 2rem;
+  width: 25rem;
 }
 .carousel__slide {
   position: absolute;
-  top: 0px;
+  display: grid;
+  place-content: center;
   left: 3rem;
-  opacity: 0;
-  transition: opacity 0.5s;
+  width: 20rem;
+  height: 20rem;
+  font-size: 8rem;
+  border-radius: 10%;
+  background-color: lightgrey;
 }
 .carousel__slide--displayed {
-  opacity: 1;
   z-index: 1;
 }
 .carousel__button {
   display: grid;
   place-content: center;
   position: absolute;
-  top: 60px;
-  width: 40px;
-  height: 40px;
-  z-index: 2;
-  font-size: 3rem;
-  font-weight: bold;
+  top: 8rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 4rem;
   border-radius: 20%;
   border: 0;
   cursor: pointer;
 }
 .carousel__button--prev {
-  left: -1rem;
+  left: -2rem;
 }
 .carousel__button--next {
-  right: -1rem;
+  right: -2rem;
 }

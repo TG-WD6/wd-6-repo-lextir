@@ -25,7 +25,7 @@ function setRotation(element, rotationRatio) {
 setClock();
 
 
-//* CAROUSEL
+//* CAROUSEL BASIC
 
   const slides = document.querySelectorAll('.carousel__slide');
   const nextButton = document.querySelector('.carousel__button--next');
