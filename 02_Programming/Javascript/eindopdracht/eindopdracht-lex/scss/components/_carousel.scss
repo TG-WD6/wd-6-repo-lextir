@@ -1,35 +1,45 @@
+/*create slider */
 .carousel {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 18rem;
+  margin: 2rem;
 
-    &__slider {
-        display: flex ;
-        width: calc(100% - 10rem);
-        margin: 0 .25rem;
-        --slider-index: 0;
-        transform: translateX(calc(let(--slider-index) * -100%));
 
-        img {
-            flex: 0 0 25%;
-            max-width: 25% ;
-            padding: .25rem;
-            border-radius: 1rem;
-        }
+  &__slide {
+    position: absolute;
+    top: 0px;
+    left: 3rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    &--displayed {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+
+  &__button {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    top: 60px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 20%;
+    border: 0;
+    cursor: pointer;
+
+    &--prev {
+      left: -1rem;
     }
 
-    &__controls {
-        width: 5rem;
-        z-index: 1;
-        margin: .25rem 0;
-        border: none;
-        border-radius: 1rem;
-        cursor: pointer;
-        font-size: 3rem;
-        color: white;
-        background-color: rgb(0, 0, 0, 0.25);
+    &--next {
+      right: -1rem;
     }
-
-    &__controls:hover {
-        background-color: rgb(0, 0, 0, 0.5);
-    }
-} 
+  }
+}

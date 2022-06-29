@@ -77,11 +77,22 @@ input[type=search]::-webkit-search-results-decoration {
   display: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin: 5rem 0;
+}
+
 .clock {
   display: grid;
   place-content: center;
   width: 20rem;
   height: 20rem;
+  border-radius: 10%;
   background-color: black;
 }
 .clock__face {
@@ -168,34 +179,42 @@ input[type=search]::-webkit-search-results-decoration {
   --rotation: 330deg;
 }
 
+/*create slider */
 .carousel {
   display: flex;
   justify-content: center;
+  position: relative;
+  width: 18rem;
+  margin: 2rem;
 }
-.carousel__slider {
-  display: flex;
-  width: calc(100% - 10rem);
-  margin: 0 0.25rem;
-  --slider-index: 0;
-  transform: translateX(calc(let(--slider-index) * -100%));
+.carousel__slide {
+  position: absolute;
+  top: 0px;
+  left: 3rem;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
-.carousel__slider img {
-  flex: 0 0 25%;
-  max-width: 25%;
-  padding: 0.25rem;
-  border-radius: 1rem;
-}
-.carousel__controls {
-  width: 5rem;
+.carousel__slide--displayed {
+  opacity: 1;
   z-index: 1;
-  margin: 0.25rem 0;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  font-size: 3rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.25);
 }
-.carousel__controls:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+.carousel__button {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 60px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  font-size: 3rem;
+  font-weight: bold;
+  border-radius: 20%;
+  border: 0;
+  cursor: pointer;
+}
+.carousel__button--prev {
+  left: -1rem;
+}
+.carousel__button--next {
+  right: -1rem;
 }
