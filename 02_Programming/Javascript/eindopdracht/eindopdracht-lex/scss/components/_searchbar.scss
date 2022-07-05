@@ -1,0 +1,27 @@
+.searchbar {
+  width: 20rem;
+
+  form {
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+
+    button {
+      border: 0;
+      padding-left: 1rem;
+      background-color: inherit;
+    }
+
+    input {
+      width: 80%;
+      border: 0;
+      padding: .3rem 1rem;
+      border-radius: 20px;
+      background-color: inherit;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

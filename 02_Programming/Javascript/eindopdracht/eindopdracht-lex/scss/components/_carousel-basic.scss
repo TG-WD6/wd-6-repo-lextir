@@ -6,7 +6,7 @@
     position: absolute;
     display: grid;
     place-content: center;
-    left: 3rem;
+    left: 2.5rem;
     width: 20rem;
     height: 20rem;
     font-size: 8rem;
@@ -19,9 +19,9 @@
   }
 
   &__button {
+    position: absolute;
     display: grid;
     place-content: center;
-    position: absolute;
     top: 8rem;
     width: 3rem;
     height: 3rem;
