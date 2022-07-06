@@ -13,7 +13,7 @@
 <body>
   <main>
 
-    <!-- KLOK -->
+    <!-- CLOCK -->
 
     <section class="clock">
       <div class="clock__face">
@@ -35,14 +35,21 @@
       </div>
     </section>
 
-    <!-- CAROUSEL BASIC -->
+    <!-- CAROUSEL -->
 
     <section class="carousel">
-      <button class="carousel__button carousel__button--prev">&#8249;</button>
-      <div class="carousel__slide carousel__slide--displayed">1</div>
-      <div class="carousel__slide">2</div>
-      <div class="carousel__slide">3</div>
-      <button class="carousel__button carousel__button--next">&rsaquo;</button>
+      <div class="carousel__control carousel__control--left"><</div>
+      <div class="carousel__inner">
+        <div class="carousel__item active">1</div>
+        <div class="carousel__item">2</div>
+        <div class="carousel__item">3</div>
+      </div>
+      <ol class="carousel__indicators">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ol>
+      <div class="carousel__control carousel__control--right">></div>
     </section>
 
   </main>

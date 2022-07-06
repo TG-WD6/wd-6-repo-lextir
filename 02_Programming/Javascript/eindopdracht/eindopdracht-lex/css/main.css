@@ -180,39 +180,115 @@ section {
 
 .carousel {
   position: relative;
-  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.carousel__slide {
+.carousel__inner {
+  position: relative;
+  width: 22rem;
+  overflow: hidden;
+}
+.carousel__inner > .active, .carousel__inner > .next {
+  display: block;
+}
+.carousel__inner > .next {
   position: absolute;
-  display: grid;
-  place-content: center;
-  left: 2.5rem;
+  top: 0;
+}
+.carousel__inner > .to-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+}
+.carousel__inner > .from-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+}
+.carousel__inner > .to-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+  animation-direction: reverse;
+}
+.carousel__inner > .from-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+  animation-direction: reverse;
+}
+.carousel__item {
+  position: relative;
+  display: none;
   width: 20rem;
   height: 20rem;
+  padding-top: 50px;
+  padding-left: 120px;
   font-size: 8rem;
   border-radius: 10%;
   background-color: lightgrey;
+  -webkit-animation: 0.5s ease-in-out;
+          animation: 0.5s ease-in-out;
 }
-.carousel__slide--displayed {
-  z-index: 1;
-}
-.carousel__button {
+.carousel__control {
   position: absolute;
-  display: grid;
-  place-content: center;
-  top: 8rem;
-  width: 3rem;
-  height: 3rem;
-  font-size: 4rem;
-  border-radius: 20%;
-  border: 0;
+  top: 40%;
+  font-size: 2rem;
+  font-weight: 800;
+  z-index: 1;
   cursor: pointer;
 }
-.carousel__button--prev {
-  left: -2rem;
+.carousel__control--left {
+  left: 1rem;
 }
-.carousel__button--next {
-  right: -2rem;
+.carousel__control--right {
+  right: 3rem;
+}
+.carousel__indicators {
+  position: absolute;
+  bottom: 5%;
+  list-style: none;
+  transform: translateX(-50%);
+}
+.carousel__indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.carousel__indicators li.active {
+  background-color: black;
+}
+@-webkit-keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@-webkit-keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .searchbar {

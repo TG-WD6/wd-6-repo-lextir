@@ -1,0 +1,108 @@
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__inner {
+    position: relative;
+    width: 22rem;
+    overflow: hidden;
+
+    & > .active,
+    & > .next {
+      display: block;
+    }
+
+    & > .next {
+      position: absolute;
+      top: 0;
+    }
+
+    & > .to-left {
+      animation-name: left;
+    }
+
+    & > .from-right {
+      animation-name: right;
+    }
+
+    & > .to-right {
+      animation-name: right;
+      animation-direction: reverse;
+    }
+
+    & > .from-left {
+      animation-name: left;
+      animation-direction: reverse;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: none;
+    width: 20rem;
+    height: 20rem;
+    padding-top: 50px;
+    padding-left: 120px;
+    font-size: 8rem;
+    border-radius: 10%;
+    background-color: lightgrey;
+    animation: 0.5s ease-in-out;
+  }
+
+  &__control {
+    position: absolute;
+    top: 40%;
+    font-size: 2rem;
+    font-weight: 800;
+    z-index: 1;
+    cursor: pointer;
+
+    &--left {
+      left: 1rem;
+    }
+
+    &--right {
+      right: 3rem;
+    }
+  }
+
+  &__indicators {
+    position: absolute;
+    bottom: 5%;
+    list-style: none;
+    transform: translateX(-50%);
+
+    li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid black;
+      cursor: pointer;
+
+      &.active {
+        background-color: black;
+      }
+    }
+  }
+
+  @keyframes left {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+  }
+
+  @keyframes right {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+}
