@@ -43,8 +43,8 @@
     display: none;
     width: 20rem;
     height: 20rem;
-    padding-top: 50px;
-    padding-left: 120px;
+    padding-top: 3rem;
+    padding-left: 8rem;
     font-size: 8rem;
     border-radius: 10%;
     background-color: lightgrey;
@@ -71,13 +71,14 @@
   &__indicators {
     position: absolute;
     bottom: 5%;
+    left: 28%;
     list-style: none;
-    transform: translateX(-50%);
 
     li {
       display: inline-block;
-      width: 10px;
-      height: 10px;
+      width: .8rem;
+      height: .8rem;
+      margin: 0 .1rem;
       border-radius: 50%;
       border: 1px solid black;
       cursor: pointer;

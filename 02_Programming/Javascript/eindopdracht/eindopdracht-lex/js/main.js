@@ -2,9 +2,9 @@
 
 setInterval(setClock, 1000);
 
-const hourHand = document.querySelector('.clock__face--hour');
-const minuteHand = document.querySelector('.clock__face--minute');
-const secondHand = document.querySelector('.clock__face--second');
+const hourHand = document.querySelector(`.clock__face--hour`);
+const minuteHand = document.querySelector(`.clock__face--minute`);
+const secondHand = document.querySelector(`.clock__face--second`);
 
 function setClock() {
   const currentDate = new Date();
@@ -17,81 +17,218 @@ function setClock() {
 }
 
 function setRotation(element, rotationRatio) {
-  element.style.setProperty('--rotation', rotationRatio * 360);
+  element.style.setProperty(`--rotation`, rotationRatio * 360);
 }
 
 setClock();
 
-
 //* CAROUSEL
 
-let items = document.querySelectorAll('.carousel .carousel__item');
-let dots = document.querySelectorAll('.carousel__indicators li');
+const items = document.querySelectorAll(`.carousel .carousel__item`);
+const dots = document.querySelectorAll(`.carousel__indicators li`);
 let currentItem = 0;
 let isEnabled = true;
 
 function changeCurrentItem(n) {
-	currentItem = (n + items.length) % items.length;
+  currentItem = (n + items.length) % items.length;
 }
 
 function nextItem(n) {
-	hideItem('to-left');
-	changeCurrentItem(n + 1);
-	showItem('from-right');
+  hideItem(`to-left`);
+  changeCurrentItem(n + 1);
+  showItem(`from-right`);
 }
 
 function previousItem(n) {
-	hideItem('to-right');
-	changeCurrentItem(n - 1);
-	showItem('from-left');
+  hideItem(`to-right`);
+  changeCurrentItem(n - 1);
+  showItem(`from-left`);
 }
 
 function goToItem(n) {
-	if (n < currentItem) {
-		hideItem('to-right');
-		currentItem = n;
-		showItem('from-left');
-	} else {
-		hideItem('to-left');
-		currentItem = n;
-		showItem('from-right');
-	}
+  if (n < currentItem) {
+    hideItem(`to-right`);
+    currentItem = n;
+    showItem(`from-left`);
+  } else {
+    hideItem(`to-left`);
+    currentItem = n;
+    showItem(`from-right`);
+  }
 }
 
 function hideItem(direction) {
-	isEnabled = false;
-	items[currentItem].classList.add(direction);
-	dots[currentItem].classList.remove('active');
-	items[currentItem].addEventListener('animationend', function() {
-		this.classList.remove('active', direction);
-	});
+  isEnabled = false;
+  items[currentItem].classList.add(direction);
+  dots[currentItem].classList.remove(`active`);
+  items[currentItem].addEventListener(`animationend`, function () {
+    this.classList.remove(`active`, direction);
+  });
 }
 
 function showItem(direction) {
-	items[currentItem].classList.add('next', direction);
-	dots[currentItem].classList.add('active');
-	items[currentItem].addEventListener('animationend', function() {
-		this.classList.remove('next', direction);
-		this.classList.add('active');
-		isEnabled = true;
-	});
+  items[currentItem].classList.add(`next`, direction);
+  dots[currentItem].classList.add(`active`);
+  items[currentItem].addEventListener(`animationend`, function () {
+    this.classList.remove(`next`, direction);
+    this.classList.add(`active`);
+    isEnabled = true;
+  });
 }
 
-document.querySelector('.carousel__control--left').addEventListener('click', function() {
-	if (isEnabled) {
-		previousItem(currentItem);
-	}
+document
+  .querySelector(`.carousel__control--left`)
+  .addEventListener(`click`, function () {
+    if (isEnabled) {
+      previousItem(currentItem);
+    }
+  });
+
+document
+  .querySelector(`.carousel__control--right`)
+  .addEventListener(`click`, function () {
+    if (isEnabled) {
+      nextItem(currentItem);
+    }
+  });
+
+document
+  .querySelector(`.carousel__indicators`)
+  .addEventListener(`click`, function (e) {
+    const target = [].slice
+      .call(e.target.parentNode.children)
+      .indexOf(e.target);
+    if (target !== currentItem && target < dots.length) {
+      goToItem(target);
+    }
+  });
+
+// * SEARCH-BAR
+
+const searchForm = document.querySelector(`.searchbar__form`);
+const searchInput = document.querySelector(`#searchInput`);
+const searchSubmit = document.querySelector(`#searchSubmit`);
+
+// Voeg zoekterm aan array
+searchForm.addEventListener(`submit`, (e) => {
+  searchStorage.push(searchInput.value);
+  localStorage.setItem(`searchTerms`, JSON.stringify(searchStorage));
+  searchInput.value = ``;
 });
 
-document.querySelector('.carousel__control--right').addEventListener('click', function() {
-	if (isEnabled) {
-		nextItem(currentItem);
-	}
-});
+let searchStorage = localStorage.getItem(`searchTerms`)
+  ? JSON.parse(localStorage.getItem(`searchTerms`))
+  : [];
 
-document.querySelector('.carousel__indicators').addEventListener('click', function(e) {
-	let target = [].slice.call(e.target.parentNode.children).indexOf(e.target);
-	if (target !== currentItem && target < dots.length) {
-		goToItem(target);
-	}
-});
+// Verwijder duplicates uit array
+function squash(searchStorage) {
+  let tmp = [];
+  for (let i = 0; i < searchStorage.length; i++) {
+    if (tmp.indexOf(searchStorage[i]) == -1) {
+      tmp.push(searchStorage[i]);
+    }
+  }
+  return tmp;
+}
+
+// Sla nieuwe array op in een variabele
+let filteredStorage = squash(searchStorage);
+console.log(filteredStorage);
+
+// Autocomplete functie
+function autocomplete(inp, arr) {
+  let currentFocus;
+  // Functie wanneer gebruiker begint te typen
+  inp.addEventListener(`input`, function (e) {
+    let a,
+      b,
+      i,
+      val = this.value;
+    //  Begin met gesloten autocomplete-lijst
+    closeAllLists();
+    if (!val) {
+      return false;
+    }
+    currentFocus = -1;
+    // Div voor de autocomplete-lijst
+    a = document.createElement(`DIV`);
+    a.setAttribute(`id`, this.id + `autocomplete-list`);
+    a.setAttribute(`class`, `autocomplete-items`);
+    // Voeg de div toe aan de input
+    this.parentNode.appendChild(a);
+    // loop voor elk item in de array
+    for (i = 0; i < arr.length; i++) {
+      // Check of de input matched met de zoekterm (case-insensitive)
+      if (arr[i].toUpperCase().indexOf(val.toUpperCase()) != -1) {
+        //  Zoja creeer een div element voor elke match
+        b = document.createElement(`DIV`);
+        let pos = arr[i].toUpperCase().indexOf(val.toUpperCase()),
+          str1 = arr[i].substring(pos, pos + val.length);
+        // Toon matches in de lijst
+        b.innerHTML = arr[i].replace(str1, "<strong>" + str1 + "</strong>");
+        //  Functie wanneer gebruiker de suggestie selecteert
+        b.addEventListener(`click`, function (e) {
+          //  Voeg de geselecteerde suggestie toe aan de input
+          inp.value = this.getElementsByTagName(`input`)[0].value;
+          // Sluit de autocomplete-lijst
+          closeAllLists();
+        });
+        a.appendChild(b);
+      }
+    }
+  });
+
+  // Functionaliteit voor de pijltjes-toetsen
+  inp.addEventListener(`keydown`, function (e) {
+    let x = document.getElementById(this.id + `autocomplete-list`);
+    if (x) x = x.getElementsByTagName(`div`);
+    if (e.keyCode == 40) {
+      //  Arrow down key verandert de focus naar beneden
+      currentFocus++;
+      //  en toont de 'active'-opmaak (blauw)
+      addActive(x);
+    } else if (e.keyCode == 38) {
+      // Arrow up key
+      currentFocus--;
+      addActive(x);
+    }
+  });
+
+  // Functie voor toevoegen active-class aan autocomplete item
+  function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = x.length - 1;
+    x[currentFocus].classList.add(`autocomplete-active`);
+  }
+
+  //  Functie voor verwijderen van active-class bij alle items
+  function removeActive(x) {
+    for (let i = 0; i < x.length; i++) {
+      x[i].classList.remove(`autocomplete-active`);
+    }
+  }
+
+  // Functie voor sluiten autocomplete-lijst
+  function closeAllLists(elmnt) {
+    let x = document.getElementsByClassName(`autocomplete-items`);
+    for (let i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+
+  // Klik ergens in het scherm om de lijst te sluiten
+  document.addEventListener(`click`, function (e) {
+    closeAllLists(e.target);
+  });
+}
+
+// Reset functie
+function clearStorage() {
+  localStorage.clear();
+}
+
+autocomplete(document.querySelector(`#searchInput`), filteredStorage);

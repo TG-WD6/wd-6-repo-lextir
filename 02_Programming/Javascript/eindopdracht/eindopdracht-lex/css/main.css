@@ -219,8 +219,8 @@ section {
   display: none;
   width: 20rem;
   height: 20rem;
-  padding-top: 50px;
-  padding-left: 120px;
+  padding-top: 3rem;
+  padding-left: 8rem;
   font-size: 8rem;
   border-radius: 10%;
   background-color: lightgrey;
@@ -244,13 +244,14 @@ section {
 .carousel__indicators {
   position: absolute;
   bottom: 5%;
+  left: 28%;
   list-style: none;
-  transform: translateX(-50%);
 }
 .carousel__indicators li {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 0.1rem;
   border-radius: 50%;
   border: 1px solid black;
   cursor: pointer;
@@ -292,25 +293,56 @@ section {
 }
 
 .searchbar {
+  display: flex;
+  /*the container must be positioned relative:*/
+  /*when hovering an item:*/
+  /*when navigating through the items using the arrow keys:*/
+}
+.searchbar .autocomplete {
+  position: relative;
+  display: inline-block;
   width: 20rem;
 }
-.searchbar form {
-  display: flex;
-  background-color: rgb(236, 236, 236);
-  border-radius: 20px;
+.searchbar input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  outline: 0;
 }
-.searchbar form button {
+.searchbar input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.searchbar button[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  width: 6rem;
+  height: 100%;
   border: 0;
-  padding-left: 1rem;
-  background-color: inherit;
+  border-radius: 10px;
+  cursor: pointer;
 }
-.searchbar form input {
-  width: 80%;
-  border: 0;
-  padding: 0.3rem 1rem;
-  border-radius: 20px;
-  background-color: inherit;
+.searchbar .autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 1;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
 }
-.searchbar form input:focus {
-  outline: none;
+.searchbar .autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.searchbar .autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+.searchbar .autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
 }
