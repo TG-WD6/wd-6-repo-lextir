@@ -158,7 +158,7 @@ function autocomplete(inp, arr) {
     this.parentNode.appendChild(a);
     // loop voor elk item in de array
     for (i = 0; i < arr.length; i++) {
-      // Check of de input matched met de zoekterm (case-insensitive)
+      // Check of de input matched met de zoekterm
       if (arr[i].toUpperCase().indexOf(val.toUpperCase()) != -1) {
         //  Zoja creeer een div element voor elke match
         b = document.createElement(`DIV`);
@@ -183,9 +183,8 @@ function autocomplete(inp, arr) {
     let x = document.getElementById(this.id + `autocomplete-list`);
     if (x) x = x.getElementsByTagName(`div`);
     if (e.keyCode == 40) {
-      //  Arrow down key verandert de focus naar beneden
+      //  Arrow down key verandert de focus naar beneden en toont de 'active'-opmaak (blauw)
       currentFocus++;
-      //  en toont de 'active'-opmaak (blauw)
       addActive(x);
     } else if (e.keyCode == 38) {
       // Arrow up key

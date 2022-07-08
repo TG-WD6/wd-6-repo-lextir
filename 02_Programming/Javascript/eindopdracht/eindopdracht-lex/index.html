@@ -56,15 +56,18 @@
 
     <section class="searchbar">
       <form class="searchbar__form" autocomplete="off">
-        <div class="autocomplete">
+        <div class="searchbar__input-container">
           <input id="searchInput" type="text" placeholder="Zoekterm..." />
+          <button type="submit">
+            <img class="search-icon" src="./img/search-icon.webp" width="20" height="20" alt="Een vergrootglas zoekicoon" />
+          </button>
         </div>
-        <button type="submit" id="searchSubmit"/>Verzenden</button>
+        <!-- <button type="submit" id="searchSubmit"/>Verzenden</button> -->
 
       </form>
-
+      <button class="searchbar__reset" onclick="clearStorage()"/>Reset</button>
     </section>
-    <button type="submit" class="searchbar__reset" value="Reset" onclick="clearStorage()"/>Reset</button>
+
 
   </main>
 
