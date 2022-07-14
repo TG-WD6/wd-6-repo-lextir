@@ -1,3 +1,5 @@
+`use strict`;
+
 //*  CLOCK
 
 setInterval(setClock, 1000);
@@ -236,3 +238,54 @@ function clearStorage() {
 }
 
 autocompleteSearch(document.querySelector(`#searchInput`), filteredStorage);
+
+//* JSON CARDS
+
+const xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let arr = JSON.parse(this.responseText);
+    let heroData = arr.superheroes;
+
+    function heroCard(hero) {
+      return `
+      <div class="superheroes__card">
+      <div class="superheroes__card--inner">
+          <div class="superheroes__card--front">
+            <img class="superheroes__photo" src="${hero.photo}">
+            <h2 class="superheroes__name">${hero.name}</h2>
+          </div>
+          <div class="superheroes__card--back">
+           <h2 class="superheroes__name">${hero.name}</h2>
+            <p>Alter ego: <span>${hero.alterego}</span><br>
+            Creator: <span>${hero.creator}</span><br>
+            Year: <span>${hero.year}</span><br>
+            Publisher: <span>${hero.publisher}</span></p>
+            <p>${superpowersList(hero.superpowers)}</p>
+          </div>
+          </div>
+      </div>
+        `;
+    }
+
+    function superpowersList(powers) {
+      return `
+      <strong>Superpowers:</strong>
+      <ul class="superheroes__powers-list">
+      ${powers.map((powers) => `<li>${powers}</li>`).join("")}
+      </ul>
+      `;
+    }
+
+    document.querySelector(".superheroes__grid").innerHTML = `
+        ${heroData.map(heroCard).join("")}
+      `;
+
+    let output = "";
+    for (var i = 0; i < heroData.length; i++) {}
+  }
+};
+
+xmlhttp.open("GET", "./js/superheroes.json", true);
+xmlhttp.send();

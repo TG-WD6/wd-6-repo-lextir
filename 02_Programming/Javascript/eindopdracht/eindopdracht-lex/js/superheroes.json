@@ -1,0 +1,116 @@
+{
+  "superheroes": [
+    {
+      "name": "Batman",
+      "alterego": "Bruce Wayne",
+      "publisher": "DC Comics",
+      "year": 1939,
+      "creator": "Bob Kane",
+      "superpowers": [
+        "Genius-level intellect",
+        "Master martial artist ",
+        "Utilizes high-tech equipment "
+      ],
+      "photo": "./img/batman.png"
+    },
+    {
+      "name": "Deadpool",
+      "alterego": "Wade Wilson",
+      "publisher": "Marvel Comics",
+      "year": 1991,
+      "creator": "Fabian Nicieza",
+      "superpowers": ["Regeneration", "Extended longevity", "Master assassin"],
+      "photo": "./img/deadpool.png"
+    },
+
+    {
+      "name": "Wonder Woman",
+      "alterego": "Diana Prince",
+      "publisher": "DC Comics",
+      "year": 1941,
+      "creator": "Charles Moulton",
+      "superpowers": [
+        "Divine empowerment",
+        "Accelerated healing",
+        "Immortality"
+      ],
+      "photo": "./img/wonderwoman.png"
+    },
+    {
+      "name": "Black Panther",
+      "alterego": "T'Challa",
+      "publisher": "Marvel Comics",
+      "year": 1966,
+      "creator": "Stan Lee",
+      "superpowers": [
+        "Can use the strength of previous Black Panthers",
+        "Vibranium suit "
+      ],
+      "photo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpre00.deviantart.net%2F9e01%2Fth%2Fpre%2Ff%2F2018%2F013%2Fa%2Ff%2Fblack_panther__1____png_by_captain_kingsman16-dbzwfo1.png&f=1&nofb=1"
+    },
+
+    {
+      "name": "Superman",
+      "alterego": "Clark Kent",
+      "publisher": "DC Comics",
+      "year": 1938,
+      "creator": "Jerry Siegel",
+      "superpowers": ["Superhuman strength", "Accelerated healing", "Flight"],
+      "photo": "./img/superman.png"
+    },
+    {
+      "name": "Rorschach",
+      "alterego": "Walter Kovacs",
+      "publisher": "DC Comics",
+      "year": 1986,
+      "creator": "Alan Moore",
+      "superpowers": [
+        "Master hand-to-hand combatant",
+        "Peak human strength",
+        "Genius level intellect"
+      ],
+      "photo": "./img/rorschach.png"
+    },
+    {
+      "name": "Spider-Man",
+      "alterego": "Peter Parker",
+      "publisher": "Marvel Comics",
+      "year": 1962,
+      "creator": "Stan Lee",
+      "superpowers": [
+        "Ability to cling to surfaces",
+        "Spider-sense ability",
+        "Accelerated healing"
+      ],
+      "photo": "./img/spiderman.png"
+    },
+    {
+      "name": "Morpheus",
+      "alterego": "Dream",
+      "publisher": "DC Comics",
+      "year": 1962,
+      "creator": "Neil Gaiman",
+      "superpowers": [
+        "Incarnation of dreams",
+        "Vast cosmic powers",
+        "Reality warping"
+      ],
+      "photo": "./img/dream.png"
+    },
+
+    {
+      "name": "Hulk",
+      "alterego": "Bruce Banner",
+      "publisher": "Marvel Comics",
+      "year": 1962,
+      "creator": "Stan Lee",
+      "superpowers": [
+        "Immense superhuman strength",
+        "Invulnerability",
+        "Anger empowerment"
+      ],
+      "photo": "./img/hulk.png"
+    }
+
+  ]
+}

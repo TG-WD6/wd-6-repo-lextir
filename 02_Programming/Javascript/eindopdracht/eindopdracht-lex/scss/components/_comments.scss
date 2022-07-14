@@ -1,0 +1,31 @@
+.comments {
+
+  input[type="text"]:invalid {
+    border: red solid 1px;
+  }
+
+  .container {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  #comment {
+    background-color: #f1f1f1;
+  }
+  #addComments {
+    width: 20%;
+    padding: 5px;
+    background-color: darkblue;
+    color: white;
+    align-self: center;
+  }
+
+  .wrapper > button {
+    margin-right: 5px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+  }
+}

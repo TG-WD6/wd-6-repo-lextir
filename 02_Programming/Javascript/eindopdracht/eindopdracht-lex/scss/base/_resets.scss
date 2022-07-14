@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -30,7 +29,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+  // max-width: 100%;
 }
 
 input,
@@ -40,7 +39,6 @@ select {
   font: inherit;
 }
 
-/*   8. Avoid text overflows */
 p,
 h1,
 h2,

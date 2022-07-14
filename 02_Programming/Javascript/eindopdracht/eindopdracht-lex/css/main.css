@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  line-height: 1.5;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -30,7 +29,6 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
 }
 
 input,
@@ -40,7 +38,6 @@ select {
   font: inherit;
 }
 
-/*   8. Avoid text overflows */
 p,
 h1,
 h2,
@@ -77,6 +74,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,4 +346,117 @@ section {
 .searchbar .autocomplete-active {
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+
+.superheroes__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.superheroes__card {
+  width: 200px;
+  height: 300px;
+  margin: 2rem;
+  background-color: transparent;
+  perspective: 1000px;
+}
+.superheroes__card--inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.superheroes__card--front, .superheroes__card--back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0.3rem 0.2rem;
+  border-radius: 1rem;
+  border: 3px solid black;
+  background-image: linear-gradient(45deg, hsl(240deg, 44%, 49%) 0%, hsl(253deg, 44%, 50%) 11%, hsl(264deg, 44%, 51%) 22%, hsl(273deg, 44%, 52%) 33%, hsl(282deg, 44%, 53%) 44%, hsl(291deg, 43%, 54%) 56%, hsl(300deg, 43%, 55%) 67%, hsl(309deg, 51%, 59%) 78%, hsl(315deg, 61%, 63%) 89%, hsl(321deg, 72%, 67%) 100%);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.superheroes__card--front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.superheroes__card--front img:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  height: 85%;
+}
+.superheroes__card--front img:nth-of-type(2) {
+  width: 70%;
+}
+.superheroes__card--front h2 {
+  bottom: 0;
+}
+.superheroes__card--back {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.7rem;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  transform: rotateY(180deg);
+}
+.superheroes__card--back h2 {
+  top: 20px;
+}
+.superheroes__card--back span {
+  float: right;
+  font-weight: bold;
+}
+.superheroes__name {
+  position: absolute;
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 0 0 0.5rem black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+.superheroes__powers-list {
+  margin-top: 0.7rem;
+  padding: 0;
+  position: relative;
+  left: 1rem;
+}
+.superheroes__card:hover .superheroes__card--inner {
+  transform: rotateY(180deg);
+}
+
+.comments input[type=text]:invalid {
+  border: red solid 1px;
+}
+.comments .container {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.comments #comment {
+  background-color: #f1f1f1;
+}
+.comments #addComments {
+  width: 20%;
+  padding: 5px;
+  background-color: darkblue;
+  color: white;
+  align-self: center;
+}
+.comments .wrapper > button {
+  margin-right: 5px;
+  padding: 5px;
+  background-color: red;
+  color: white;
 }
