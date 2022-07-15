@@ -1,31 +1,95 @@
 .comments {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
 
-  input[type="text"]:invalid {
-    border: red solid 1px;
+  input,
+  textarea {
+    display: block;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    outline-color: grey;
   }
 
-  .container {
-    width: 30rem;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+  button {
+    border: none;
+    cursor: pointer;
   }
 
-  #comment {
-    background-color: #f1f1f1;
+  // post new comment inputs
+  &__post--name {
+    margin: 2rem 0 0.5rem 0;
+    border: 1px solid grey;
   }
-  #addComments {
-    width: 20%;
-    padding: 5px;
-    background-color: darkblue;
+
+  &__post--input {
+    height: 6rem;
+  }
+}
+
+//  posted messages
+.comments__message {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem 1rem 0.3rem;
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
+
+  div:nth-of-type(1) {
+    font-weight: bold;
+    color: #ce4927;
+    margin-bottom: 0.3rem;
+  }
+
+  &--reply {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    background-color: #dfdfe0;
+  }
+}
+
+// post new reply input
+&__reply--input {
+  width: 80%;
+  margin-bottom: 0.5rem;
+  border: 1px solid grey;
+}
+
+&__button {
+  &--post {
     color: white;
-    align-self: center;
-  }
+    width: 10rem;
+    margin-top: 1rem;
+    padding: 0.4rem 0rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color: rgb(22, 101, 133);
+    transition: 400ms;
+    opacity: 1;
 
-  .wrapper > button {
-    margin-right: 5px;
-    padding: 5px;
-    background-color: red;
-    color: white;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &--reply,
+    &--like,
+    &--delete,
+    &--addreply,
+    &--cancelreply {
+      margin: 0.6rem 0.3rem 0 0.3rem;
+      padding: 0 0.4rem;
+      color: rgb(124, 124, 124);
+      background-color: transparent;
+      border-radius: 0.3rem;
+      transition: 200ms;
+
+      &:hover {
+        background-color: darkgray;
+        color: black;
+      }
+    }
   }
 }

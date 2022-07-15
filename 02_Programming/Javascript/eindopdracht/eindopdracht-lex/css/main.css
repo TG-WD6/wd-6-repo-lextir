@@ -348,6 +348,84 @@ section {
   color: #ffffff;
 }
 
+.comments {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+.comments input,
+.comments textarea {
+  display: block;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  outline-color: grey;
+}
+.comments button {
+  border: none;
+  cursor: pointer;
+}
+.comments__post--name {
+  margin: 2rem 0 0.5rem 0;
+  border: 1px solid grey;
+}
+.comments__post--input {
+  height: 6rem;
+}
+
+.comments__message {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem 1rem 0.3rem;
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
+}
+.comments__message div:nth-of-type(1) {
+  font-weight: bold;
+  color: #ce4927;
+  margin-bottom: 0.3rem;
+}
+.comments__message--reply {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+  background-color: #dfdfe0;
+}
+
+.comments__reply--input {
+  width: 80%;
+  margin-bottom: 0.5rem;
+  border: 1px solid grey;
+}
+
+.comments__button--post {
+  color: white;
+  width: 10rem;
+  margin-top: 1rem;
+  padding: 0.4rem 0rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  background-color: rgb(22, 101, 133);
+  transition: 400ms;
+  opacity: 1;
+}
+.comments__button--post:hover {
+  opacity: 0.8;
+}
+.comments__button--reply, .comments__button--like, .comments__button--delete, .comments__button--addreply, .comments__button--cancelreply {
+  margin: 0.6rem 0.3rem 0 0.3rem;
+  padding: 0 0.4rem;
+  color: rgb(124, 124, 124);
+  background-color: transparent;
+  border-radius: 0.3rem;
+  transition: 200ms;
+}
+.comments__button--reply:hover, .comments__button--like:hover, .comments__button--delete:hover, .comments__button--addreply:hover, .comments__button--cancelreply:hover {
+  background-color: darkgray;
+  color: black;
+}
+
 .superheroes__grid {
   display: flex;
   flex-wrap: wrap;
@@ -433,30 +511,4 @@ section {
 }
 .superheroes__card:hover .superheroes__card--inner {
   transform: rotateY(180deg);
-}
-
-.comments input[type=text]:invalid {
-  border: red solid 1px;
-}
-.comments .container {
-  width: 30rem;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-.comments #comment {
-  background-color: #f1f1f1;
-}
-.comments #addComments {
-  width: 20%;
-  padding: 5px;
-  background-color: darkblue;
-  color: white;
-  align-self: center;
-}
-.comments .wrapper > button {
-  margin-right: 5px;
-  padding: 5px;
-  background-color: red;
-  color: white;
 }

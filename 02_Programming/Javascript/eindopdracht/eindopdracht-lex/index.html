@@ -13,6 +13,7 @@
 <body>
   <main>
 
+
     <!-- CLOCK -->
 
     <section class="clock">
@@ -54,14 +55,34 @@
 
     <!-- SEARCH -->
 
-    <section class="searchbar">
-      <form class="searchbar__form" autocomplete="off">
-          <input id="searchInput" type="text" placeholder="Zoekterm..." />
-          <button type="submit" onclick="searchSubmit()" >
-            <img class="search-icon" src="./img/search-icon.webp" width="20" height="20" alt="Een vergrootglas zoekicoon" />
-          </button>
-      </form>
-      <button class="searchbar__reset" onclick="clearStorage()"/>Reset</button>
+ <section class="searchbar">
+  <form class="searchbar__form" autocomplete="off">
+      <input id="searchInput" type="text" placeholder="Zoekterm..." />
+      <button type="submit" onclick="searchSubmit()" >
+        <img class="search-icon" src="./img/search-icon.webp" width="20" height="20" alt="Een vergrootglas zoekicoon" />
+      </button>
+  </form>
+  <button class="searchbar__reset" onclick="clearStorage()"/>Reset</button>
+</section>
+
+
+
+    <!-- COMMENTS -->
+
+    <section class="comments">
+      <div class="comments__all"></div>
+      <input
+        type="text"
+        class="comments__post--name"
+        placeholder="Name"
+        required
+      />
+      <textarea
+        class="comments__post--input"
+        placeholder="Join the discussion..."
+        required
+      ></textarea>
+      <button class="comments__button--post">Post your comment</button>
     </section>
 
     <!-- JSON CARDS -->

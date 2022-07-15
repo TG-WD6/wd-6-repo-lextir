@@ -12,13 +12,19 @@
   <body>
     <main>
       <section class="comments">
-        <div class="container">
-          <div id="allComments"></div>
-          <label for="comment" name="comment">Add your comment:</label>
-          <textarea id="comment" required></textarea>
-          <button id="addComments">Add</button>
-
-      </div>
+        <div class="comments__all"></div>
+        <input
+          type="text"
+          class="comments__post--name"
+          placeholder="Name"
+          required
+        />
+        <textarea
+          class="comments__post--input"
+          placeholder="Join the discussion..."
+          required
+        ></textarea>
+        <button class="comments__button--post">Post your comment</button>
       </section>
     </main>
   </body>
